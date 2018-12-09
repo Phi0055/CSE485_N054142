@@ -1,0 +1,84 @@
+/*Reset*/
+.container{
+    padding: 0;
+}
+/*Nav*/
+header .me-nav {
+    background-color: #0069d9;
+}
+header .me-nav .navbar-brand img{
+    height: 35px;
+}
+header .me-nav .dropdown .dropdown-menu{
+    background-color: #0069d9;
+}
+header .me-nav .dropdown-item:hover{
+    background-color: white;
+}
+header .me-nav #navcol-1 .nav-link:hover{
+    color: white;
+}
+header .me-nav #navcol-1 .btn{
+    border-radius: 25px;
+}
+/*Form Đăng Nhập*/
+.me-form-login{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.me-form-login .login-card{
+    position: fixed;
+    display: block;
+}
+
+/*Form Đăng Ký*/
+.Sex{
+    height: 100%;
+    width: 100%;
+}
+.Sex .form-check{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+/*Slide*/
+.carousel img{
+    width: 100%;
+    min-height: 200px;
+    max-height: 600px;
+}
+
+/*fixed nav*/
+#nt-compact{
+    position: fixed;
+    display: block;
+    top: 150px;
+    max-height: 400px;
+    z-index: 10;
+}
+
+/*list du lich*/
+.me-list-dl .intro h2{
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.me-list-dl .articles .item{
+    min-height: 250px;
+    padding-top: 10px;
+}
+.me-list-dl .articles .item h3{
+    margin-top: 5px;
+}
+
+/*list DL top 3*/
+.me-top3 .articles{
+    padding-bottom: 15px;
+    height: auto;
+}
+.me-top3 #top3show{
+    text-align: right;
+    width: 100%;
+}
