@@ -5,7 +5,7 @@ class Muser extends CI_Model{
     }
 
     public function listUser(){
-        $query=$this->db->query("SELECT * FROM taikhoan where level <> 2");
+        $query=$this->db->query("SELECT * FROM tai_khoan where cap_do <> 2");
         return $query->result_array();
     }
 }

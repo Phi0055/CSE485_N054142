@@ -18,7 +18,7 @@ class Admin extends CI_Controller{
 
     public function get_list_user(){
         $this->load->model("admin/Muser");
-        $data['data']=$this->Muser->listUser();
+        $data['listUser']=$this->Muser->listUser();
         $this->load->view("admin/get_list_user_admin_view", $data);
     }
 }

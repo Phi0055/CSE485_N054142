@@ -8,7 +8,7 @@
         <div class="carousel-item active">
             <img src="<?php echo base_url();?>assets/img/la.jpg" alt="Los Angeles">
             <div class="carousel-caption">
-                <a href="http://localhost/BTLTravelingMVC/index.php/du_lich"><h3>Du Lịch</h3></a>
+                <a href="<?php echo base_url();?>index.php/du_lich"><h3>Du Lịch</h3></a>
                 <p>Du Lịch Theo Từng Chủ Đề!</p>
             </div>
         </div>

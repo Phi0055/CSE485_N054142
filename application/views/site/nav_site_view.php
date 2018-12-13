@@ -13,10 +13,10 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Du Lịch</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" id="du_lich_bxh" href="http://localhost/BTLTravelingMVC/index.php/du_lich/view_bxh">Bảng Xếp Hạng</a>
-                            <a class="dropdown-item" role="presentation" id="du_lich_moi" href="http://localhost/BTLTravelingMVC/index.php/du_lich/view_moi">Mới</a>
-                            <a class="dropdown-item" role="presentation" id="du_lich_trong_nuoc" href="http://localhost/BTLTravelingMVC/index.php/du_lich/view_trong_nuoc">Trong Nước</a>
-                            <a class="dropdown-item" role="presentation" id="du_lich_ngoai_nuoc" href="http://localhost/BTLTravelingMVC/index.php/du_lich/view_ngoai_nuoc">Ngoài Nước</a>
+                            <a class="dropdown-item" role="presentation" id="du_lich_bxh" href="<?php echo base_url();?>index.php/du_lich/view_bxh">Bảng Xếp Hạng</a>
+                            <a class="dropdown-item" role="presentation" id="du_lich_moi" href="<?php echo base_url();?>index.php/du_lich/view_moi">Mới</a>
+                            <a class="dropdown-item" role="presentation" id="du_lich_trong_nuoc" href="<?php echo base_url();?>index.php/du_lich/view_trong_nuoc">Trong Nước</a>
+                            <a class="dropdown-item" role="presentation" id="du_lich_ngoai_nuoc" href="<?php echo base_url();?>index.php/du_lich/view_ngoai_nuoc">Ngoài Nước</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -36,7 +36,7 @@
                 </ul>
                 <p class="ml-auto navbar-text actions">
                     <a class="btn btn-light" role="button" id="btnDangNhap"><i class="fa fa-user"></i>Đăng Nhập</a>
-                    <a class="btn btn-light" role="button" href="http://localhost/BTLTravelingMVC/index.php/regist"><i class="fa fa-sign-in"></i>Đăng Ký</a>
+                    <a class="btn btn-light" role="button" href="<?php echo base_url();?>index.php/regist"><i class="fa fa-sign-in"></i>Đăng Ký</a>
                 </p>
             </div>
         </div>

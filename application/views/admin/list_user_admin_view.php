@@ -17,21 +17,20 @@
                     <th class="hidden-xs">ID</th>
                     <th>Tên Đăng Nhập</th>
                     <th>Mật Khẩu</th>
-                    <th>Level</th>
+                    <th>Cấp Độ</th>
                 </tr>
                 </thead>
                 <tbody>
-
-                <?php foreach ($data as $row){?>
+                <?php foreach ($listUser as $row){?>
                     <tr>
                         <td class="row" style="box-sizing: border-box;">
                             <a class="btn btn-default col-6" style="border-right: 2px solid white;"><em class="fa fa-pencil"></em></a>
                             <a class="btn btn-danger col-6"><em class="fa fa-trash"></em></a>
                         </td>
-                        <td class="hidden-xs"><?php echo $row['id'];?></td>
-                        <td><?php echo $row['tendangnhap'];?></td>
-                        <td><?php echo $row['matkhau'];?></td>
-                        <td><?php echo $row['level'];?></td>
+                        <td class="hidden-xs"><?php echo $row['id_tk']?></td>
+                        <td><?php echo $row['ten_dang_nhap']?></td>
+                        <td><?php echo $row['mat_khau']?></td>
+                        <td><?php echo $row['cap_do']?></td>
                     </tr>
                 <?php
                 }
