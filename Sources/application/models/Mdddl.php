@@ -19,13 +19,13 @@ class Mdddl extends CI_Model{
         return $query->num_rows();
     }
 
-    public function getList($size, $start){
+    public function getList($start, $size){
         $start = isset($start)? $start : 0;
         $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl limit $start , $size");
         return $query->result_array();
     }
 
-    public function getListM($size, $start){
+    public function getListM($start, $size){
         $start = isset($start)? $start : 0;
         $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl order by dd.id_dddl desc limit $start , $size");
         return $query->result_array();
@@ -36,7 +36,7 @@ class Mdddl extends CI_Model{
         return $query->result_array();
     }
 
-    public function getListMTN($size, $start){
+    public function getListMTN($start, $size){
         $start = isset($start)? $start : 0;
         $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Trong Nước' order by dd.id_dddl desc limit $start , $size");
         return $query->result_array();
@@ -47,7 +47,7 @@ class Mdddl extends CI_Model{
         return $query->result_array();
     }
 
-    public function getListMNN($size, $start){
+    public function getListMNN($start, $size){
         $start = isset($start)? $start : 0;
         $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Ngoài Nước' order by dd.id_dddl desc limit $start , $size");
         return $query->result_array();

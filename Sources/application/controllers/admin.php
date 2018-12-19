@@ -30,9 +30,9 @@ class Admin extends CI_Controller{
         $config['base_url'] = base_url()."index.php/admin/get_list_user";
         $config['per_page'] = 5;
 
-        $size=$this->uri->segment(3);
+        $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listUser']= $this->Muser->getList($config['per_page'], $size);
+        $data['listUser']= $this->Muser->getList($start, $config['per_page']);
         $this->load->view("admin/get_list_user_admin_view", $data);
     }
 
@@ -42,9 +42,9 @@ class Admin extends CI_Controller{
         $config['base_url'] = base_url()."index.php/admin/get_list_dddl";
         $config['per_page'] = 5;
 
-        $size=$this->uri->segment(3);
+        $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listdddl']= $this->Mdddl->getList($config['per_page'], $size);
+        $data['listdddl']= $this->Mdddl->getList($start, $config['per_page']);
         $this->load->view("admin/get_list_dddl_admin_view", $data);
     }
 
@@ -55,9 +55,9 @@ class Admin extends CI_Controller{
         $config['base_url'] = base_url()."index.php/admin/get_list_dv";
         $config['per_page'] = 5;
 
-        $size=$this->uri->segment(3);
+        $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listdv']= $this->Mdv->getList($config['per_page'], $size);
+        $data['listdv']= $this->Mdv->getList($start, $config['per_page']);
         $this->load->view("admin/get_list_dv_admin_view", $data);
     }
 

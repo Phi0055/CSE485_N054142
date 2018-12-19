@@ -9,7 +9,7 @@ class Mdv extends CI_Model{
         return $query->num_rows();
     }
 
-    public function getList($size, $start){
+    public function getList($start, $size){
         $start = isset($start)? $start : 0;
         $query=$this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv limit $start , $size");
         return $query->result_array();

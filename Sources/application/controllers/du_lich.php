@@ -26,9 +26,9 @@ class Du_lich extends CI_Controller{
         $config['base_url'] = base_url()."index.php/du_lich/view_trong_nuoc";
         $config['per_page'] = 9;
 
-        $size=$this->uri->segment(3);
+        $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listdltn']= $this->Mdddl->getListMTN($config['per_page'], $size);
+        $data['listdltn']= $this->Mdddl->getListMTN($start, $config['per_page']);
         $this->load->view("site/du_lich_trong_nuoc_site_view", $data);
     }
 
@@ -38,9 +38,9 @@ class Du_lich extends CI_Controller{
         $config['base_url'] = base_url()."index.php/du_lich/view_ngoai_nuoc";
         $config['per_page'] = 9;
 
-        $size=$this->uri->segment(3);
+        $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listdlnn']= $this->Mdddl->getListMNN($config['per_page'], $size);
+        $data['listdlnn']= $this->Mdddl->getListMNN($start, $config['per_page']);
         $this->load->view("site/du_lich_ngoai_nuoc_site_view", $data);
     }
 
@@ -54,9 +54,9 @@ class Du_lich extends CI_Controller{
         $config['base_url'] = base_url()."index.php/du_lich/view_moi";
         $config['per_page'] = 9;
 
-        $size=$this->uri->segment(3);
+        $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listdlm']= $this->Mdddl->getListM($config['per_page'], $size);
+        $data['listdlm']= $this->Mdddl->getListM($start, $config['per_page']);
         $this->load->view("site/du_lich_moi_site_view", $data);
     }
 

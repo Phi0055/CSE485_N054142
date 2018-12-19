@@ -13,7 +13,6 @@ class Mcn extends CI_Model{
         $start = isset($start)? $start : 0;
         $query=$this->db->query("select * from cam_nang limit $start , $size;");
         return $query->result_array();
-        //echo "$start and $size";
     }
 }
 ?>

@@ -16,9 +16,9 @@ class Page extends CI_Controller{
         $config['base_url'] = base_url()."index.php/page/index";
         $config['per_page'] = 3;
 
-        $size=$this->uri->segment(3);
+        $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['data']= $this->Muser->getList($config['per_page'], $size);
+        $data['data']= $this->Muser->getList($start, $config['per_page']);
         $this->load->view("test_view", $data);
     }
 
