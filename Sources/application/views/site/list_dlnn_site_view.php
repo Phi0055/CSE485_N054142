@@ -2,7 +2,7 @@
     <div class="container">
         <div class="intro">
             <h2 class="text-center">Địa điểm Du Lịch Ngoài Nước</h2>
-            <p class="text-center">xxx</p>
+            <p class="text-center">Các tour du lịch nước ngoài với nhiều khuyến mãi ưu đãi cho khách hàng. Ngoài các tour thăm quan các điểm du lịch nổi tiếng nước ngoài như du lịch Thái Lan, du lịch Singapore, du lịch Malaysia, du lịch Campuchia, du lịch Trung Quốc, du lịch Hồng Kông, du lịch Hàn Quốc, du lịch Nhật Bản, du lịch Châu Âu, du lịch Mỹ… Chúng tôi còn cung cấp các tour du lịch và lịch khởi hành thăm quan tất cả các điểm khác trên thế giới. Các tour du lịch nước ngoài khởi hành hàng tuần xuất phát từ Hà Nội và Sài Gòn. Traveling cung cấp các tour du lịch nước ngoài chất lượng hàng đầu, đảm bảo uy tín,ưu đãi tốt nhất</p>
         </div>
         <div class="row articles">
             <?php

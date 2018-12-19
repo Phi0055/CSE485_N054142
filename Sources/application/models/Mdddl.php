@@ -58,5 +58,10 @@ class Mdddl extends CI_Model{
         return $query->result_array();
     }
 
+    public function deleteById($id){
+        $this->db->query("delete from ctdddl where id_dddl = $id;");
+        $this->db->query("delete from ctdgdddl where id_dddl = $id;");
+        $this->db->query("delete from dd_du_lich where id_dddl = $id;");
+    }
 }
 ?>

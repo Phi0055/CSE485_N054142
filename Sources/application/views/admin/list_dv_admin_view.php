@@ -26,8 +26,9 @@
                 <?php foreach ($listdv as $row){?>
                     <tr class="w3-animate-left">
                         <td align="center">
-                            <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                            <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                            <a class="btn btn-default" href="<?php echo base_url();?>index.php/admin/edit_dv"><em class="fa fa-pencil"></em></a>
+                            <br>
+                            <a class="btn btn-danger" href="<?php echo base_url();?>index.php/admin/delete_dv/<?php echo $row['id_dv'];?>"><em class="fa fa-trash"></em></a>
                         </td>
                         <td><?php echo $row['id_dv'];?></td>
                         <td><?php echo $row['ten_dv'];?></td>

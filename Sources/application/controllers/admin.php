@@ -82,7 +82,27 @@ class Admin extends CI_Controller{
     }
 
     public function delete_dddl($id){
-        echo $id;
-        //redirect(base_url() . "index.php/admin/get_list_dddl");
+        $this->load->model("Mdddl");
+        $this->Mdddl->deleteById($id);
+        redirect(base_url() . "index.php/admin/get_list_dddl");
     }
+
+    public function delete_dv($id){
+        $this->load->model("Mdv");
+        $this->Mdv->deleteById($id);
+        redirect(base_url() . "index.php/admin/get_list_dv");
+    }
+
+    public function delete_cn($id){
+        $this->load->model("Mcn");
+        $this->Mcn->deleteById($id);
+        redirect(base_url() . "index.php/admin/get_list_cn");
+    }
+
+    public function delete_tk($id){
+        $this->load->model("Muser");
+        $this->Muser->deleteById($id);
+        redirect(base_url() . "index.php/admin/get_list_user");
+    }
+
 }
