@@ -85,3 +85,14 @@ header .me-nav #navcol-1 .nav-link:hover{
 .content .me-db-item{
     padding: 0 30px;
 }
+
+/*Form đăng ký*/
+.Sex{
+    height: 100%;
+    width: 100%;
+}
+.Sex .form-check{
+    width: 50%;
+    float: left;
+    height: 100%;
+}

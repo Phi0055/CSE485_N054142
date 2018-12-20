@@ -30,7 +30,7 @@
                         <a class="nav-link">Bảng Xếp Hạng</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link">Cẩm Nang</a>
+                        <a class="nav-link" href="<?php echo base_url();?>index.php/cam_nang">Cẩm Nang</a>
                     </li>
                 </ul>
                 <p class="ml-auto navbar-text actions">

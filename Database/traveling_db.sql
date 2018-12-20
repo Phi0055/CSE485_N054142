@@ -232,46 +232,6 @@ insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(61,' di s�
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(62,'chiếc đuôi của một loài thuỷ quái đang bò lên bờ biển','Bán đảo Lofoten, Na Uy được xem là một trong những điểm tham quan nổi tiếng nhất của Iceland. Những dãy đá sừng sững bao quanh ôm gọn những thị trấn và người dân nơi đây. Khung cảnh hiện lên hùng vĩ nhưng yên bình dễ khiến người ta siêu lòng.','Ngoài Nước');
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(63,'đồng bằng Nam Bộ - miền Tây Nam Bộ','Đến đồng bằng sông Cửu Long ngoài việc thăm thú những vườn trái cây bạt ngàn, đi trên một trong 9 nhánh sông đổ ra biển của dòng sông Mê kông, nghe đờn ca tài tử và thưởng thức những món đặc sản vùng Nam Bộ, du khách cũng khó lòng bỏ qua việc tham quan các khu chợ nổi, một đặc trưng chỉ có ở miền Tây sông nước.','Trong Nước');
 
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(1,2,4,'Đây là một nơi rất thích. Đây là một địa điểm thích hợp với những bạn thích đi du lịch');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(2,10,3,'Bình thường, mọi thứ đều ổn nhưng không có gì đặc biệt.');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(42,2,3,'Trung bình, tôi không thấy nơi này có nhiều thứ thú vị');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(63,11,5,'Rất Tốt, đây là nơi hoàn hảo để hẹn hò');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(43,2,4,'Khá ổn, không có gì đặc sắc nhưng mọi thứ đều tốt');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(14,1,5,'khung cảnh ở đây đẹp lắm ');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(5,2,1,'tôi thất vọng khi đến đây');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(56,7,1,' ở đó không khí ô nhiễm quá');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(27,2,5,'Hài lòng, vui lắm mọi người ạ');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(19,5,5,'hoàn hảo, không có gì để chê');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(8,6,5,'nếu có điều kiệ, hãy đến đây một lần');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(19,10,1,'phi mất một chuyến đi, buồn quá!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(10,10,3,'bình thường mà sao mọi người khen nhiều vậy?');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(1,1,4,'một chuyến đi vui cùng bạn bè!!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(11,7,5,'nếu có cơ hội, tôi sẽ quay lại lần nữa cũng gia đình, quá tuyệt');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(12,6,5,'Rất tuyệt vời,');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(12,9,4,'nói chung là ổn , không phí công sức , thời gian , tiền bạc khi đến đây');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(14,7,3,'Chẳng có gì đặc biệt cả');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(15,8,2,' không Tốt, chán ghê');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(1,11,4,'khá hài lòng, cũng vui');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(2,1,3,'không có gì vui!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(62,2,3,'không đẹp như mình nghĩ');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(13,1,5,'quá tuyệt vời, đẹp lắm!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(33,2,4,'Khá ổn, không khí trong lành');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(54,1,5,'đẹp lắm các bạn ạ!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(35,2,1,'sai lầm khi đến đây');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(56,4,1,'không bao giờ quay lại lần nữa');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(47,2,5,'hoàn hảo, một địa điểm lý tưởng');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(16,5,5,'đẹp, chuyến đi ý nghĩa');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(18,6,5,'sẽ quay lại. hihi');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(9,10,1,'tồi tệ quá, buồn, chả đẹp gì cả');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(40,10,3,'thời tiết không ủng hộ cho lắm!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(60,1,4,'cảnh đẹp lắm');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(51,7,5,'một địa điẻm du lịch hoàn hảo');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(22,6,5,'Rất tuyệt vời,rất ý nghĩa');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(42,9,4,'vui lắm!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(34,7,3,'đi 3 hôm mưa 2 !!');
-insert into ctdgdddl( id_dddl,id_tk, so_sao_dddl,binh_luan_dddl) values(25,8,2,' đừng phí tiền đến đây');
-
-
 insert into dich_vu( ten_dv,link_dv) values ('Aria Hotel Budapest', '1');
 insert into dich_vu( ten_dv,link_dv) values ('Mandapa A Ritz-Carlton Reserve', '2');
 insert into dich_vu( ten_dv,link_dv) values ('Turin Palace Hotel', '3');
@@ -344,46 +304,170 @@ insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (33,'Hàng Không n�
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (34,'Hàng Không nội địa-Air Mekong','Hãng hàng không nội địa Air Mekong được ra đời vào năm 2012 không có khuyến mãi sốc như hai hãng hàng không phía trên bên cạnh đó, các máy bay đều rất nhỏ và chỉ sử dụng trong các chuyến bay đặc thù như Hà Nội đi đến Phú Quốc, Côn Đảo.Vì có thiết kế nhỏ nên hãng hàng không này có vinh dự phục vụ mộtvợ chồng siêu tài tử Brad Pitt – Angela khi họ đã thuê riêng một chuyến bay của hãng hàng không này ra Côn Đảo.', 'Phương tiện');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (35,'Hàng không nội địa- Vasco','Hãng hàng không Việt Nam trong nội địa thứ 5 đó là Vasco, chính xác đây là một hãng hàng không xuất phát từ Công ty của hãng VietnamAirlines có thể gọi là công ty con của hãng hàng không quốc gia.Máy bay của Vasco có thiết kế nhỏ vì công ty này chỉ bay và phục vụ cho các tuyến bay hàng không ở Việt Nam trong nội địa ngắn và được xuất phát từ TP Hồ Chí Minh.', 'Phương tiện');
 
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(15,8,2,'  phục vụ không tốt,');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(1,2,4,'Tốt,Hài lòng');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,1,3,'không Tốt,không có gì đặc biệt');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(22,2,3,'nhân viên không nhiệt tình');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(13,1,5,'Nhân viên nhiệt tình, dịch vụ tốt');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(33,2,4,'khá tốt, nên tiếp tục phát huy');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(34,1,5,'mọi thứ hoàn hảo');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(35,2,1,'không thể chấp nhận được cách phục vụ');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(26,4,1,'dịch vụ trên chuyến đi rất kém');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(17,2,5,'Hài lòng, nhân viên thân thiện, nhiệt tình');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(16,5,5,'hoàn hảo');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(18,6,5,'Tốt, nên phát huy');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(9,10,1,'kém, không hài long chút nào');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(4,10,3,'dịch vụ không tốt lắm');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(30,1,4,'khá ổn');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(11,7,5,'Tuyệt vời, các dịch vụ trong khách sạn rất tốt');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(22,6,5,'Rất tuyệt vời');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(12,9,4,'view trong khách sạn khá đẹp');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(34,7,3,'Tôi không thoải mái');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(25,8,2,' chuyến đi tồi');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,1,5,'Tốt, Rất ưng ý');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(11,2,4,'khá ổn, phát triển thêm nhé!');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,11,3,'Bình thường mà');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,9,3,'ở mức trung bình khá thôi');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(1,1,5,'Rất Tốt, dịch vụ tuyệt');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(1,7,4,'không đặc biệt nhưng Khá ổn');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,2,5,'Tốtlắm, hồ bơi sang chảnh');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(1,2,1,'Không Tốt,chả có gì, không khí không thoáng mát');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,4,1,'Rất kém,chả có gì ');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(1,2,5,'Hài lòng, tôi dễ tính mà!');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,5,5,'hoàn hảo, mọi thứ ở mức tuyệt vời');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(1,6,5,'Tốt, cần phát huy nhé!');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(14,1,1,'kém, không nên ở đây');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(21,10,3,'trung bình, cần phát triển nâng cao hơn');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(31,3,4,'mức giá cũng được,view bình thường');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,7,5,'giá rẻ dịch vụ lại tốt');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,6,5,'Rất tuyệt vời');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(2,9,4,'Tôi thấy ở đâu cũng vậy!');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(11,7,3,'ở mức trung bình, cần tu sủa lại không gian');
-insert into ctdgdv( id_dv,id_tk, so_sao_dv,binh_luan_dv) values(31,8,2,' không Tốt, nhân viên bị khó ở !');
+INSERT INTO `ctdgdv` (`id_dv`, `id_tk`, `so_sao_dv`, `binh_luan_dv`) VALUES
+(1, 1, 5, 'Rất Tốt, dịch vụ tuyệt'),
+(1, 2, 1, 'Không Tốt,chả có gì, không khí không thoáng mát'),
+(1, 2, 4, 'Tốt,Hài lòng'),
+(1, 2, 5, 'Hài lòng, tôi dễ tính mà!'),
+(1, 6, 5, 'Tốt, cần phát huy nhé!'),
+(1, 7, 4, 'không đặc biệt nhưng Khá ổn'),
+(2, 1, 3, 'không Tốt,không có gì đặc biệt'),
+(2, 1, 5, 'Tốt, Rất ưng ý'),
+(2, 2, 5, 'Tốtlắm, hồ bơi sang chảnh'),
+(2, 4, 1, 'Rất kém,chả có gì '),
+(2, 5, 5, 'hoàn hảo, mọi thứ ở mức tuyệt vời'),
+(2, 6, 5, 'Rất tuyệt vời'),
+(2, 7, 5, 'giá rẻ dịch vụ lại tốt'),
+(2, 9, 3, 'ở mức trung bình khá thôi'),
+(2, 9, 4, 'Tôi thấy ở đâu cũng vậy!'),
+(2, 11, 3, 'Bình thường mà'),
+(3, 6, 3, 'tạm chấp nhận được'),
+(4, 10, 3, 'dịch vụ không tốt lắm'),
+(5, 5, 5, 'nên nới lỏng hơn về việc ra vào cò lại mọ thứ đều tuyệt vời'),
+(6, 4, 3, 'tôi là một khách hàng khó tính, nên cải thiện nhiều hơn'),
+(7, 2, 5, 'các bạn cần tiếp tục phát huy mọi dịch vụ và triển khai nhiều ưu đãi hơn nữa'),
+(8, 10, 3, 'dịch vụ ở đây chưa thực sự tốt'),
+(9, 10, 1, 'kém, không hài long chút nào'),
+(10, 6, 5, 'khách sạn hoàn hảo cả về chất lượng,không gian và dịch vụ'),
+(11, 2, 4, 'khá ổn, phát triển thêm nhé!'),
+(11, 7, 3, 'ở mức trung bình, cần tu sủa lại không gian'),
+(11, 7, 5, 'Tuyệt vời, các dịch vụ trong khách sạn rất tốt'),
+(12, 9, 4, 'view trong khách sạn khá đẹp'),
+(13, 1, 5, 'Nhân viên nhiệt tình, dịch vụ tốt'),
+(14, 1, 1, 'kém, không nên ở đây'),
+(15, 8, 2, '  phục vụ không tốt,'),
+(16, 5, 5, 'hoàn hảo'),
+(17, 2, 5, 'Hài lòng, nhân viên thân thiện, nhiệt tình'),
+(18, 6, 5, 'Tốt, nên phát huy'),
+(19, 10, 5, 'khu nghỉ dưỡng quá hoàn hảo, không có gì để chê trách'),
+(20, 8, 5, 'sứng đáng là khách sạn 5 sao'),
+(21, 10, 3, 'trung bình, cần phát triển nâng cao hơn'),
+(22, 2, 3, 'nhân viên không nhiệt tình'),
+(22, 6, 5, 'Rất tuyệt vời'),
+(23, 4, 3, 'chất luộng dịch vụ khá ổn, nhưng không gian hơi hẹp'),
+(23, 11, 2, 'khách sạn cao cấp hay nhà nghỉ bình dân không phân biệt nổi nữa'),
+(24, 3, 1, 'nhân viên ở đây bị kỳ thị người Việt Nam à'),
+(25, 6, 5, 'lần đầu tiên biết say máy bay là gì, nhưng mà vui'),
+(25, 8, 2, ' chuyến đi tồi'),
+(26, 3, 4, 'không biết quy định, tý nữa thì bị cho ở lại khỏi bay'),
+(26, 4, 1, 'dịch vụ trên chuyến đi rất kém'),
+(26, 4, 2, 'không hài lòng về cách cư xử của tiếp viên'),
+(27, 3, 5, 'chuyến bay an toàn'),
+(27, 6, 4, 'dịch vụ ổn, nhân viên thân thiện'),
+(28, 8, 5, 'ngủ một mạch cả lộ trình bay luôn'),
+(28, 11, 5, 'cảm ơn vì cho tôi hạ cánh an toàn'),
+(29, 4, 4, 'ngày xưa chỉ ước được đi máy bay một lần ý.giờ được đi sợ đến già'),
+(29, 7, 3, 'lần thứ xxx đi máy bay nhưng lần này không thực sự hài lòng'),
+(30, 1, 4, 'khá ổn'),
+(30, 4, 1, 'nên cải thiện chất lượng dịch vụ'),
+(31, 3, 4, 'mức giá cũng được,view bình thường'),
+(31, 3, 5, 'đã quá nổi tiếng, không chỉ về dịch vụ mà chất lượng chuyến bay cũng hoàn hảo'),
+(31, 7, 5, 'xứng đáng nhận 5 sao cho một hãng hàng không nội địa'),
+(31, 8, 2, ' không Tốt, nhân viên bị khó ở !'),
+(32, 4, 5, 'hệ thống nhân viên vui vẻ, thân thiện, nhiệt tình'),
+(33, 2, 4, 'khá tốt, nên tiếp tục phát huy'),
+(33, 2, 5, 'tuyệt vời, chuyến đi thuận lợi quá'),
+(33, 8, 5, 'hàng không nội địa mà dịch vụ rất chuyên nghiệp'),
+(34, 1, 5, 'mọi thứ hoàn hảo'),
+(34, 7, 3, 'Tôi không thoải mái'),
+(34, 10, 1, 'tôi sợ  đi máy bay đến già luôn'),
+(35, 2, 1, 'không thể chấp nhận được cách phục vụ'),
+(35, 10, 5, 'bay cao bay xa bay bay , giờ vẫn run');
+
+
+
+INSERT INTO `ctdgdddl` (`id_dddl`, `id_tk`, `so_sao_dddl`, `binh_luan_dddl`) VALUES
+(1, 1, 4, 'một chuyến đi vui cùng bạn bè!!'),
+(1, 2, 4, 'Đây là một nơi rất thích. Đây là một địa điểm thích hợp với những bạn thích đi du lịch'),
+(1, 11, 4, 'khá hài lòng, cũng vui'),
+(2, 1, 3, 'không có gì vui!'),
+(2, 10, 3, 'Bình thường, mọi thứ đều ổn nhưng không có gì đặc biệt.'),
+(3, 5, 5, 'tôi rất thích nơi này'),
+(4, 2, 3, 'không lý tưởng như tôi nghĩ, mông đợi nhiều hơn thế'),
+(5, 2, 1, 'tôi thất vọng khi đến đây'),
+(6, 9, 5, 'một địa điểm tuyệt vời để hẹn hò'),
+(7, 10, 4, 'nhiều khỉ lắm hihi haha'),
+(8, 6, 5, 'nếu có điều kiệ, hãy đến đây một lần'),
+(9, 10, 1, 'tồi tệ quá, buồn, chả đẹp gì cả'),
+(10, 10, 3, 'bình thường mà sao mọi người khen nhiều vậy?'),
+(11, 7, 5, 'nếu có cơ hội, tôi sẽ quay lại lần nữa cũng gia đình, quá tuyệt'),
+(12, 6, 5, 'Rất tuyệt vời,'),
+(12, 9, 4, 'nói chung là ổn , không phí công sức , thời gian , tiền bạc khi đến đây'),
+(13, 1, 5, 'quá tuyệt vời, đẹp lắm!'),
+(14, 1, 5, 'khung cảnh ở đây đẹp lắm '),
+(14, 7, 3, 'Chẳng có gì đặc biệt cả'),
+(15, 8, 2, ' không Tốt, chán ghê'),
+(16, 5, 5, 'đẹp, chuyến đi ý nghĩa'),
+(17, 6, 5, 'có tiền thì quay lại bao nhiêu lần cũng không chán'),
+(18, 6, 5, 'sẽ quay lại. hihi'),
+(19, 5, 5, 'hoàn hảo, không có gì để chê'),
+(19, 10, 1, 'phi mất một chuyến đi, buồn quá!'),
+(20, 11, 4, 'huế mộng mơ thiệt đó'),
+(21, 9, 4, ' tên ngô đồng mà sao không có ngô, tính qua đó vặt ngô mà'),
+(22, 6, 5, 'Rất tuyệt vời,rất ý nghĩa'),
+(23, 5, 3, 'có gì hay đâu,chán òm'),
+(24, 6, 5, 'vua biết ăn chơi quá ha'),
+(25, 8, 2, ' đừng phí tiền đến đây'),
+(26, 9, 4, 'chùa này thiêng lắm,không gian yên tĩnh thanh tịnh'),
+(27, 2, 5, 'Hài lòng, vui lắm mọi người ạ'),
+(28, 10, 2, 'chỉ thấy mệt khi đến đây thôi, có gì vui đâu'),
+(29, 10, 5, 'mũi né tưởng đâu là mũi nghé'),
+(30, 11, 4, 'nhiều thứ hay ho lắm '),
+(31, 9, 4, 'cảnh quan tuyệt vời,nơi khá thích hợp để nghỉ dưỡng'),
+(32, 7, 3, 'có ai thấy gì đặc biệt ở đây không'),
+(33, 2, 4, 'Khá ổn, không khí trong lành'),
+(34, 7, 3, 'đi 3 hôm mưa 2 !!'),
+(35, 2, 1, 'sai lầm khi đến đây'),
+(36, 11, 3, 'nhạt, bình thường quá mà'),
+(37, 3, 2, 'mỏi chân chứ được cái quái gì đâu'),
+(38, 9, 2, 'mất tiền, mất thời gian, mất công sức  để đến đây haizzz'),
+(39, 7, 5, 'đẹp mê hồn luôn, cứ phải gọi là hoàn hảo'),
+(40, 6, 3, 'tất cả chỉ là nghệ thuạt sắp đặt, quảng cáo thì rõ hay, rõ đẹp'),
+(40, 10, 3, 'thời tiết không ủng hộ cho lắm!'),
+(41, 8, 1, 'nếu có ước muốn cho thời gian trở lại, tôi sẽ ko mất tiền ngu'),
+(42, 2, 3, 'Trung bình, tôi không thấy nơi này có nhiều thứ thú vị'),
+(42, 9, 4, 'vui lắm!'),
+(43, 2, 4, 'Khá ổn, không có gì đặc sắc nhưng mọi thứ đều tốt'),
+(45, 5, 5, 'Fa thì đừng đến đây nhá, tủi thân lắm ý'),
+(46, 9, 4, 'vui, đẹp mỗi tội về đen hết da, như kiểu đi làm đồng ý'),
+(47, 2, 5, 'hoàn hảo, một địa điểm lý tưởng'),
+(48, 3, 1, 'có ai thyaas nó đẹp không, cứ mình thì không thấy một chút xíu gì gọi là đẹp cả'),
+(49, 9, 5, 'trải nghiệm khó quên, hang động đẹp lắm luôn'),
+(50, 8, 5, 'nhìn cái hồ ai dám bơi, tui sợ chết đuối, uống no nước luôn'),
+(50, 11, 4, 'khá tuyệt'),
+(51, 5, 5, 'vào đó mà đi một mình chắc khỏi ra quá'),
+(51, 6, 4, 'kiếm hoài  không  được cây tre trăm đốt'),
+(51, 7, 5, 'một địa điẻm du lịch hoàn hảo'),
+(52, 3, 3, 'chắc tại mình không hợp phong thủy, đi đến đó chán òm'),
+(52, 6, 3, 'tôi muốn nhiều hơn thế khi đến đây'),
+(53, 4, 2, 'mai tự xây cái cầu thnag như vậy'),
+(53, 6, 2, 'chưa tìm ra sự đặc biệt '),
+(53, 8, 3, 'ai nói cho tôi biết có gì vui ở đây'),
+(54, 1, 5, 'đẹp lắm các bạn ạ!'),
+(54, 7, 2, 'có gì vui đâu chứ'),
+(54, 8, 4, 'về đến nhà mới biết mình còn sống, chỉ sợ núi lửa nó phun là toi đời. haha'),
+(54, 9, 5, 'hihi, ngoài sự mong đợi luôn, tận mắt đc thấy ko phải xem qua ảnh qua báo nữa, thích ghê'),
+(54, 11, 3, 'tích tiền đưa gia đình đến đây chơi một bữa nữa'),
+(55, 3, 3, 'thấy bình thường à'),
+(55, 4, 5, 'tự nhiên có tạo hóa lạ lùng thiệt'),
+(55, 6, 2, 'chán òm, quảng cáo thì rõ đẹp, đến dó có gì đâu'),
+(56, 4, 1, 'không bao giờ quay lại lần nữa'),
+(56, 7, 1, ' ở đó không khí ô nhiễm quá'),
+(56, 8, 4, 'chỡ mãi chả thấy nó đổi màu gì cả'),
+(57, 2, 2, 'quá bình thường'),
+(57, 3, 4, 'thành phố mộng mơ'),
+(57, 8, 4, 'khá thú vị khi đến đây, nhiều chỗ chơi chỗ ăn, thoải mái '),
+(58, 2, 2, 'đi về mệt muốn chết, lại chả có gì hay ho'),
+(58, 8, 3, 'chán kinh'),
+(58, 9, 4, 'khá ổn, dù sao cũng có một kỳ nghỉ vui vẻ'),
+(59, 3, 3, 'có gì hay đâu, lượn một ngày thấy chán'),
+(59, 3, 4, 'quá nhiều điều để khám phá'),
+(60, 1, 4, 'cảnh đẹp lắm'),
+(60, 7, 5, 'cái thác đó là nơi sống ảo cho mọi chị em '),
+(60, 9, 3, 'thác đẹp hầy'),
+(61, 5, 5, 'chờ mãi mới có cơ hội được đi, cảm ơn vì đã ko phụ sự kỳ vọng của tôi'),
+(62, 2, 3, 'không đẹp như mình nghĩ'),
+(63, 11, 5, 'Rất Tốt, đây là nơi hoàn hảo để hẹn hò');
 
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'QUÀ DU LỊCH 3 MIỀN ĐẤT NƯỚC VIỆT NAM','Sau mỗi chuyến du lịch, những đặc sản là món quà nhỏ bé mang đậm hương vị vùng miền mà bạn muốn gửi tặng đến những người thân yêu. Vì thế, quà cho người nhà sau mỗi chuyến đi là điều khiến nhiều người lưu tâm.','1' );
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH ẤN ĐỘ, MUMBAI, DELHI TỪ A ĐẾN Z','Sông Hằng huyền thoại, những đỉnh núi tuyết vĩnh cửu, thành phố sôi động và những bãi biển hoang sơ khiến Ấn Độ luôn nằm trong những điểm đến hấp dẫn nhất hành tinh.','2');
@@ -395,8 +479,6 @@ insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHẬT
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'5 MÔN NGHỆ THUẬT THỂ HIỆN SỰ TINH TẾ CỦA NGƯỜI NHẬT BẢN','Nhật Bản là đất nước luôn hướng tới sự hoàn hảo, bên cạnh sự phát triển nhanh chóng của công nghệ thì các giá trị văn hóa nghệ thuật Nhật Bản không mất đi mà còn có sự thay đổi làm sao để tương thích với thời đại.', '8');
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH BRAZIL, RIO DE JANEIRO TỪ A ĐẾN Z','Rio de Janeiro là thủ phủ của Brazil nói chung và bang Rio de Janeiro nói riêng, thường được khách du lịch gọi tắt bằng cái tên là Rio. Thành phố này nổi tiếng trong lòng du khách bởi có cảnh sắc thiên nhiên lý thú cùng với những bãi biển cát trắng trải dài, hay những rừng mưa nằm trong lòng đô thị.', '9');
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'7 ĐẶC SẢN XỨ HOA VÀNG TRÊN CỎ XANH ĂN LÀ GHIỀN','Sau thành công của bộ phim "Tôi thấy hoa vàng trên cỏ xanh" chuyển thể từ tác phẩm cùng tên của nhà văn Nguyễn Nhật Ánh, vùng đất Phú Yên đầy nắng gió nằm trải dài trên dải đất miền Trung thân thương đã trở nên vô cùng nổi tiếng. Ngoài những cảnh đẹp, hiếm có mảnh đất nào mà ở khắp mọi nơi từ ngoài đường đến trong hẻm, từ trung tâm đến huyện lỵ lại có nhiều đồ ăn ngon như Phú Yên.', '10');
-
-
 
 select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.cap_do <> 2 limit 3, 5;
 
@@ -413,5 +495,30 @@ select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl orde
 select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Trong Nước' order by dd.id_dddl desc limit 0, 3;
 
 select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Ngoài Nước' order by dd.id_dddl desc limit 0, 3;
-;
 
+select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where dd.id_dddl = 15;
+
+/*
+delete from ctdddl where id_dddl = 5;
+delete from ctdgdddl where id_dddl = 5;
+delete from dd_du_lich where id_dddl = 5;
+*/
+
+/*
+delete from ctdv where id_dv = 5;
+delete from ctdgdv where id_dv = 5;
+delete from dich_vu where id_dv = 5;
+*/
+
+/*
+delete from cam_nang where id_cn = 5;
+*/
+
+/*
+delete from ctdgdv where id_tk = 5;
+delete from ctdgdddl where id_tk = 5;
+delete from thong_tin_tai_khoan where id_tk = 5;
+delete from tai_khoan where id_tk = 5;
+*/
+select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.id_tk = 5;
+select id_tk from tai_khoan where id_tk >= all (select id_tk from tai_khoan);

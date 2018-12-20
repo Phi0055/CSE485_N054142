@@ -14,9 +14,9 @@ class Du_lich extends CI_Controller{
 
     public function index(){
         $this->load->model("Mdddl");
-        $data['listdltntop3'] = $this->Mdddl->getListMTNS(3);
-        $data['listdlnntop3'] = $this->Mdddl->getListMNNS(3);
-        $data['listdddltop3'] = $this->Mdddl->getListMS(3);
+        $data['listdltntop3'] = $this->Mdddl->getListMTN(0,3);
+        $data['listdlnntop3'] = $this->Mdddl->getListMNN(0,3);
+        $data['listdddltop3'] = $this->Mdddl->getListM(0,3);
         $this->load->view('site/du_lich_site_view', $data);
     }
 
@@ -60,7 +60,9 @@ class Du_lich extends CI_Controller{
         $this->load->view("site/du_lich_moi_site_view", $data);
     }
 
-    public function view_detail(){
-        $this->load->view("site/s_detail_dddl_view");
+    public function view_detail($id){
+        $this->load->model("Mdddl");
+        $data['dddl'] = $this->Mdddl->getByID($id);
+        $this->load->view("site/s_detail_dddl_site_view", $data);
     }
 }

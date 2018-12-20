@@ -94,7 +94,7 @@ Footer{
 #nt-compact{
     position: fixed;
     display: block;
-    top: 150px;
+    top: 250px;
     max-height: 400px;
     z-index: 10;
 }
@@ -141,7 +141,7 @@ Footer{
 .me-fix-dtm .jumbotron-triangular-addon-wrapper{
     position: fixed;
     display: block;
-    top: 300px;
+    top: 250px;
     width: 100%;
 }
 
@@ -208,4 +208,27 @@ Footer{
 }
 .me-detail .me-cmt{
     padding-top: 30px;
+}
+
+/*Cẩm nang*/
+.me-cn .me-top-cn {
+    position: relative;
+}
+
+.me-cn .me-top-cn .word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.me-cn .me-top-cn img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+.me-cn .card {
+    text-align: center;
+    padding-bottom: 15px;
 }

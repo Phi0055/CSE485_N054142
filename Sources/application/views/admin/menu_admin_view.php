@@ -7,7 +7,7 @@
         </div>
         <div id="me-admin-tv" class="panel-collapse collapse">
             <ul>
-                <li><a href="<?php echo base_url();?>index.php/admin"><i class="fa fa-angle-right" aria-hidden="true"></i>  Thêm Thành Viên</a></li>
+                <li><a href="<?php echo base_url();?>index.php/admin/add_user"><i class="fa fa-angle-right" aria-hidden="true"></i>  Thêm Thành Viên</a></li>
                 <li><a href="<?php echo base_url();?>index.php/admin/get_list_user"><i class="fa fa-angle-right" aria-hidden="true"></i>  Xem Thành Viên</a></li>
             </ul>
         </div>

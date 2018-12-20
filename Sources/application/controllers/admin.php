@@ -73,6 +73,30 @@ class Admin extends CI_Controller{
         $this->load->view("admin/get_list_cn_admin_view", $data);
     }
 
+    public function add_user(){
+        $this->load->view("admin/s_add_user_admin_view");
+    }
+
+    public function edit_user($id){
+        $this->load->model("Muser");
+        $data['user'] = $this->Muser->getById($id);
+        $this->load->view("admin/s_edit_user_admin_view", $data);
+    }
+
+    public function pro_add_user(){
+        $tk = isset($_POST['tk']) ? $_POST['tk'] : "";
+        $mk = isset($_POST['mk']) ? $_POST['mk'] : "";
+        $ht = isset($_POST['ht']) ? $_POST['ht'] : "";
+        $gt = isset($_POST['gt']) ? $_POST['gt'] : "Nam";
+        $email = isset($_POST['email']) ? $_POST['email'] : "";
+        $ns = isset($_POST['ns']) ? $_POST['ns'] : "0000-00-00";
+        $dc = isset($_POST['dc']) ? $_POST['dc'] : "";
+        $sdt = isset($_POST['sdt']) ? $_POST['sdt'] : "";
+        $this->load->model("Muser");
+        $this->Muser->add($tk, $mk, $ht, $gt, $email, $ns, $dc, $sdt);
+        $this->get_list_user();
+    }
+
     public function add_dddl(){
         $this->load->view("admin/s_add_dddl_admin_view");
     }
@@ -99,7 +123,7 @@ class Admin extends CI_Controller{
         redirect(base_url() . "index.php/admin/get_list_cn");
     }
 
-    public function delete_tk($id){
+    public function delete_user($id){
         $this->load->model("Muser");
         $this->Muser->deleteById($id);
         redirect(base_url() . "index.php/admin/get_list_user");

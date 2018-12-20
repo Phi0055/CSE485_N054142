@@ -16,7 +16,7 @@
             <div class="col-sm-6 col-md-4 item">
                 <h4>Du Lịch Mới</h4>
                 <?php foreach ($listdddltop2 as $row){?>
-                    <a href="<?php echo base_url() . "index.php/du_lich/view_detail";?>">
+                    <a href="<?php echo base_url() . "index.php/du_lich/view_detail/" . $row['id_dddl'];?>">
                         <img class="img-fluid w3-animate-zoom w3-hover-opacity" src="<?php echo base_url() . "assets/img/dddl/". $row['link_dddl'] . ".jpg"; ?>">
                     </a>
                     <h3 class="name"><?php echo $row['ten_dddl'];?></h3>
@@ -26,7 +26,7 @@
             <div class="col-sm-6 col-md-4 item">
                 <h4>Du Lịch Trong Nước</h4>
                 <?php foreach ($listdltntop2 as $row){?>
-                    <a href="#">
+                    <a href="<?php echo base_url() . "index.php/du_lich/view_detail/" . $row['id_dddl'];?>">
                         <img class="img-fluid w3-animate-zoom w3-hover-opacity" src="<?php echo base_url() . "assets/img/dddl/". $row['link_dddl'] . ".jpg"; ?>">
                     </a>
                     <h3 class="name"><?php echo $row['ten_dddl'];?></h3>

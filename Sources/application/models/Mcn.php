@@ -18,5 +18,10 @@ class Mcn extends CI_Model{
     public function deleteById($id){
         $this->db->query("delete from cam_nang where id_cn = $id;");
     }
+
+    public function getListAll(){
+        $query=$this->db->query("select * from cam_nang;");
+        return $query->result_array();
+    }
 }
 ?>

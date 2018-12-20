@@ -16,7 +16,7 @@
         <div class="carousel-item">
             <img src="<?php echo base_url();?>assets/img/dichvu.jpg" alt="Dich Vu">
             <div class="carousel-caption">
-                <a href=""><h3>Dịch Vụ</h3></a>
+                <a href="<?php echo base_url();?>index.php/dich_vu"><h3>Dịch Vụ</h3></a>
                 <p>Dịch Vụ Phong Phú!</p>
             </div>
         </div>
