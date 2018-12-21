@@ -22,7 +22,7 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">Dịch Vụ</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation">Phương Tiện</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dich_vu/view_pt">Phương Tiện</a>
                             <a class="dropdown-item" role="presentation">Khách Sạn</a>
                         </div>
                     </li>

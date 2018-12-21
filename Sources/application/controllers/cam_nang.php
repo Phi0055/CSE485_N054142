@@ -14,8 +14,13 @@ class Cam_nang extends CI_Controller{
 
     public function index(){
         $this->load->model("Mcn");
-        $length = $this->Mcn->countAll();
-        $data['listcn'] = $this->Mcn->getList(0,$length);
+        $config['total_rows'] = $this->Mcn->countAll();
+        $config['base_url'] = base_url()."index.php/cam_nang/index";
+        $config['per_page'] = 6;
+
+        $start=$this->uri->segment(3);
+        $this->load->library('pagination', $config);
+        $data['listcn'] = $this->Mcn->getList($start, $config['per_page']);
         $this->load->view("site/cam_nang_site_view", $data);
     }
 
