@@ -1,14 +1,15 @@
 <div class="me-detail">
     <div class="container">
         <div class="photo-card container">
-            <div class="photo-background" style="background-image:url(<?php echo base_url();?>assets/img/product-aeon-feature.jpg);"></div>
-            <div class="photo-details">
-                <h1>Dịch Vụ<br></h1>
+            <div class="photo-background w3-animate-zoom" style="background-image:url(<?php echo base_url() . "assets/img/dv/" . $dv['link_dv'] . ".jpg);";?>"></div>
+            <div class="photo-details w3-animate-top">
+                <h1><?php echo $dv['ten_dv'];?><br></h1>
                 <p>
                     <strong>
-                        Nằm ở vùng Ðông Bắc Việt Nam, vịnh Hạ Long là một phần vịnh Bắc Bộ, bao gồm vùng biển của thành phố Hạ Long
+                        <?php echo $dv['tieu_de_dv'];?>
                     </strong>
-                    Vùng tập trung dày đặc các đảo đá có phong cảnh ngoạn mục và nhiều hang động đẹp nổi tiếng là vùng trung tâm Di sản thiên nhiên vịnh Hạ Long
+                    <br>
+                    <?php echo $dv['noi_dung_dv'];?>
                     <br>
                 </p>
                 <p class="copyright">

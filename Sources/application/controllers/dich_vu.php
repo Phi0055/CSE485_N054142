@@ -16,8 +16,10 @@ class Dich_vu extends CI_Controller{
         $this->load->view('site/dich_vu_site_view');
     }
 
-    public function view_detail(){
-        $this->load->view("site/s_detail_dv_site_view");
+    public function view_detail($id){
+        $this->load->model("Mdv");
+        $data['dv'] = $this->Mdv->getByID($id);
+        $this->load->view("site/s_detail_dv_site_view", $data);
     }
 
     public function view_pt(){

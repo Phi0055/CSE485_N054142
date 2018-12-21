@@ -31,5 +31,11 @@ class Mdv extends CI_Model{
         $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'phương tiện' limit $start, $size;");
         return $query->result_array();
     }
+
+    public function getByID($id){
+        $query=$this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where dv.id_dv = $id");
+        return $query->row_array();
+    }
+
 }
 ?>
