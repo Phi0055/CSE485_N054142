@@ -1,7 +1,7 @@
 <header>
     <nav class="me-nav navbar navbar-light navbar-expand-md navigation-clean-button">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="<?php echo base_url();?>">
                 <span><img src="<?php echo base_url();?>assets/img/logo.png">Traveling </span>
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
@@ -22,7 +22,7 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">Dịch Vụ</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation">Phương Tiện</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dich_vu/view_pt">Phương Tiện</a>
                             <a class="dropdown-item" role="presentation">Khách Sạn</a>
                         </div>
                     </li>

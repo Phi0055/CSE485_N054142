@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/chat-live.css">
     <link rel="stylesheet" href="assets/css/Jumbotron-Triangular-Addon.css">
     <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Card-Item-List.css">
     <link rel="stylesheet" href="assets/css/w3.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>

@@ -20,5 +20,16 @@ class Mdv extends CI_Model{
         $this->db->query("delete from ctdgdv where id_dv = $id;");
         $this->db->query("delete from dich_vu where id_dv = $id;");
     }
+
+    public function countPT(){
+        $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'phương tiện';");
+        return $query->num_rows();
+    }
+
+    public function getListPT($start, $size){
+        $start = isset($start)? $start : 0;
+        $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'phương tiện' limit $start, $size;");
+        return $query->result_array();
+    }
 }
 ?>

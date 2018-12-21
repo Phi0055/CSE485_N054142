@@ -20,4 +20,16 @@ class Dich_vu extends CI_Controller{
         $this->load->view("site/s_detail_dv_site_view");
     }
 
+    public function view_pt(){
+        $this->load->model("Mdv");
+        $config['total_rows'] = $this->Mdv->countPT();
+        $config['base_url'] = base_url()."index.php/dich_vu/view_pt";
+        $config['per_page'] = 9;
+
+        $start=$this->uri->segment(3);
+        $this->load->library('pagination', $config);
+        $data['listdvpt'] = $this->Mdv->getListPT($start, $config['per_page']);
+        $this->load->view("site/dich_vu_pt_site_view", $data);
+    }
+
 }

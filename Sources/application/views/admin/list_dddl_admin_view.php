@@ -26,7 +26,7 @@
                 <?php foreach ($listdddl as $row){?>
                     <tr class="w3-animate-left">
                         <td align="center">
-                            <a class="btn btn-default" href="<?php echo base_url();?>index.php/admin/edit_dddl"><em class="fa fa-pencil"></em></a>
+                            <a class="btn btn-default" href="<?php echo base_url();?>index.php/admin/edit_dddl/<?php echo $row['id_dddl'];?>"><em class="fa fa-pencil"></em></a>
                             <br>
                             <a class="btn btn-danger" href="<?php echo base_url();?>index.php/admin/delete_dddl/<?php echo $row['id_dddl'];?>"><em class="fa fa-trash"></em></a>
                         </td>

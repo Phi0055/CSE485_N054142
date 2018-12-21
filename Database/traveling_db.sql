@@ -522,3 +522,5 @@ delete from tai_khoan where id_tk = 5;
 */
 select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.id_tk = 5;
 select id_tk from tai_khoan where id_tk >= all (select id_tk from tai_khoan);
+
+select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = "phương tiện" limit 0, 1000;

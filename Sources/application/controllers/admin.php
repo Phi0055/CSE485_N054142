@@ -101,8 +101,10 @@ class Admin extends CI_Controller{
         $this->load->view("admin/s_add_dddl_admin_view");
     }
 
-    public function edit_dddl(){
-        $this->load->view("admin/s_edit_dddl_admin_view");
+    public function edit_dddl($id){
+        $this->load->model("Mdddl");
+        $data['dddl'] = $this->Mdddl->getById($id);
+        $this->load->view("admin/s_edit_dddl_admin_view", $data);
     }
 
     public function delete_dddl($id){

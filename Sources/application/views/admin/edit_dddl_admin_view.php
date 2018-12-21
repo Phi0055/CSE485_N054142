@@ -8,25 +8,25 @@
             <table class="table">
                 <tr>
                     <td><P>Tên</p></td>
-                    <td><input type="text" name="title" class="form-control"></td>
+                    <td><textarea name="noidung" class="form-control" id="" cols="30" rows="1" placeholder="<?php echo $dddl['ten_dddl'];?>"></textarea></td>
                 </tr>
                 <tr>
                     <td><P>Tiêu đề</p></td>
-                    <td><input type="text" name="title" class="form-control"></td>
+                    <td><textarea name="noidung" class="form-control" id="" cols="30" rows="1" placeholder="<?php echo $dddl['tieu_de_dddl'];?>"></textarea></td>
                 </tr>
                 <tr>
                     <td><P>Nội dung</p></td>
-                    <td><textarea name="content" class="form-control" id="" cols="30" rows="10"></textarea></td>
+                    <td><textarea name="noidung" class="form-control" id="" cols="30" rows="10" placeholder="<?php echo $dddl['noi_dung_dddl'];?>"></textarea></td>
                 </tr>
                 <tr>
                     <td><P>Hình ảnh</p></td>
-                    <td><input type="file" name="img" class="form-control"></td>
+                    <td><input type="file" name="img" class="form-control" accept="image/jpg"></td>
                 </tr>
                 <tr>
                     <td><p>Lựa chọn danh mục</p></td>
-                    <td><select name="cat" class="form-control">
-                            <option value="">Trong nước</option>
-                            <option value="">Ngoài nước</option>
+                    <td><select name="chu de" class="form-control">
+                            <option value="tn" selected>Trong Nước</option>
+                            <option value="nn" <?php if ($dddl['chu_de'] === "Ngoài Nước") echo "selected"?>>Ngoài Nước</option>
                         </select>
                     </td>
                 </tr>
