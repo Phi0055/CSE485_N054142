@@ -33,6 +33,9 @@
                 }
                 ?>
             </div>
+            <div class="list123">
+                <?php echo $this->pagination->create_links();?>
+            </div>
         </section>
     </main>
 </div>

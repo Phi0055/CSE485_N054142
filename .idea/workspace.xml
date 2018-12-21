@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12fbf390-0c5b-40fa-b978-2abf2e46471b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/all_list_dvpt_site_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_pt_site_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/assets/css/Responsive-Card-Item-List.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/traveling_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/traveling_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9mv003np62psd4g3d9pqk53e4f2r274g" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/config/session/ci_session9mv003np62psd4g3d9pqk53e4f2r274g" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/models/Mdv.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Mdv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_dddl_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_dddl_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_user_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_user_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/list_dddl_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/list_dddl_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/list_user_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/list_user_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/head_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/head_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session43uebl2dbfgrg6qmov95basihu2dtvpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/config/session/ci_session43uebl2dbfgrg6qmov95basihu2dtvpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/cam_nang.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/cam_nang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/models/Mcn.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Mcn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/all_list_cn_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/all_list_cn_site_view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +18,7 @@
     <pharConfigPath>$PROJECT_DIR$/Sources/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,6 +39,9 @@
         <option value="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" />
         <option value="$PROJECT_DIR$/Sources/application/views/site/all_list_dvpt_site_view.php" />
         <option value="$PROJECT_DIR$/Sources/application/views/site/slide_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/models/Mcn.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/all_list_cn_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/controllers/cam_nang.php" />
       </list>
     </option>
   </component>
@@ -70,7 +61,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,10 +73,17 @@
               <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
               <item name="Sources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
+              <item name="Sources" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -126,16 +123,17 @@
       <workItem from="1545357274905" duration="6778000" />
       <workItem from="1545376132790" duration="622000" />
       <workItem from="1545382457561" duration="359000" />
+      <workItem from="1545383249472" duration="2143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11041000" />
+    <option name="totallyTimeSpent" value="13184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27600554" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4105409" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -240,9 +238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_dlm_site_view.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dich_vu_site_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -306,29 +301,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/dich_vu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/application/views/site/du_lich_moi_site_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mdddl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mcn.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/application/views/site/du_lich_trong_nuoc_site_view.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -374,6 +352,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/dich_vu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mdddl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_dlm_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_cn_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mcn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/cam_nang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -11,7 +11,7 @@ class Mcn extends CI_Model{
 
     public function getList($start, $size){
         $start = isset($start)? $start : 0;
-        $query=$this->db->query("select * from cam_nang limit $start , $size;");
+        $query=$this->db->query("select * from cam_nang limit $start, $size;");
         return $query->result_array();
     }
 
@@ -19,9 +19,5 @@ class Mcn extends CI_Model{
         $this->db->query("delete from cam_nang where id_cn = $id;");
     }
 
-    public function getListAll(){
-        $query=$this->db->query("select * from cam_nang;");
-        return $query->result_array();
-    }
 }
 ?>
