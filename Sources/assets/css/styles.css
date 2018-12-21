@@ -1,0 +1,234 @@
+/*Reset*/
+.container{
+    padding: 0;
+}
+/*Nav*/
+header .me-nav {
+    background: linear-gradient(95.82deg, #007bff 0%, rgba(255, 255, 255, 0) 50.26%),
+    linear-gradient(264.18deg, #007bff 0%, rgba(255, 255, 255, 0) 50.26%), #FFFFFF;
+}
+header .me-nav .navbar-brand img{
+    height: 35px;
+}
+header .me-nav .dropdown .dropdown-menu{
+    background-color: #0069d9;
+}
+header .me-nav .dropdown-item:hover{
+    background-color: white;
+}
+header .me-nav #navcol-1 .nav-link:hover{
+    color: white;
+}
+header .me-nav #navcol-1 .btn{
+    border-radius: 25px;
+}
+
+/*Footer*/
+Footer{
+    background: linear-gradient(180deg, #292C2F 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 84.02%), #292C2F;
+}
+/*Form Đăng Nhập*/
+.me-form-login{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.me-form-login .login-card{
+    position: fixed;
+    display: block;
+}
+
+/*Form Đăng Ký*/
+.Sex{
+    height: 100%;
+    width: 100%;
+}
+.Sex .form-check{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+/*Form TTCN*/
+.me-TTCN {
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.me-TTCN form.custom-form{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.me-TTCN img{
+    width: 100%;
+}
+.me-TTCN label{
+    padding: 0 10px;
+}
+.me-TTCN .row,.me-TTCN .col-sm-4,.me-TTCN .col-sm-6,.me-TTCN .col-md-6,.me-TTCN .col-lg-4,.me-TTCN .col-lg-8{
+    padding: 0;
+    margin: 0;
+}
+.me-TTCN #me-setting-ttcn{
+    border-radius: 30px;
+    position: absolute; /*lớp cha * relative */
+    right: 0;
+}
+
+/*Slide*/
+.carousel img{
+    width: 100%;
+    min-height: 200px;
+    max-height: 600px;
+}
+.carousel a{
+    color: red;
+    background-color: lightgrey;
+}
+.carousel p{
+    color: red;
+}
+
+/*fixed nav*/
+#nt-compact{
+    position: fixed;
+    display: block;
+    top: 250px;
+    max-height: 400px;
+    z-index: 10;
+}
+
+/*list du lich*/
+.article-list .articles .img-fluid{
+    border-radius: 20%;
+    min-height: 250px;
+    width: 100%;
+}
+.me-list-dl .intro h2{
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.me-list-dl .articles .item{
+    padding-top: 10px;
+}
+.me-list-dl .articles .item h3{
+    margin-top: 5px;
+}
+
+.me-list-dl .articles .img-fluid{
+    border-radius: 50%;
+    height: 50px;
+}
+
+/*list DL top 3*/
+.me-top3 .articles{
+    padding-bottom: 15px;
+    height: auto;
+}
+.me-top3 #top3show{
+    text-align: right;
+    width: 100%;
+}
+
+/*Fix dtm*/
+.me-fix-dtm{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+.me-fix-dtm .jumbotron-triangular-addon-wrapper{
+    position: fixed;
+    display: block;
+    top: 250px;
+    width: 100%;
+}
+
+.me-fix-dtm .jumbotron-triangular-addon-wrapper {
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color: #FFFFFF;}
+    25%  {background-color: #CCFFFF;}
+    50%  {background-color: #CCFFCC;}
+    100% {background-color: #FFFFFF;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: #FFFFFF;}
+    25%  {background-color: #CCFFFF;}
+    50%  {background-color: #CCFFCC;}
+    100% {background-color: #FFFFFF;}
+}
+
+.me-fix-dtm i {
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {color: white; transform: rotate(45deg);}
+    25%  {color: red}
+    50%  {color: yellow}
+    100% {color: green}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {color: white; transform: rotate(45deg);}
+    25%  {color: red}
+    50%  {color: yellow}
+    100% {color: green}
+}
+
+/*123 Pang*/
+.list123{
+    font-size: 1.5em;
+    color: #dc3545;
+    text-align: center;
+}
+
+
+/*Detail*/
+.me-detail{
+    width: 100%;
+    margin-top: 20px;
+}
+.me-detail .me-cmt{
+    padding-top: 30px;
+}
+
+/*Cẩm nang*/
+.me-cn .me-top-cn {
+    position: relative;
+}
+
+.me-cn .me-top-cn .word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.me-cn .me-top-cn img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+.me-cn .card {
+    text-align: center;
+    padding-bottom: 15px;
+}
