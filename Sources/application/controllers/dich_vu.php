@@ -12,10 +12,13 @@ class Dich_vu extends CI_Controller{
         parent::__construct();
     }
 
-    public function index(){
-        $this->load->view('site/dich_vu_site_view');
-    }
 
+    public function index(){
+        $this->load->model("Mdv");
+        $data['listdvtop3'] = $this->Mdddl->getListPT(0,3);
+        $data['listdvtop3'] = $this->Mdddl->getListKS(0,3);
+        $this->load->view('site/dich_vu_site_view', $data);
+    }
     public function view_detail(){
         $this->load->view("site/s_detail_dv_site_view");
     }
@@ -30,6 +33,17 @@ class Dich_vu extends CI_Controller{
         $this->load->library('pagination', $config);
         $data['listdvpt'] = $this->Mdv->getListPT($start, $config['per_page']);
         $this->load->view("site/dich_vu_pt_site_view", $data);
+    }
+    public function view_ks(){
+        $this->load->model("Mdv");
+        $config['total_rows'] = $this->Mdv->countKS();
+        $config['base_url'] = base_url()."index.php/dich_vu/view_ks";
+        $config['per_page'] = 9;
+
+        $start=$this->uri->segment(3);
+        $this->load->library('pagination', $config);
+        $data['listdvks'] = $this->Mdv->getListKS($start, $config['per_page']);
+        $this->load->view("site/dich_vu_ks_site_view", $data);
     }
 
 }
