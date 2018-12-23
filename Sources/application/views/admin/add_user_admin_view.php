@@ -40,4 +40,5 @@
         </div>
         <input class="btn btn-light submit-button" type="submit" value="Đăng Ký">
     </form>
+    <?php echo validation_errors();?>
 </div>

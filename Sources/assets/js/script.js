@@ -14,14 +14,7 @@ $(document).ready(function () {
 
     //Kiểm tra đăng nhập
     $("#Login").click(function () {
-        //Nếu False
-        var TKadmin = "admin";
-        var MKadmin = "admin";
-        var lc = confirm("Nhập sai tài khoản hoặc mật khẩu! Bạn muốn thử lại không?");
-        if (lc === false){
-            $(".me-form-login").hide();
-        }
-        //Nếu True
+        
     });
     
     //Click Chat
@@ -34,4 +27,11 @@ $(document).ready(function () {
         $(".me-open-button").show();
     });
 
+    //Xóa địa điểm du lịch
+    $("#delete_dddl").click(function () {
+        var lc = confirm("Bạn có muốn xóa không?");
+        if (lc === true){
+            alert("Xóa thành công!!!");
+        }
+    });
 });

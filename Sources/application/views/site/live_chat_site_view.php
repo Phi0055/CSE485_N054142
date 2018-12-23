@@ -1,7 +1,7 @@
 <button class="me-open-button">Chat</button>
 
 <div class="chat-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
+    <form action="" class="form-container">
         <h3>Chat</h3>
 
         <label for="msg"><b>Message</b></label>

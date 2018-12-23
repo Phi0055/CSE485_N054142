@@ -84,17 +84,29 @@ class Admin extends CI_Controller{
     }
 
     public function pro_add_user(){
-        $tk = isset($_POST['tk']) ? $_POST['tk'] : "";
-        $mk = isset($_POST['mk']) ? $_POST['mk'] : "";
-        $ht = isset($_POST['ht']) ? $_POST['ht'] : "";
-        $gt = isset($_POST['gt']) ? $_POST['gt'] : "Nam";
-        $email = isset($_POST['email']) ? $_POST['email'] : "";
-        $ns = isset($_POST['ns']) ? $_POST['ns'] : "0000-00-00";
-        $dc = isset($_POST['dc']) ? $_POST['dc'] : "";
-        $sdt = isset($_POST['sdt']) ? $_POST['sdt'] : "";
-        $this->load->model("Muser");
-        $this->Muser->add($tk, $mk, $ht, $gt, $email, $ns, $dc, $sdt);
-        $this->get_list_user();
+        //Kiểm tra bằng form validation
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('tk', 'Tên Đăng Nhập', 'required');
+        $this->form_validation->set_rules('mk', 'Mật Khẩu', 'required');
+        $this->form_validation->set_rules('gt', 'Giới Tính', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+        $this->form_validation->set_rules('sdt', 'Số Điện Thoại', 'numeric');
+        if($this->form_validation->run() == FALSE){
+            $this->add_user();
+        }
+        else{
+            $tk = isset($_POST['tk']) ? $_POST['tk'] : "";
+            $mk = isset($_POST['mk']) ? $_POST['mk'] : "";
+            $ht = isset($_POST['ht']) ? $_POST['ht'] : "";
+            $gt = isset($_POST['gt']) ? $_POST['gt'] : "Nam";
+            $email = isset($_POST['email']) ? $_POST['email'] : "";
+            $ns = isset($_POST['ns']) ? $_POST['ns'] : "";
+            $dc = isset($_POST['dc']) ? $_POST['dc'] : "";
+            $sdt = isset($_POST['sdt']) ? $_POST['sdt'] : "";
+            $this->load->model("Muser");
+            $this->Muser->add($tk, $mk, $ht, $gt, $email, $ns, $dc, $sdt);
+            $this->get_list_user();
+        }
     }
 
     public function add_dddl(){
@@ -105,6 +117,30 @@ class Admin extends CI_Controller{
         $this->load->model("Mdddl");
         $data['dddl'] = $this->Mdddl->getById($id);
         $this->load->view("admin/s_edit_dddl_admin_view", $data);
+    }
+
+    public function pro_edit_user($id){
+        //Kiểm tra bằng form validation
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('mk', 'Mật Khẩu', 'required');
+        $this->form_validation->set_rules('gt', 'Giới Tính', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+        $this->form_validation->set_rules('sdt', 'Số Điện Thoại', 'numeric');
+        if($this->form_validation->run() == FALSE){
+            $this->edit_user($id);
+        }
+        else{
+            $mk = isset($_POST['mk']) ? $_POST['mk'] : "";
+            $ht = isset($_POST['ht']) ? $_POST['ht'] : "";
+            $gt = isset($_POST['gt']) ? $_POST['gt'] : "Nam";
+            $email = isset($_POST['email']) ? $_POST['email'] : "";
+            $ns = isset($_POST['ns']) ? $_POST['ns'] : "";
+            $dc = isset($_POST['dc']) ? $_POST['dc'] : "";
+            $sdt = isset($_POST['sdt']) ? $_POST['sdt'] : "";
+            $this->load->model("Muser");
+            $this->Muser->edit($id, $mk, $ht, $gt, $email, $ns, $dc, $sdt);
+            $this->get_list_user();
+        }
     }
 
     public function delete_dddl($id){

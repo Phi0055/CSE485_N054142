@@ -26,7 +26,7 @@
                         <td align="center">
                             <a class="btn btn-default" href="<?php echo base_url();?>index.php/admin/edit_cn"><em class="fa fa-pencil"></em></a>
                             <br>
-                            <a class="btn btn-danger" href="<?php echo base_url() . "index.php/admin/delete_cn/" . $row['id_cn'];?>"><em class="fa fa-trash"></em></a>
+                            <a class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa không');" href="<?php echo base_url() . "index.php/admin/delete_cn/" . $row['id_cn'];?>"><em class="fa fa-trash"></em></a>
                         </td>
                         <td><?php echo $row['id_cn'];?></td>
                         <td><?php echo $row['tieu_de_cn'];?></td>
