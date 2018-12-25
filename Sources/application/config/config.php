@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:85/BTLTravelingMVC/';
+$config['base_url'] = 'http://localhost:85/CSE485_N054142/Sources/';
 
 /*
 |--------------------------------------------------------------------------
@@ -521,7 +521,3 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-
-/*New*/
-$config['sess_use_database'] = TRUE;
-$config['sess_table_name'] = 'ci_sessions';

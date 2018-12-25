@@ -12,15 +12,20 @@ class Dich_vu extends CI_Controller{
         parent::__construct();
     }
 
-
     public function index(){
-        $this->load->model("Mdv");
-        $data['listdvtop3'] = $this->Mdddl->getListPT(0,3);
-        $data['listdvtop3'] = $this->Mdddl->getListKS(0,3);
-        $this->load->view('site/dich_vu_site_view', $data);
+        $this->load->view('site/dich_vu_site_view');
     }
-    public function view_detail(){
-        $this->load->view("site/s_detail_dv_site_view");
+
+    public function view_detail($id){
+        $this->load->model("Mdv");
+        $data['dv'] = $this->Mdv->getByID($id);
+        $sums =  $this->Mdv->getSumStarById($id);
+        $data['counts'] =  $this->Mdv->getCountStarById($id);
+        if ($sums['sums'] == "")$sums['sums'] = 0;
+        if ($data['counts']['counts'] == "0")$data['counts']['counts'] = 1;
+        $data['star'] = $sums['sums'] / $data['counts']['counts'];
+    
+        $this->load->view("site/s_detail_dv_site_view", $data);
     }
 
     public function view_pt(){
@@ -34,6 +39,7 @@ class Dich_vu extends CI_Controller{
         $data['listdvpt'] = $this->Mdv->getListPT($start, $config['per_page']);
         $this->load->view("site/dich_vu_pt_site_view", $data);
     }
+
     public function view_ks(){
         $this->load->model("Mdv");
         $config['total_rows'] = $this->Mdv->countKS();
@@ -45,5 +51,6 @@ class Dich_vu extends CI_Controller{
         $data['listdvks'] = $this->Mdv->getListKS($start, $config['per_page']);
         $this->load->view("site/dich_vu_ks_site_view", $data);
     }
+
 
 }

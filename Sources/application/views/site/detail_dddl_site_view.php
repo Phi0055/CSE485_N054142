@@ -1,7 +1,7 @@
 <div class="me-detail">
     <div class="container">
         <div class="photo-card container">
-            <div class="photo-background w3-animate-zoom" style="background-image:url(<?php echo base_url() . "assets/img/dddl/" . $dddl['link_dddl'] . ".jpg);";?>"></div>
+            <div class="photo-background w3-animate-zoom" style="background-image:url(<?php echo base_url() . "assets/img/dddl/" . $dddl['link_dddl'];?>)"></div>
             <div class="photo-details w3-animate-top">
                 <h1><?php echo $dddl['ten_dddl'];?><br></h1>
                 <p>
@@ -17,7 +17,7 @@
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
-                    4.31/5 trong 1314 đánh giá
+                    <?php echo $star;?>/5 trong <?php echo $counts['counts'];?> đánh giá
                 </p>
                 <button class="btn btn-primary" type="button">Gửi đánh giá của bạn</button>
             </div>
@@ -61,20 +61,18 @@
         </div>
 
         <div class="more-projects">
-            <h3 class="text-center">More</h3>
+            <h3 class="text-center">Nhiều hơn</h3>
             <div class="row gallery">
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/nature/image2.jpg"></a></div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/nature/image3.jpg"></a></div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/tech/image4.jpg"></a></div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/nature/image5.jpg"></a></div>
-                </div>
+                <?php foreach ($listdltop4 as $row){ ?>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="item">
+                            <a href="<?php echo base_url() . "index.php/du_lich/view_detail/" . $row['id_dddl'];?>">
+                                <img style="width: 100%; height: 180px" class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/dddl/<?php echo $row['link_dddl'];?>">
+                                <p><?php echo $row['ten_dddl'];?></p>
+                            </a>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@ class Home extends CI_Controller{
 
     public function index(){
         $this->load->model("Mdddl");
-        $data['listdltntop2'] = $this->Mdddl->getListMTN(0,2);
+        $data['listdltntop2'] = $this->Mdddl->getListTNRad(0,2);
         $data['listdddltop2'] = $this->Mdddl->getListM(0,2);
         $this->load->view('site/home_site_view', $data);
     }

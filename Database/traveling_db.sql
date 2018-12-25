@@ -102,70 +102,71 @@ insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,s
 insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values(10,'i','i@gmail.com','1998-11-22','Nữ','Hà Giang',0963456789);
 insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values(11,'k','k@gmail.com','1994-08-11','Nam','Lang Sơn',0973456779);
 
-insert into dd_du_lich(ten_dddl, link_dddl) values('Vịnh Hạ Long','1');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Cát Bà','2');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Đà Lạt','3');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Cáp treo Vinpearl Nha Trang','4');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hang Sơn Đoòng','5');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Đảo Phú Quốc','6');
-insert into dd_du_lich(ten_dddl, link_dddl) values('bán đảo Sơn Trà','7');
-insert into dd_du_lich(ten_dddl, link_dddl) values('núi đôi Quản Bạ','8');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Tòa thánh Cao Đài (Tây Ninh)','9');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Nhà hát lớn Hà Nội','10');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Quốc lộ 4D','11');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Than Uyên ','12');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Làng An Bằng','13');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Côn Đảo','14');
-insert into dd_du_lich(ten_dddl, link_dddl) values('thác Bản Giốc','15');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Nhà thờ Đức Bà (Sài Gòn)','16');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Jungle Beach (Khánh Hòa)','17');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Tràng An','18');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Chùa Linh Phước','19');
-insert into dd_du_lich(ten_dddl, link_dddl) values('TP Huế','20');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Ngô Đồng','21');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Vườn quốc gia Phong Nha - Kẻ Bàng','22');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Thung lũng Bắc Sơn','23');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Lăng Khải Định','24');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Vườn quốc gia Cúc Phương','25');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Chùa Thiên Mụ','26');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hồ Hoàn Kiếm','27');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hội An','28');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Mũi Né','29');
-insert into dd_du_lich(ten_dddl, link_dddl) values(' Địa đạo Củ Chi','30');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Vịnh Hạ Long','1.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Cát Bà','2.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Đà Lạt','3.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Cáp treo Vinpearl Nha Trang','4.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hang Sơn Đoòng','5.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Đảo Phú Quốc','6.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('bán đảo Sơn Trà','7.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('núi đôi Quản Bạ','8.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Tòa thánh Cao Đài (Tây Ninh)','9.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Nhà hát lớn Hà Nội','10.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Quốc lộ 4D','11.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Than Uyên ','12.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Làng An Bằng','13.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Côn Đảo','14.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('thác Bản Giốc','15.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Nhà thờ Đức Bà (Sài Gòn)','16.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Jungle Beach (Khánh Hòa)','17.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Tràng An','18.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Chùa Linh Phước','19.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('TP Huế','20.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Ngô Đồng','21.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Vườn quốc gia Phong Nha - Kẻ Bàng','22.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Thung lũng Bắc Sơn','23.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Lăng Khải Định','24.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Vườn quốc gia Cúc Phương','25.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Chùa Thiên Mụ','26.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hồ Hoàn Kiếm','27.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hội An','28.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Mũi Né','29.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values(' Địa đạo Củ Chi','30.jpg');
 
-insert into dd_du_lich(ten_dddl, link_dddl) values('Vùng núi Zhangye Danxia, tỉnh Cam Túc, Trung Quốc','31');
-insert into dd_du_lich(ten_dddl, link_dddl) values(' Nơi ‘tận cùng thế giới’ ở Banos, Ecuador','32');
-insert into dd_du_lich(ten_dddl, link_dddl) values(' Hố xanh vỹ đại ở Belize','33');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Cánh đồng hoa tulip Hà Lan','34');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Thiên đường hoa ở công viên Hitachi Seaside','35');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động băng Mendenhall, Alaska, Mỹ:','36');
-insert into dd_du_lich(ten_dddl, link_dddl) values(' Ngọn núi Roraima nằm giữa Venezuela, Brazil và Guyana','37');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Khu vực Cappadocia, Thổ Nhĩ Kỳ','38');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Bãi biển sao trên đảo Vaadhoo, Mandives:','39');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Thác nước Victoria','40');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Trolltunga ở Hordaland, Na Uy','41');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Bãi biển Whitehaven, Australia:','42');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Vườn quốc gia Grand Canyon, bang Arizona, Mỹ','43');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động cẩm thạch Marble Cathedral, Chile','44');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Đường hầm tình yêu Tunnel of love','45');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Cánh đồng muối tuyệt đẹp Salar de Uyuni ở Bolivia:','46');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Enchanted Well – Chapada Diamantina National Park (Brazil):','47');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hẻm núi Antelope, Mỹ','48');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động Fingal, Scotland','49');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hồ bơi khổng lồ Tosua Ocean Trench, Samoa:','50');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Rừng tre Sagano ở Nhật Bản','51');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động đom đóm ở New Zealand','52');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Cầu thang Haiku, ở Oahu, Hawaii:','53');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Núi lửa ở bán đảo Kamchatka, Nga:','54');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hố sụt ở bán đảo Yucatan, Mexico','55');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Hồ đổi màu trên đỉnh núi Kelimutu ở Indonesia:','56');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Thành phố Amsterdam, Hà Lan','57');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Quần đảo Azores, Bồ Đào Nha','58');
-insert into dd_du_lich(ten_dddl, link_dddl) values( 'Thủ đô Ljubljana, Slovenia','59');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Thác Victoria, Cộng hoà Zimbabwe','60');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Ruộng bậc thang Sa Pa','61');
-insert into dd_du_lich(ten_dddl, link_dddl) values('Bán đảo Lofoten, Na Uy','62');
-insert into dd_du_lich(ten_dddl, link_dddl) values(' Đồng bằng sông Cửu Long','63');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Vùng núi Zhangye Danxia, tỉnh Cam Túc, Trung Quốc','31.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values(' Nơi ‘tận cùng thế giới’ ở Banos, Ecuador','32.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values(' Hố xanh vỹ đại ở Belize','33.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Cánh đồng hoa tulip Hà Lan','34.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Thiên đường hoa ở công viên Hitachi Seaside','35.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động băng Mendenhall, Alaska, Mỹ:','36.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values(' Ngọn núi Roraima nằm giữa Venezuela, Brazil và Guyana','37.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Khu vực Cappadocia, Thổ Nhĩ Kỳ','38.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Bãi biển sao trên đảo Vaadhoo, Mandives:','39.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Thác nước Victoria','40.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Trolltunga ở Hordaland, Na Uy','41.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Bãi biển Whitehaven, Australia:','42.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Vườn quốc gia Grand Canyon, bang Arizona, Mỹ','43.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động cẩm thạch Marble Cathedral, Chile','44.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Đường hầm tình yêu Tunnel of love','45.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Cánh đồng muối tuyệt đẹp Salar de Uyuni ở Bolivia:','46.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Enchanted Well – Chapada Diamantina National Park (Brazil):','47.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hẻm núi Antelope, Mỹ','48.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động Fingal, Scotland','49.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hồ bơi khổng lồ Tosua Ocean Trench, Samoa:','50.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Rừng tre Sagano ở Nhật Bản','51.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hang động đom đóm ở New Zealand','52.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Cầu thang Haiku, ở Oahu, Hawaii:','53.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Núi lửa ở bán đảo Kamchatka, Nga:','54.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hố sụt ở bán đảo Yucatan, Mexico','55.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Hồ đổi màu trên đỉnh núi Kelimutu ở Indonesia:','56.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Thành phố Amsterdam, Hà Lan','57.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Quần đảo Azores, Bồ Đào Nha','58.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values( 'Thủ đô Ljubljana, Slovenia','59.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Thác Victoria, Cộng hoà Zimbabwe','60.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Ruộng bậc thang Sa Pa','61.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('Bán đảo Lofoten, Na Uy','62.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values(' Đồng bằng sông Cửu Long','63.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('xxx','42.jpg');
 
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(1,'TP Hạ Long- TP Cẩm Phả -Quảng Ninh','Không chỉ đẹp bởi cảnh sắc “mây trời sóng nước”, vẻ đẹp nên thơ hay vô số những đảo đá vôi nổi trên mặt nước, Hạ Long còn đem lại cho du khách cảm giác bình yên khi hòa mình vào cảnh vật nơi đây. Được đánh giá là một trong 29 Vịnh đẹp nhất thế giới, cuối tháng 3/2012, tổ chức New Open World cũng đã chính thức công nhận vịnh Hạ Long là một trong bảy kỳ quan thiên nhiên mới của thế giới.','Trong Nước');
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(2,'Huyện đảo Cát Bà -phía nam Vịnh Hạ Long','Huyện đảo Cát Bà là quần đảo có tới 367 đảo lớn nhỏ. Cát Bà là tên hòn đảo chính rộng khoảng 100 km2, cách cảng Hải Phòng 30 hải lý, nằm ở phía nam Vịnh Hạ Long, tạo nên một quần thể đảo và hang động trên biển làm mê hồn du khách. Đến đây du khách sẽ được tận hưởng không khí trong lành và hoà mình vào thiên nhiên tươi đẹp.','Trong Nước');
@@ -232,41 +233,41 @@ insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(61,' di s�
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(62,'chiếc đuôi của một loài thuỷ quái đang bò lên bờ biển','Bán đảo Lofoten, Na Uy được xem là một trong những điểm tham quan nổi tiếng nhất của Iceland. Những dãy đá sừng sững bao quanh ôm gọn những thị trấn và người dân nơi đây. Khung cảnh hiện lên hùng vĩ nhưng yên bình dễ khiến người ta siêu lòng.','Ngoài Nước');
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(63,'đồng bằng Nam Bộ - miền Tây Nam Bộ','Đến đồng bằng sông Cửu Long ngoài việc thăm thú những vườn trái cây bạt ngàn, đi trên một trong 9 nhánh sông đổ ra biển của dòng sông Mê kông, nghe đờn ca tài tử và thưởng thức những món đặc sản vùng Nam Bộ, du khách cũng khó lòng bỏ qua việc tham quan các khu chợ nổi, một đặc trưng chỉ có ở miền Tây sông nước.','Trong Nước');
 
-insert into dich_vu( ten_dv,link_dv) values ('Aria Hotel Budapest', '1');
-insert into dich_vu( ten_dv,link_dv) values ('Mandapa A Ritz-Carlton Reserve', '2');
-insert into dich_vu( ten_dv,link_dv) values ('Turin Palace Hotel', '3');
-insert into dich_vu( ten_dv,link_dv) values ('Hotel The Serras', '4');
-insert into dich_vu( ten_dv,link_dv) values ('BoHo Prague Hotel', '5');
-insert into dich_vu( ten_dv,link_dv) values ('Portrait Firenze', '6');
-insert into dich_vu( ten_dv,link_dv) values ('Shinta Mani Resort', '7');
-insert into dich_vu( ten_dv,link_dv) values ('Tulemar Bungalows & Villas', '8');
-insert into dich_vu( ten_dv,link_dv) values ('JA Manafaru', '9');
-insert into dich_vu( ten_dv,link_dv) values ('Kandolhu Maldives', '10');
-insert into dich_vu( ten_dv,link_dv) values ('Khách sạn ibis Styles Nha Trang', '11');
-insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Indochine Palace Huế', '12');
-insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Lotte Hà Nộ', '13');
-insert into dich_vu( ten_dv,link_dv) values ('Khu nghỉ dưỡng Ana Mandara Huế', '14');
-insert into dich_vu( ten_dv,link_dv) values ('Khách sạn Rum Vàng 2 Đà Lạt ', '15');
-insert into dich_vu( ten_dv,link_dv) values ('Pelican Cruise Hạ Long', '16');
-insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Hadana Boutique Đà Nẵng', '17');
-insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Golden Central Sài Gòn', '18');
-insert into dich_vu( ten_dv,link_dv) values ('Khu nghỉ dưỡng Novela Mũi Né', '19');
-insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Pullman Hà Nội', '20');
-insert into dich_vu( ten_dv,link_dv) values ('Singapore Airlines', '21');
-insert into dich_vu( ten_dv,link_dv) values ('Air New Zealand', '22');
-insert into dich_vu( ten_dv,link_dv) values ('Emirates.', '23');
-insert into dich_vu( ten_dv,link_dv) values ('Japan Airlines', '24');
-insert into dich_vu( ten_dv,link_dv) values ('Eva Air ', '25');
-insert into dich_vu( ten_dv,link_dv) values ('Southwest Airlines', '26');
-insert into dich_vu( ten_dv,link_dv) values ('Jet2.com', '27');
-insert into dich_vu( ten_dv,link_dv) values ('Qatar Airways', '28');
-insert into dich_vu( ten_dv,link_dv) values ('Azul Brazilian Airlines', '29');
-insert into dich_vu( ten_dv,link_dv) values ('Korean Air', '30');
-insert into dich_vu( ten_dv,link_dv) values ('Vietnam Airline', '31');
-insert into dich_vu( ten_dv,link_dv) values ('Jetstar', '32');
-insert into dich_vu( ten_dv,link_dv) values ('Vietjet Air', '33');
-insert into dich_vu( ten_dv,link_dv) values ('Air Mekong', '34');
-insert into dich_vu( ten_dv,link_dv) values ('Vasco', '35');
+insert into dich_vu( ten_dv,link_dv) values ('Aria Hotel Budapest', '1.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Mandapa A Ritz-Carlton Reserve', '2.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Turin Palace Hotel', '3.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Hotel The Serras', '4.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('BoHo Prague Hotel', '5.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Portrait Firenze', '6.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Shinta Mani Resort', '7.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Tulemar Bungalows & Villas', '8.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('JA Manafaru', '9.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Kandolhu Maldives', '10.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khách sạn ibis Styles Nha Trang', '11.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Indochine Palace Huế', '12.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Lotte Hà Nộ', '13.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khu nghỉ dưỡng Ana Mandara Huế', '14.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khách sạn Rum Vàng 2 Đà Lạt ', '15.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Pelican Cruise Hạ Long', '16.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Hadana Boutique Đà Nẵng', '17.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Golden Central Sài Gòn', '18.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khu nghỉ dưỡng Novela Mũi Né', '19.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Khách Sạn Pullman Hà Nội', '20.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Singapore Airlines', '21.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Air New Zealand', '22.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Emirates.', '23.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Japan Airlines', '24.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Eva Air ', '25.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Southwest Airlines', '26.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Jet2.com', '27.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Qatar Airways', '28.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Azul Brazilian Airlines', '29.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Korean Air', '30.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Vietnam Airline', '31.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Jetstar', '32.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Vietjet Air', '33.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Air Mekong', '34.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Vasco', '35.jpg');
 
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (1,'Budapest, Hungary. ', 'Khách sạn Aria Hotel thuộc hệ thống khách sạn Library Hotel Collection nổi tiếng tại  Budapest, Hungary. Aria Hotel Budapest mang đến cho du khách những trải nghiệm thực sự hoàn hảo. Sự tiện nghi, thiết kế vô cùng hiện đại, địa điểm hoàn hảo, đội ngũ nhân viên tận tình, chu đáo, dịch vụ spa tuyệt vời tại Aria Hotel Budapest sẽ khiến bạn không muốn rời đi. Tận hưởng bữa sáng và bữa chiều cùng với rượu và pho mát ngon miệng mỗi ngày sẽ là điều mà bạn không nên bỏ qua.','khách sạn');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (2,' Ubud, Indonesia','Khách sạn Mandapa A Ritz-Carlton Reserve thuộc tỉnh Ubud, Indonesia được đánh giá là khách sạn tốt nhất của châu Á. Chính vì vậy, không khó để hiểu tại sao Mandapa A Ritz-Carlton Reserve lại là một trong những khách sạn hàng đầu thế giới. Ấn tượng chính là từ để miêu tả khách sạn Mandapa A Ritz-Carlton Reserve. Tất cả những gì mà du khách mong chờ đều được phục vụ vô cùng chu đáo tại đây.','khách sạn' );
@@ -469,17 +470,18 @@ INSERT INTO `ctdgdddl` (`id_dddl`, `id_tk`, `so_sao_dddl`, `binh_luan_dddl`) VAL
 (62, 2, 3, 'không đẹp như mình nghĩ'),
 (63, 11, 5, 'Rất Tốt, đây là nơi hoàn hảo để hẹn hò');
 
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'QUÀ DU LỊCH 3 MIỀN ĐẤT NƯỚC VIỆT NAM','Sau mỗi chuyến du lịch, những đặc sản là món quà nhỏ bé mang đậm hương vị vùng miền mà bạn muốn gửi tặng đến những người thân yêu. Vì thế, quà cho người nhà sau mỗi chuyến đi là điều khiến nhiều người lưu tâm.','1' );
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH ẤN ĐỘ, MUMBAI, DELHI TỪ A ĐẾN Z','Sông Hằng huyền thoại, những đỉnh núi tuyết vĩnh cửu, thành phố sôi động và những bãi biển hoang sơ khiến Ấn Độ luôn nằm trong những điểm đến hấp dẫn nhất hành tinh.','2');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHỮNG ĐỊA ĐIỂM SỐNG ẢO CỰC CHẤT TẠI HÀ NỘI','Nếu bạn có dự định đến du lịch Hà Nội và là tín đồ của hoạt động "sống ảo", "checkin" thì hãy ghi nhớ ngay những địa điểm sau đây. Bởi dưới đây là những địa chỉ "sống ảo" cực chất mà không phải ai cũng biết','3');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHỮNG HÀNH ĐỘNG CẦN CHÚ Ý KHI DU LỊCH MALAYSIA','Malaysia là một quốc gia sở hữu nhiều danh thắng đẹp, nền văn hóa đa dạng, đa ngôn ngữ và đa sắc tộc. Chính vì vậy mà quốc gia này đang trở thành một điểm đến được yêu thích. Tuy nhiên, vì tính chất đa ngôn ngữ và sắc tộc, nên Malaysia có rất nhiều quy tắc ứng xử riêng biệt, những điều cậm kỵ và sẵn sàng phạt rất nặng nếu du khách vi phạm.', '4');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'LITHUANIA, VIÊN NGỌC ẨN MÌNH NƠI BỜ BIỂN BALTIC','Nằm bên bờ biển Baltic, đất nước Lithuania bình yên với những lâu đài cổ xinh đẹp như trong một câu chuyện thần thoại. Bên cạnh đó là vẻ đẹp giao thoa giữa nét cổ kính của những công trình rêu phong và nét hiện đại của các tòa tháp chọc trời, cùng lối sống hiền hòa, dung dị mà không phải đất nước châu Âu nào cũng có được.', '5');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NGÔI LÀNG NHƯ HỌA BÙA ĐỦ MÀU SẮC Ở ĐÀI LOAN','Tại Đài Loan có một ngôi làng rất đặc biệt, được mệnh danh là Làng Cầu Vồng. Tại đây mọi bức tường nhà đều phủ đầy màu sắc, từng cánh cửa cũng như có hồn riêng và con đường làng sống động mở ra trước mắt du khách.', '6');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHẬT BẢN TƯNG BỪNG NGÀY HỘI CUỐI NĂM','Nhật Bản – Đất nước mặt trời mọc không chỉ nổi tiếng với hoa Anh Đào, núi Phú Sĩ mà còn là cái nôi của một nền văn hóa đặc sắc, đa dạng với những con người thân thiện, hiếu khách và nền khoa học tiên tiến. Cuối năm còn là thời gian diễn ra nhiều lễ hội đặc sắc thu hút đông đảo du khách về tham dự.', '7');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'5 MÔN NGHỆ THUẬT THỂ HIỆN SỰ TINH TẾ CỦA NGƯỜI NHẬT BẢN','Nhật Bản là đất nước luôn hướng tới sự hoàn hảo, bên cạnh sự phát triển nhanh chóng của công nghệ thì các giá trị văn hóa nghệ thuật Nhật Bản không mất đi mà còn có sự thay đổi làm sao để tương thích với thời đại.', '8');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH BRAZIL, RIO DE JANEIRO TỪ A ĐẾN Z','Rio de Janeiro là thủ phủ của Brazil nói chung và bang Rio de Janeiro nói riêng, thường được khách du lịch gọi tắt bằng cái tên là Rio. Thành phố này nổi tiếng trong lòng du khách bởi có cảnh sắc thiên nhiên lý thú cùng với những bãi biển cát trắng trải dài, hay những rừng mưa nằm trong lòng đô thị.', '9');
-insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'7 ĐẶC SẢN XỨ HOA VÀNG TRÊN CỎ XANH ĂN LÀ GHIỀN','Sau thành công của bộ phim "Tôi thấy hoa vàng trên cỏ xanh" chuyển thể từ tác phẩm cùng tên của nhà văn Nguyễn Nhật Ánh, vùng đất Phú Yên đầy nắng gió nằm trải dài trên dải đất miền Trung thân thương đã trở nên vô cùng nổi tiếng. Ngoài những cảnh đẹp, hiếm có mảnh đất nào mà ở khắp mọi nơi từ ngoài đường đến trong hẻm, từ trung tâm đến huyện lỵ lại có nhiều đồ ăn ngon như Phú Yên.', '10');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'QUÀ DU LỊCH 3 MIỀN ĐẤT NƯỚC VIỆT NAM','Sau mỗi chuyến du lịch, những đặc sản là món quà nhỏ bé mang đậm hương vị vùng miền mà bạn muốn gửi tặng đến những người thân yêu. Vì thế, quà cho người nhà sau mỗi chuyến đi là điều khiến nhiều người lưu tâm.','1.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH ẤN ĐỘ, MUMBAI, DELHI TỪ A ĐẾN Z','Sông Hằng huyền thoại, những đỉnh núi tuyết vĩnh cửu, thành phố sôi động và những bãi biển hoang sơ khiến Ấn Độ luôn nằm trong những điểm đến hấp dẫn nhất hành tinh.','2.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHỮNG ĐỊA ĐIỂM SỐNG ẢO CỰC CHẤT TẠI HÀ NỘI','Nếu bạn có dự định đến du lịch Hà Nội và là tín đồ của hoạt động "sống ảo", "checkin" thì hãy ghi nhớ ngay những địa điểm sau đây. Bởi dưới đây là những địa chỉ "sống ảo" cực chất mà không phải ai cũng biết','3.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHỮNG HÀNH ĐỘNG CẦN CHÚ Ý KHI DU LỊCH MALAYSIA','Malaysia là một quốc gia sở hữu nhiều danh thắng đẹp, nền văn hóa đa dạng, đa ngôn ngữ và đa sắc tộc. Chính vì vậy mà quốc gia này đang trở thành một điểm đến được yêu thích. Tuy nhiên, vì tính chất đa ngôn ngữ và sắc tộc, nên Malaysia có rất nhiều quy tắc ứng xử riêng biệt, những điều cậm kỵ và sẵn sàng phạt rất nặng nếu du khách vi phạm.', '4.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'LITHUANIA, VIÊN NGỌC ẨN MÌNH NƠI BỜ BIỂN BALTIC','Nằm bên bờ biển Baltic, đất nước Lithuania bình yên với những lâu đài cổ xinh đẹp như trong một câu chuyện thần thoại. Bên cạnh đó là vẻ đẹp giao thoa giữa nét cổ kính của những công trình rêu phong và nét hiện đại của các tòa tháp chọc trời, cùng lối sống hiền hòa, dung dị mà không phải đất nước châu Âu nào cũng có được.', '5.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NGÔI LÀNG NHƯ HỌA BÙA ĐỦ MÀU SẮC Ở ĐÀI LOAN','Tại Đài Loan có một ngôi làng rất đặc biệt, được mệnh danh là Làng Cầu Vồng. Tại đây mọi bức tường nhà đều phủ đầy màu sắc, từng cánh cửa cũng như có hồn riêng và con đường làng sống động mở ra trước mắt du khách.', '6.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHẬT BẢN TƯNG BỪNG NGÀY HỘI CUỐI NĂM','Nhật Bản – Đất nước mặt trời mọc không chỉ nổi tiếng với hoa Anh Đào, núi Phú Sĩ mà còn là cái nôi của một nền văn hóa đặc sắc, đa dạng với những con người thân thiện, hiếu khách và nền khoa học tiên tiến. Cuối năm còn là thời gian diễn ra nhiều lễ hội đặc sắc thu hút đông đảo du khách về tham dự.', '7.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'5 MÔN NGHỆ THUẬT THỂ HIỆN SỰ TINH TẾ CỦA NGƯỜI NHẬT BẢN','Nhật Bản là đất nước luôn hướng tới sự hoàn hảo, bên cạnh sự phát triển nhanh chóng của công nghệ thì các giá trị văn hóa nghệ thuật Nhật Bản không mất đi mà còn có sự thay đổi làm sao để tương thích với thời đại.', '8.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH BRAZIL, RIO DE JANEIRO TỪ A ĐẾN Z','Rio de Janeiro là thủ phủ của Brazil nói chung và bang Rio de Janeiro nói riêng, thường được khách du lịch gọi tắt bằng cái tên là Rio. Thành phố này nổi tiếng trong lòng du khách bởi có cảnh sắc thiên nhiên lý thú cùng với những bãi biển cát trắng trải dài, hay những rừng mưa nằm trong lòng đô thị.', '9.jpg');
+insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'7 ĐẶC SẢN XỨ HOA VÀNG TRÊN CỎ XANH ĂN LÀ GHIỀN','Sau thành công của bộ phim "Tôi thấy hoa vàng trên cỏ xanh" chuyển thể từ tác phẩm cùng tên của nhà văn Nguyễn Nhật Ánh, vùng đất Phú Yên đầy nắng gió nằm trải dài trên dải đất miền Trung thân thương đã trở nên vô cùng nổi tiếng. Ngoài những cảnh đẹp, hiếm có mảnh đất nào mà ở khắp mọi nơi từ ngoài đường đến trong hẻm, từ trung tâm đến huyện lỵ lại có nhiều đồ ăn ngon như Phú Yên.', '10.jpg');
 
+/*
 select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.cap_do <> 2 limit 3, 5;
 
 select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl;
@@ -492,12 +494,14 @@ select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl wher
 
 select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl order by dd.id_dddl desc limit 3;
 
-select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Trong Nước' order by dd.id_dddl desc limit 0, 3;
+select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Trong Nước' order by RAND() limit 0, 3;
 
-select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Ngoài Nước' order by dd.id_dddl desc limit 0, 3;
+select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Ngoài Nước' order by RAND() limit 0, 3;
 
 select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where dd.id_dddl = 15;
 
+select chu_de from ctdddl where id_dddl = 5;
+*/
 /*
 delete from ctdddl where id_dddl = 5;
 delete from ctdgdddl where id_dddl = 5;
@@ -520,9 +524,30 @@ delete from ctdgdddl where id_tk = 5;
 delete from thong_tin_tai_khoan where id_tk = 5;
 delete from tai_khoan where id_tk = 5;
 */
+
+/*
 select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.id_tk = 5;
 select id_tk from tai_khoan where id_tk >= all (select id_tk from tai_khoan);
 
 select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = "phương tiện" limit 0, 1000;
 
 select * from cam_nang limit 0, 1000;
+
+select * from tai_khoan where ten_dang_nhap = 'admin' and mat_khau = 'admin';
+
+update tai_khoan set mat_khau = '123' where id_tk = 3;
+
+update thong_tin_tai_khoan set ho_ten = 'xxx xxx', email = 'x@gmail.com', ngay_sinh = '1998-02-02', gioi_tinh = 'Nam', dia_chi = 'HN', sdt = '1234569879' where id_tk = 3;
+*/
+
+select * from ctdgdddl where id_dddl = 7;
+
+select sum(so_sao_dddl) as sums from ctdgdddl where id_dddl = 1;
+
+select count(so_sao_dddl) as counts from ctdgdddl where id_dddl = 1;
+
+select * from ctdgdv where id_dv=1;
+
+select sum(so_sao_dv) as sums from ctdgdv where id_dv =1;
+
+select * from ctdgdv;

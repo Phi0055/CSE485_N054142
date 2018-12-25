@@ -1,5 +1,5 @@
 <div class="row register-form">
-    <form action="<?php echo base_url();?>index.php/admin/pro_edit_user" method="post" class="custom-form" style="padding: 0; margin: 0; width: 100%">
+    <form action="<?php echo base_url();?>index.php/admin/pro_edit_user/<?php echo $user['id_tk'];?>" method="post" class="custom-form" style="padding: 0; margin: 0; width: 100%">
         <h1>Sửa Thành Viên</h1>
         <div class="form-row form-group">
             <div class="col-lg-4 col-md-4 label-column"><label class="col-form-label" for="name-input-field">Tên Đăng Nhập</label></div>
@@ -40,4 +40,5 @@
         </div>
         <input class="btn btn-light submit-button" type="submit" value="Lưu">
     </form>
+    <?php echo validation_errors();?>
 </div>

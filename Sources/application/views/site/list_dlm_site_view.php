@@ -9,7 +9,7 @@
             foreach ($listdddltop3 as $row){?>
                 <div class="col-sm-6 col-md-4 item">
                     <a href="<?php echo base_url() . "index.php/du_lich/view_detail/" . $row['id_dddl'];?>">
-                        <img class="img-fluid w3-animate-zoom w3-hover-opacity" src="<?php echo base_url() . "assets/img/dddl/". $row['link_dddl'] . ".jpg"; ?>">
+                        <img class="img-fluid w3-animate-zoom w3-hover-opacity" src="<?php echo base_url() . "assets/img/dddl/". $row['link_dddl']; ?>">
                     </a>
                     <h3 class="name"><?php echo $row['ten_dddl'];?></h3>
                     <p class="description"><?php echo $row['tieu_de_dddl'];?></p>

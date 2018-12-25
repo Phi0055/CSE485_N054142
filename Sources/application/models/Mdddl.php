@@ -43,6 +43,17 @@ class Mdddl extends CI_Model{
         return $query->result_array();
     }
 
+    public function getListTNRad($start, $size){
+        $start = isset($start)? $start : 0;
+        $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Trong Nước' order by RAND() limit $start , $size");
+        return $query->result_array();
+    }
+
+    public function getListNNRad($start, $size){
+        $start = isset($start)? $start : 0;
+        $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Ngoài Nước' order by RAND() limit $start , $size");
+        return $query->result_array();
+    }
 
     public function deleteById($id){
         $this->db->query("delete from ctdddl where id_dddl = $id;");
@@ -54,5 +65,21 @@ class Mdddl extends CI_Model{
         $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where dd.id_dddl = $id");
         return $query->row_array();
     }
+
+    public function getTypeById($id){
+        $query=$this->db->query("select chu_de from ctdddl where id_dddl = $id");
+        return $query->row_array();
+    }
+
+    public function getSumStarById($id){
+        $query=$this->db->query("select sum(so_sao_dddl) as sums from ctdgdddl where id_dddl = $id");
+        return $query->row_array();
+    }
+
+    public function getCountStarById($id){
+        $query=$this->db->query("select count(so_sao_dddl) as counts from ctdgdddl where id_dddl = $id");
+        return $query->row_array();
+    }
+
 }
 ?>

@@ -29,9 +29,20 @@ class Muser extends CI_Model{
         $this->db->query("insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values($id,'$ht','$email',$ns,'$gt','$dc',$sdt);");
     }
 
+    public function edit($id, $mk, $ht, $gt, $email, $ns, $dc, $sdt){
+        $this->db->query("update tai_khoan set mat_khau = $mk where id_tk = '$id';");
+        $this->db->query("update thong_tin_tai_khoan set ho_ten = '$ht', email = '$email', ngay_sinh = '$ns', gioi_tinh = '$gt', dia_chi = '$dc', sdt = '$sdt' where id_tk = $id;");
+    }
+
     public function getById($id){
         $query=$this->db->query("select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.id_tk = $id");
         return $query->row_array();
+    }
+
+    public function checkExists($tk, $mk){
+        $query = $this->db->query("select * from tai_khoan where ten_dang_nhap = '$tk' and mat_khau = '$mk';");
+        if ($query->num_rows() > 0)return TRUE;
+        return FALSE;
     }
 
 }

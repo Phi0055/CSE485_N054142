@@ -21,7 +21,7 @@
                 foreach ($listcn as $row){?>
                     <div class="col-md-6 col-lg-4">
                         <div class="card">
-                            <img height = "250px" class="card-img-top w-100 d-block w3-animate-zoom" src="<?php echo base_url() . "assets/img/cn/". $row['link_cn'] . ".jpg"; ?>">
+                            <img height = "250px" class="card-img-top w-100 d-block w3-animate-zoom" src="<?php echo base_url() . "assets/img/cn/". $row['link_cn']; ?>">
                             <div class="card-body">
                                 <h4 class="card-title"><?php echo $row['tieu_de_cn'];?></h4>
                                 <p class="card-text"><?php echo substr($row['noi_dung_cn'], 0,150) . "...";?></p>

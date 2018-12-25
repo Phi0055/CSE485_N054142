@@ -221,6 +221,8 @@ Footer{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
+    width: 100%;
+    text-align: center;
 }
 
 .me-cn .me-top-cn img {
