@@ -30,7 +30,7 @@
         <div class="carousel-item">
             <img src="<?php echo base_url();?>assets/img/camnang.png" alt="Cam Nang">
             <div class="carousel-caption">
-                <a href=""><h3>Cẩm Nang</h3></a>
+                <a href="<?php echo base_url();?>index.php/cam_nang"><h3>Cẩm Nang</h3></a>
                 <p>Cẩm Nang Vô Cùng Hữu Ích!</p>
             </div>
         </div>

@@ -14,8 +14,8 @@ class Du_lich extends CI_Controller{
 
     public function index(){
         $this->load->model("Mdddl");
-        $data['listdltntop3'] = $this->Mdddl->getListMTN(0,3);
-        $data['listdlnntop3'] = $this->Mdddl->getListMNN(0,3);
+        $data['listdltntop3'] = $this->Mdddl->getListTNRad(0,3);
+        $data['listdlnntop3'] = $this->Mdddl->getListNNRad(0,3);
         $data['listdddltop3'] = $this->Mdddl->getListM(0,3);
         $this->load->view('site/du_lich_site_view', $data);
     }
@@ -63,6 +63,28 @@ class Du_lich extends CI_Controller{
     public function view_detail($id){
         $this->load->model("Mdddl");
         $data['dddl'] = $this->Mdddl->getByID($id);
+
+        //Lấy số sao
+        $sums =  $this->Mdddl->getSumStarById($id);
+        $data['counts'] =  $this->Mdddl->getCountStarById($id);
+        $temp = $data['counts']['counts'];
+
+        if ($sums['sums'] == "")$sums['sums'] = 0;
+        if ($data['counts']['counts'] == "0")$data['counts']['counts'] = 1;
+        $data['star'] = $sums['sums'] / $data['counts']['counts'];
+
+        if ($temp == "0")$data['counts']['counts'] = 0;
+
+        //Lấy 4 dddl ngẫu nhiên tương ứng
+        $type = $this->Mdddl->getTypeById($id);
+        $data['listdltop4'] = array();
+        if ($type['chu_de'] === "Trong Nước"){
+            $data['listdltop4'] = $this->Mdddl->getListTNRad(0,4);
+        }elseif ($type['chu_de'] === "Ngoài Nước"){
+            $data['listdltop4'] = $this->Mdddl->getListNNRad(0,4);
+        }
+        //Lấy comments
+        $data['comments'] = $this->Mdddl->getComments($id);
         $this->load->view("site/s_detail_dddl_site_view", $data);
     }
 }

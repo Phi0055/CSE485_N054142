@@ -26,15 +26,58 @@ class Mdv extends CI_Model{
         return $query->num_rows();
     }
 
+    public function countKS(){
+        $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'phương tiện';");
+        return $query->num_rows();
+    }
+
     public function getListPT($start, $size){
         $start = isset($start)? $start : 0;
         $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'phương tiện' limit $start, $size;");
         return $query->result_array();
     }
 
+    public function getListPTRad($start, $size){
+        $start = isset($start)? $start : 0;
+        $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'phương tiện' order by rand() limit $start, $size;");
+        return $query->result_array();
+    }
+
+    public function getListKSRad($start, $size){
+        $start = isset($start)? $start : 0;
+        $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'khách sạn' order by rand() limit $start, $size;");
+        return $query->result_array();
+    }
+
+    public function getListKS($start, $size){
+        $start = isset($start)? $start : 0;
+        $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'khách sạn' limit $start, $size;");
+        return $query->result_array();
+    }
+
     public function getByID($id){
         $query=$this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where dv.id_dv = $id");
         return $query->row_array();
+    }
+
+    public function getCountStarById($id){
+        $query=$this->db->query("select count(so_sao_dv) as counts from ctdgdv where id_dv = $id;");
+        return $query->row_array();
+    }
+
+    public function getSumStarById($id){
+        $query=$this->db->query("select sum(so_sao_dv) as sums from ctdgdv where id_dv = $id;");
+        return $query->row_array();
+    }
+
+    public function getTypeById($id){
+        $query=$this->db->query("select loai from ctdv where id_dv = $id");
+        return $query->row_array();
+    }
+
+    public function getComments($id){
+        $query = $this->db->query("select * from ctdgdv ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dv = $id;");
+        return $query->result_array();
     }
 
 }

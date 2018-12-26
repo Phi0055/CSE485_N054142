@@ -166,6 +166,7 @@ insert into dd_du_lich(ten_dddl, link_dddl) values('Thác Victoria, Cộng hoà 
 insert into dd_du_lich(ten_dddl, link_dddl) values('Ruộng bậc thang Sa Pa','61.jpg');
 insert into dd_du_lich(ten_dddl, link_dddl) values('Bán đảo Lofoten, Na Uy','62.jpg');
 insert into dd_du_lich(ten_dddl, link_dddl) values(' Đồng bằng sông Cửu Long','63.jpg');
+insert into dd_du_lich(ten_dddl, link_dddl) values('xxx','42.jpg');
 
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(1,'TP Hạ Long- TP Cẩm Phả -Quảng Ninh','Không chỉ đẹp bởi cảnh sắc “mây trời sóng nước”, vẻ đẹp nên thơ hay vô số những đảo đá vôi nổi trên mặt nước, Hạ Long còn đem lại cho du khách cảm giác bình yên khi hòa mình vào cảnh vật nơi đây. Được đánh giá là một trong 29 Vịnh đẹp nhất thế giới, cuối tháng 3/2012, tổ chức New Open World cũng đã chính thức công nhận vịnh Hạ Long là một trong bảy kỳ quan thiên nhiên mới của thế giới.','Trong Nước');
 insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl,chu_de) values(2,'Huyện đảo Cát Bà -phía nam Vịnh Hạ Long','Huyện đảo Cát Bà là quần đảo có tới 367 đảo lớn nhỏ. Cát Bà là tên hòn đảo chính rộng khoảng 100 km2, cách cảng Hải Phòng 30 hải lý, nằm ở phía nam Vịnh Hạ Long, tạo nên một quần thể đảo và hang động trên biển làm mê hồn du khách. Đến đây du khách sẽ được tận hưởng không khí trong lành và hoà mình vào thiên nhiên tươi đẹp.','Trong Nước');
@@ -267,6 +268,7 @@ insert into dich_vu( ten_dv,link_dv) values ('Jetstar', '32.jpg');
 insert into dich_vu( ten_dv,link_dv) values ('Vietjet Air', '33.jpg');
 insert into dich_vu( ten_dv,link_dv) values ('Air Mekong', '34.jpg');
 insert into dich_vu( ten_dv,link_dv) values ('Vasco', '35.jpg');
+insert into dich_vu( ten_dv,link_dv) values ('Aria Hotel Budapest', '1.jpg');
 
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (1,'Budapest, Hungary. ', 'Khách sạn Aria Hotel thuộc hệ thống khách sạn Library Hotel Collection nổi tiếng tại  Budapest, Hungary. Aria Hotel Budapest mang đến cho du khách những trải nghiệm thực sự hoàn hảo. Sự tiện nghi, thiết kế vô cùng hiện đại, địa điểm hoàn hảo, đội ngũ nhân viên tận tình, chu đáo, dịch vụ spa tuyệt vời tại Aria Hotel Budapest sẽ khiến bạn không muốn rời đi. Tận hưởng bữa sáng và bữa chiều cùng với rượu và pho mát ngon miệng mỗi ngày sẽ là điều mà bạn không nên bỏ qua.','khách sạn');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (2,' Ubud, Indonesia','Khách sạn Mandapa A Ritz-Carlton Reserve thuộc tỉnh Ubud, Indonesia được đánh giá là khách sạn tốt nhất của châu Á. Chính vì vậy, không khó để hiểu tại sao Mandapa A Ritz-Carlton Reserve lại là một trong những khách sạn hàng đầu thế giới. Ấn tượng chính là từ để miêu tả khách sạn Mandapa A Ritz-Carlton Reserve. Tất cả những gì mà du khách mong chờ đều được phục vụ vô cùng chu đáo tại đây.','khách sạn' );
@@ -303,6 +305,7 @@ insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (32,'Jetstar Pacific
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (33,'Hàng Không nội địa-Vietjet Air','Nằm trong các hãng hàng không Việt Nam tiếp theo đó là Vietjet Air, đơn vị này mới xuất hiện trong thị trường Việt Nam hiện nay, với giá rẻ rất cạnh tranh với hãng Jetstar, ngoài ra giá vé còn có thể giảm xuống từ 19.000 đồng đến 99.000 đồng.Đường bay chủ lực của hãng hàng không này cũng là Hà Nội – TP HCM, ngoài ra trong những thời gian gần đây hãng đã mở đường bay TP HCM đi Nha Trang, Hải Phòng cùng các tỉnh thành khác.', 'Phương tiện');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (34,'Hàng Không nội địa-Air Mekong','Hãng hàng không nội địa Air Mekong được ra đời vào năm 2012 không có khuyến mãi sốc như hai hãng hàng không phía trên bên cạnh đó, các máy bay đều rất nhỏ và chỉ sử dụng trong các chuyến bay đặc thù như Hà Nội đi đến Phú Quốc, Côn Đảo.Vì có thiết kế nhỏ nên hãng hàng không này có vinh dự phục vụ mộtvợ chồng siêu tài tử Brad Pitt – Angela khi họ đã thuê riêng một chuyến bay của hãng hàng không này ra Côn Đảo.', 'Phương tiện');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (35,'Hàng không nội địa- Vasco','Hãng hàng không Việt Nam trong nội địa thứ 5 đó là Vasco, chính xác đây là một hãng hàng không xuất phát từ Công ty của hãng VietnamAirlines có thể gọi là công ty con của hãng hàng không quốc gia.Máy bay của Vasco có thiết kế nhỏ vì công ty này chỉ bay và phục vụ cho các tuyến bay hàng không ở Việt Nam trong nội địa ngắn và được xuất phát từ TP Hồ Chí Minh.', 'Phương tiện');
+insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (36,'Hàng không nội địa- Vasco','Hãng hàng không Việt Nam trong nội địa thứ 5 đó là Vasco, chính xác đây là một hãng hàng không xuất phát từ Công ty của hãng VietnamAirlines có thể gọi là công ty con của hãng hàng không quốc gia.Máy bay của Vasco có thiết kế nhỏ vì công ty này chỉ bay và phục vụ cho các tuyến bay hàng không ở Việt Nam trong nội địa ngắn và được xuất phát từ TP Hồ Chí Minh.', 'Phương tiện');
 
 INSERT INTO `ctdgdv` (`id_dv`, `id_tk`, `so_sao_dv`, `binh_luan_dv`) VALUES
 (1, 1, 5, 'Rất Tốt, dịch vụ tuyệt'),
@@ -493,13 +496,14 @@ select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl wher
 
 select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl order by dd.id_dddl desc limit 3;
 
-select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Trong Nước' order by dd.id_dddl desc limit 0, 3;
+select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Trong Nước' order by RAND() limit 0, 3;
 
-select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Ngoài Nước' order by dd.id_dddl desc limit 0, 3;
+select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where ct.chu_de = 'Ngoài Nước' order by RAND() limit 0, 3;
 
 select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where dd.id_dddl = 15;
-*/
 
+select chu_de from ctdddl where id_dddl = 5;
+*/
 /*
 delete from ctdddl where id_dddl = 5;
 delete from ctdgdddl where id_dddl = 5;
@@ -537,3 +541,21 @@ update tai_khoan set mat_khau = '123' where id_tk = 3;
 
 update thong_tin_tai_khoan set ho_ten = 'xxx xxx', email = 'x@gmail.com', ngay_sinh = '1998-02-02', gioi_tinh = 'Nam', dia_chi = 'HN', sdt = '1234569879' where id_tk = 3;
 */
+/*
+select * from ctdgdddl where id_dddl = 7;
+
+select sum(so_sao_dddl) as sums from ctdgdddl where id_dddl = 1;
+
+select count(so_sao_dddl) as counts from ctdgdddl where id_dddl = 1;
+
+select * from ctdgdv where id_dv = 1;
+
+select count(so_sao_dv) as counts from ctdgdv where id_dv = 1;
+
+select sum(so_sao_dv) as sums from ctdgdv where id_dv = 1;
+
+select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where loai = "Phương tiện" order by rand() limit 0, 4;
+*/
+select * from cam_nang where id_cn = 5;
+
+select * from ctdgdddl ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dddl = 60;

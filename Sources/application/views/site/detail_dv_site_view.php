@@ -1,7 +1,7 @@
 <div class="me-detail">
     <div class="container">
         <div class="photo-card container">
-            <div class="photo-background w3-animate-zoom" style="background-image:url(<?php echo base_url() . "assets/img/dv/" . $dv['link_dv'] . ".jpg);";?>"></div>
+            <div class="photo-background w3-animate-zoom" style="background-image:url(<?php echo base_url() . "assets/img/dv/" . $dv['link_dv'];?>)"></div>
             <div class="photo-details w3-animate-top">
                 <h1><?php echo $dv['ten_dv'];?><br></h1>
                 <p>
@@ -17,7 +17,7 @@
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
-                    4.31/5 trong 1314 đánh giá
+                    <?php echo $star;?>/5 trong <?php echo $counts['counts'];?> đánh giá
                 </p>
                 <button class="btn btn-primary" type="button">Gửi đánh giá của bạn</button>
             </div>
@@ -31,111 +31,38 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
-                        <li class="list-group-item" style="margin-bottom:6px;">
-                            <div class="media">
-                                <div></div>
-                                <div class="media-body">
-                                    <div class="media" style="overflow:visible;">
-                                        <div><img src="assets/img/user-photo4.jpg" class="mr-3" style="width: 25px; height:25px;"></div>
-                                        <div class="media-body" style="overflow:visible;">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p><a href="#">Sara Doe:</a> This guy has been going 100+ MPH on side streets. <br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" style="margin-bottom:6px;">
-                            <div class="media">
-                                <div></div>
-                                <div class="media-body">
-                                    <div class="media" style="overflow:visible;">
-                                        <div><img src="assets/img/user-photo4.jpg" class="mr-3" style="width: 25px; height:25px;"></div>
-                                        <div class="media-body" style="overflow:visible;">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p><a href="#">Sara Doe:</a> This guy has been going 100+ MPH on side streets. <br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" style="margin-bottom:6px;">
-                            <div class="media">
-                                <div></div>
-                                <div class="media-body">
-                                    <div class="media" style="overflow:visible;">
-                                        <div><img src="assets/img/user-photo4.jpg" class="mr-3" style="width: 25px; height:25px;"></div>
-                                        <div class="media-body" style="overflow:visible;">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p><a href="#">Sara Doe:</a> This guy has been going 100+ MPH on side streets. <br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" style="margin-bottom:6px;">
-                            <div class="media">
-                                <div></div>
-                                <div class="media-body">
-                                    <div class="media" style="overflow:visible;">
-                                        <div><img src="assets/img/user-photo4.jpg" class="mr-3" style="width: 25px; height:25px;"></div>
-                                        <div class="media-body" style="overflow:visible;">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p><a href="#">Sara Doe:</a> This guy has been going 100+ MPH on side streets. <br>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <li class="list-group-item">
+                            <?php foreach ($comments as $row){ ?>
+                                <p><img src="<?php echo base_url();?>assets/img/user-photo4.jpg" width="20px" height="20px">
+                                    <b><?php echo $row['ho_ten'];?></b> : <?php echo $row['binh_luan_dv'];?></p>
+                            <?php } ?>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <nav>
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                <li class="page-item active"><a class="page-link">1</a></li>
-                <li class="page-item"><a class="page-link">2</a></li>
-                <li class="page-item"><a class="page-link">3</a></li>
-                <li class="page-item"><a class="page-link">4</a></li>
-                <li class="page-item"><a class="page-link">5</a></li>
-                <li class="page-item"><a class="page-link" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-            </ul>
-        </nav>
+        <br>
+
         <div>
             <textarea name="" id="" cols="70" rows="3"></textarea>
-            <br>
+            <br><br>
             <button class="btn btn-primary" type="button">Bình Luận</button>
         </div>
 
         <div class="more-projects">
-            <h3 class="text-center">More Projects</h3>
+            <h3 class="text-center">Nhiều hơn</h3>
             <div class="row gallery">
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/nature/image2.jpg"></a></div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/nature/image3.jpg"></a></div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/tech/image4.jpg"></a></div>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/nature/image5.jpg"></a></div>
-                </div>
+                <?php foreach ($listdvtop4 as $row){ ?>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="item">
+                            <a href="<?php echo base_url() . "index.php/dich_vu/view_detail/" . $row['id_dv'];?>">
+                                <img style="width: 100%; height: 180px" class="img-fluid scale-on-hover" src="<?php echo base_url();?>assets/img/dv/<?php echo $row['link_dv'];?>">
+                                <p><?php echo $row['ten_dv'];?></p>
+                            </a>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>

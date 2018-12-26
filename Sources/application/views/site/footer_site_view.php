@@ -3,7 +3,14 @@
         <div class="row">
             <div class="col-sm-6 col-md-4 footer-navigation">
                 <h3><a href="#">Traveling <img src="<?php echo base_url();?>assets/img/logo.png" width="100px"></a></h3>
-                <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+                <p class="links"><a href="<?php echo base_url();?>">Home</a>
+                    <strong> · </strong>
+                    <a href="<?php echo base_url();?>index.php/Site/blog">Blog</a>
+                    <strong> · </strong>
+                    <a href="<?php echo base_url();?>index.php/Site/about">About</a>
+                    <strong> · </strong>
+                    <a href="<?php echo base_url();?>index.php/Site/contact">Contact</a>
+                </p>
                 <p class="company-name">Traveling © 2018 </p>
             </div>
             <div class="col-sm-6 col-md-4 footer-contacts">

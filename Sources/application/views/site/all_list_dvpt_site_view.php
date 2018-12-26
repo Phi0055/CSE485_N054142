@@ -1,4 +1,8 @@
-<div class="me-dvpt container">
+<div class="me-dvpt container article-list">
+    <div class="intro">
+        <h2 class="text-center">Dịch Vụ-Phương Tiện</h2>
+        <p class="text-center">Du lịch có muôn kiểu, thì phương tiện du lịch cũng có nhiều lựa chọn. Dù muốn hay không bởi sự linh hoạt là vô cùng cần thiết đối với mỗi chuyến đi, chi phí, tính tiện lợi hợp lí sẽ giúp cho khách du lịch có tâm lí quyết định nhanh chóng và hợp lý hơn về sử dụng loại hình phương tiện nào cho hành trình du lịch của mình.</p>
+    </div>
     <div class="row">
         <?php
         foreach ($listdvpt as $row){?>
