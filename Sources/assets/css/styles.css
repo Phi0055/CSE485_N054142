@@ -102,7 +102,9 @@ Footer{
 /*list du lich*/
 .article-list .articles .img-fluid{
     border-radius: 20%;
-    min-height: 250px;
+    min-height: 200px;
+    height: 250px;
+    height: auto;
     width: 100%;
 }
 .me-list-dl .intro h2{

@@ -81,5 +81,10 @@ class Mdddl extends CI_Model{
         return $query->row_array();
     }
 
+    public function getComments($id){
+        $query = $this->db->query("select * from ctdgdddl ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dddl = $id;");
+        return $query->result_array();
+    }
+
 }
 ?>

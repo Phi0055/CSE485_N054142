@@ -26,7 +26,7 @@
                                 <h4 class="card-title"><?php echo $row['tieu_de_cn'];?></h4>
                                 <p class="card-text"><?php echo substr($row['noi_dung_cn'], 0,150) . "...";?></p>
                             </div>
-                            <div><a class="btn btn-outline-primary btn-sm" type="button" href="<?php echo base_url();?>index.php/cam_nang/view_detail">Learn More</a></div>
+                            <div><a class="btn btn-outline-primary btn-sm" type="button" href="<?php echo base_url();?>index.php/cam_nang/view_detail/<?php echo $row['id_cn'];?>">Learn More</a></div>
                         </div>
                     </div>
                     <?php

@@ -67,10 +67,13 @@ class Du_lich extends CI_Controller{
         //Lấy số sao
         $sums =  $this->Mdddl->getSumStarById($id);
         $data['counts'] =  $this->Mdddl->getCountStarById($id);
+        $temp = $data['counts']['counts'];
 
         if ($sums['sums'] == "")$sums['sums'] = 0;
         if ($data['counts']['counts'] == "0")$data['counts']['counts'] = 1;
         $data['star'] = $sums['sums'] / $data['counts']['counts'];
+
+        if ($temp == "0")$data['counts']['counts'] = 0;
 
         //Lấy 4 dddl ngẫu nhiên tương ứng
         $type = $this->Mdddl->getTypeById($id);
@@ -80,6 +83,8 @@ class Du_lich extends CI_Controller{
         }elseif ($type['chu_de'] === "Ngoài Nước"){
             $data['listdltop4'] = $this->Mdddl->getListNNRad(0,4);
         }
+        //Lấy comments
+        $data['comments'] = $this->Mdddl->getComments($id);
         $this->load->view("site/s_detail_dddl_site_view", $data);
     }
 }

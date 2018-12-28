@@ -24,8 +24,12 @@ class Cam_nang extends CI_Controller{
         $this->load->view("site/cam_nang_site_view", $data);
     }
 
-    public function view_detail(){
-        $this->load->view("site/s_detail_cn_site_view");
+    public function view_detail($id){
+        $this->load->model("Mcn");
+        $data['cn'] = $this->Mcn->getByID($id);
+        $data['listcntop4'] = $this->Mcn->getListRad(0,4);
+        //print_r($data);
+        $this->load->view("site/s_detail_cn_site_view", $data);
     }
 
 }
