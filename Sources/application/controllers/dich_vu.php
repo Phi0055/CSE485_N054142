@@ -72,4 +72,16 @@ class Dich_vu extends CI_Controller{
         $this->load->view("site/dich_vu_ks_site_view", $data);
     }
 
+    public function view_bxh(){
+        $this->load->model("Mdv");
+        $config['total_rows'] = $this->Mdv->countBXH();
+        $config['base_url'] = base_url()."index.php/dich_vu/view_bxh";
+        $config['per_page'] = 9;
+
+        $start=$this->uri->segment(3);
+        $this->load->library('pagination', $config);
+        $data['listdvbxh'] = $this->Mdv->getListBXH($start, $config['per_page']);
+        $this->load->view("site/dich_vu_bxh_site_view", $data);
+    }
+
 }

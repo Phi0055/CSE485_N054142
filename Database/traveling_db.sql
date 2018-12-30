@@ -559,3 +559,20 @@ select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where loai = 
 select * from cam_nang where id_cn = 5;
 
 select * from ctdgdddl ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dddl = 60;
+
+select *, sum(so_sao_dddl)/count(so_sao_dddl) as bxh, sum(so_sao_dddl) as sums from ctdgdddl group by id_dddl order by sum(so_sao_dddl)/count(so_sao_dddl) desc, count(so_sao_dddl) desc;
+
+/*Đối với các địa điểm du lịch chưa có lượt đánh giá nào thì chưa được vào bảng xếp hạng*/
+select * from dd_du_lich dd join ctdddl ct on dd.id_dddl = ct.id_dddl join ctdgdddl ctdg on ctdg.id_dddl = dd.id_dddl group by dd.id_dddl order by sum(so_sao_dddl)/count(so_sao_dddl) desc, count(so_sao_dddl) desc;
+
+select *, sum(so_sao_dv)/count(so_sao_dv) as bxh, sum(so_sao_dv) as sums from ctdgdv group by id_dv order by sum(so_sao_dv)/count(so_sao_dv) desc, count(so_sao_dv) desc;
+
+/*Đối với các dịch vụ du lịch chưa có lượt đánh giá nào thì chưa được vào bảng xếp hạng*/
+select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv join ctdgdv ctdg on ctdg.id_dv = dv.id_dv group by dv.id_dv order by sum(so_sao_dv)/count(so_sao_dv) desc, count(so_sao_dv) desc limit 0, 6;
+
+select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%31%' OR ct.tieu_de_dv LIKE '%31%' OR ct.noi_dung_dv LIKE '%31%' OR ct.id_dv LIKE '%31%';
+
+select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where dd.ten_dddl like '%vịnh%' OR ct.tieu_de_dddl like '%vịnh%' OR ct.noi_dung_dddl like '%vịnh%';
+
+
+

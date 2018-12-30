@@ -32,7 +32,7 @@
         </div>
         <div class="form-row form-group">
             <div class="col-lg-4 col-md-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Số Điện Thoại</label></div>
-            <div class="col-lg-7 col-md-7 label-column"><input class="form-control" type="tel" name="sdt"></div>
+            <div class="col-lg-7 col-md-7 label-column"><input class="form-control" type="text" name="sdt"></div>
         </div>
         <div class="form-row form-group">
             <div class="col-lg-4 col-md-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Địa Chỉ</label></div>

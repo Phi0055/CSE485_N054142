@@ -31,6 +31,11 @@ class Mdv extends CI_Model{
         return $query->num_rows();
     }
 
+    public function countBXH(){
+        $query = $this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv join ctdgdv ctdg on ctdg.id_dv = dv.id_dv group by dv.id_dv order by sum(so_sao_dv)/count(so_sao_dv) desc, count(so_sao_dv) desc;");
+        return $query->num_rows();
+    }
+
     public function getListPT($start, $size){
         $start = isset($start)? $start : 0;
         $query = $this->db->query("select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = 'phương tiện' limit $start, $size;");
@@ -79,6 +84,28 @@ class Mdv extends CI_Model{
         $query = $this->db->query("select * from ctdgdv ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dv = $id;");
         return $query->result_array();
     }
+
+    public function getListBXH($start, $size){
+        $start = isset($start)? $start : 0;
+        $query = $this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv join ctdgdv ctdg on ctdg.id_dv = dv.id_dv group by dv.id_dv order by sum(so_sao_dv)/count(so_sao_dv) desc, count(so_sao_dv) desc limit $start, $size;");
+        return $query->result_array();
+    }
+
+    public function countAllS($s){
+        $query=$this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%$s%' OR ct.tieu_de_dv LIKE '%$s%' OR ct.noi_dung_dv LIKE '%$s%';");
+        return $query->num_rows();
+    }
+
+    public function getListS($start, $size, $s){
+        $start = isset($start)? $start : 0;
+        $query=$this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%$s%' OR ct.tieu_de_dv LIKE '%$s%' OR ct.noi_dung_dv LIKE '%$s%' limit $start , $size");
+        return $query->result_array();
+    }
+
+//    public function getListS($s){
+//        $query=$this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%$s%' OR ct.tieu_de_dv LIKE '%$s%' OR ct.noi_dung_dv LIKE '%$s%';");
+//        return $query->result_array();
+//    }
 
 }
 ?>

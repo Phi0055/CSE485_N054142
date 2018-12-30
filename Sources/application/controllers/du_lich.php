@@ -17,6 +17,7 @@ class Du_lich extends CI_Controller{
         $data['listdltntop3'] = $this->Mdddl->getListTNRad(0,3);
         $data['listdlnntop3'] = $this->Mdddl->getListNNRad(0,3);
         $data['listdddltop3'] = $this->Mdddl->getListM(0,3);
+        $data['listdlbxhtop3'] = $this->Mdddl->getListBXH(0,3);
         $this->load->view('site/du_lich_site_view', $data);
     }
 
@@ -45,7 +46,15 @@ class Du_lich extends CI_Controller{
     }
 
     public function view_bxh(){
-        $this->load->view('site/du_lich_bxh_site_view');
+        $this->load->model("Mdddl");
+        $config['total_rows'] = $this->Mdddl->countBXH();
+        $config['base_url'] = base_url()."index.php/du_lich/view_bxh";
+        $config['per_page'] = 9;
+
+        $start=$this->uri->segment(3);
+        $this->load->library('pagination', $config);
+        $data['listdlbxh']= $this->Mdddl->getListBXH($start, $config['per_page']);
+        $this->load->view('site/du_lich_bxh_site_view', $data);
     }
 
     public function view_moi(){

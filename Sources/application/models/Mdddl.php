@@ -86,5 +86,27 @@ class Mdddl extends CI_Model{
         return $query->result_array();
     }
 
+    public function countBXH(){
+        $query=$this->db->query("select * from dd_du_lich dd join ctdddl ct on dd.id_dddl = ct.id_dddl join ctdgdddl ctdg on ctdg.id_dddl = dd.id_dddl group by dd.id_dddl order by sum(so_sao_dddl)/count(so_sao_dddl) desc, count(so_sao_dddl) desc;");
+        return $query->num_rows();
+    }
+
+    public function getListBXH($start, $size){
+        $start = isset($start)? $start : 0;
+        $query = $this->db->query("select * from dd_du_lich dd join ctdddl ct on dd.id_dddl = ct.id_dddl join ctdgdddl ctdg on ctdg.id_dddl = dd.id_dddl group by dd.id_dddl order by sum(so_sao_dddl)/count(so_sao_dddl) desc, count(so_sao_dddl) desc limit $start , $size");
+        return $query->result_array();
+    }
+
+    public function countAllS($s){
+        $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where dd.ten_dddl like '%$s%' OR ct.tieu_de_dddl like '%$s%' OR ct.noi_dung_dddl like '$s%';");
+        return $query->num_rows();
+    }
+
+    public function getListS($start, $size, $s){
+        $start = isset($start)? $start : 0;
+        $query=$this->db->query("select * from dd_du_lich dd inner join ctdddl ct on dd.id_dddl = ct.id_dddl where dd.ten_dddl like '%$s%' OR ct.tieu_de_dddl like '%$s%' OR ct.noi_dung_dddl like '%$s%' limit $start , $size");
+        return $query->result_array();
+    }
+
 }
 ?>
