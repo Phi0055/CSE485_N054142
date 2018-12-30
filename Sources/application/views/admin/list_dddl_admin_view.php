@@ -5,6 +5,13 @@
                 <div class="row">
                     <div class="col col-xs-6">
                         <h3 class="panel-title">Bảng Địa Điểm Du Lịch</h3>
+                        <form action="<?php echo base_url();?>index.php/admin/get_list_dddl_s" method="post" class="form-inline mr-auto">
+                            <div class="form-control">
+                                <label for="search-field"></label>
+                                <input class="form-control search-field" type="text" placeholder="Search.." name="search">
+                                <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

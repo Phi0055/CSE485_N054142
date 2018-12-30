@@ -6,11 +6,15 @@
         </div>
         <div class="row articles">
             <div class="col-sm-6 col-md-3 item">
-                <a href="<?php echo base_url();?>index.php/du_lich/view_bxh"><h4>Bảng Xếp Hạng</h4></a>
-                <a href="#"><img class="img-fluid w3-animate-zoom w3-hover-opacity" src="<?php echo base_url(); ?>assets/img/desk.jpg"></a>
-                <h3 class="name">Top 1</h3>
-                <a href="#"><img class="img-fluid w3-animate-zoom w3-hover-opacity" src="<?php echo base_url(); ?>assets/img/desk.jpg"></a>
-                <h3 class="name">Top 2</h3>
+                <a href="<?php echo base_url();?>index.php/du_lich/view_bxh"><h4>Bảng Xếp Hạng Du Lịch</h4></a>
+                <?php
+                $stt = 1;
+                foreach ($listdlbxhtop2 as $row){?>
+                    <a href="<?php echo base_url() . "index.php/du_lich/view_detail/" . $row['id_dddl'];?>">
+                        <img class="img-fluid w3-animate-zoom w3-hover-opacity" src="<?php echo base_url() . "assets/img/dddl/". $row['link_dddl']; ?>">
+                    </a>
+                    <h3 class="name">Top <?php echo $stt++;?></h3>
+                <?php } ?>
             </div>
             <div class="col-sm-6 col-md-3 item">
                 <a href="<?php echo base_url();?>index.php/du_lich/view_moi"><h4>Du Lịch Mới</h4></a>

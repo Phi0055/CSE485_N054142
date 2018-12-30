@@ -13,21 +13,22 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Du Lịch</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" id="du_lich_bxh" href="<?php echo base_url();?>index.php/du_lich/view_bxh">Bảng Xếp Hạng</a>
-                            <a class="dropdown-item" role="presentation" id="du_lich_moi" href="<?php echo base_url();?>index.php/du_lich/view_moi">Mới</a>
-                            <a class="dropdown-item" role="presentation" id="du_lich_trong_nuoc" href="<?php echo base_url();?>index.php/du_lich/view_trong_nuoc">Trong Nước</a>
-                            <a class="dropdown-item" role="presentation" id="du_lich_ngoai_nuoc" href="<?php echo base_url();?>index.php/du_lich/view_ngoai_nuoc">Ngoài Nước</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_bxh">Bảng Xếp Hạng</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_moi">Mới</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_trong_nuoc">Trong Nước</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_ngoai_nuoc">Ngoài Nước</a>
                         </div>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Dịch Vụ</a>
                         <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dich_vu/view_bxh">Bảng Xếp Hạng</a>
                             <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dich_vu/view_pt">Phương Tiện</a>
                             <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dich_vu/view_ks">Khách Sạn</a>
                         </div>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link">Bảng Xếp Hạng</a>
+                        <a class="nav-link" href="<?php echo base_url();?>index.php/bang_xep_hang">Bảng Xếp Hạng</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" href="<?php echo base_url();?>index.php/cam_nang">Cẩm Nang</a>

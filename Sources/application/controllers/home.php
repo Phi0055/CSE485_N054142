@@ -18,10 +18,12 @@ class Home extends CI_Controller{
         $this->load->model("Mdv");
         $data['listdltntop2'] = $this->Mdddl->getListTNRad(0,2);
         $data['listdlnntop2'] = $this->Mdddl->getListNNRad(0,2);
+        $data['listdlbxhtop2'] = $this->Mdddl->getListBXH(0,2);
         $data['listdddltop2'] = $this->Mdddl->getListM(0,2);
         $data['listcntop3'] = $this->Mcn->getListRad(0,3);
         $data['listdvpttop2'] = $this->Mdv->getListPTRad(0,2);
         $data['listdvkstop2'] = $this->Mdv->getListKSRad(0,2);
+        $data['listdvbxhtop6'] = $this->Mdv->getListBXH(0,6);
         $this->load->view('site/home_site_view', $data);
     }
 }

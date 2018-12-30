@@ -10,6 +10,7 @@ if (!defined('BASEPATH'))
 class Admin extends CI_Controller{
     public function __construct() {
         parent::__construct();
+        $this->load->library("session");
     }
 
     public function index(){
@@ -165,6 +166,46 @@ class Admin extends CI_Controller{
         $this->load->model("Muser");
         $this->Muser->deleteById($id);
         redirect(base_url() . "index.php/admin/get_list_user");
+    }
+
+    public function get_list_dv_s(){
+        if (isset($_POST['search'])){
+            $s = $_POST['search'];
+            $this->session->set_userdata('search', $s);
+        }else{
+            $s=$this->session->userdata('search');
+        }
+        //$s = isset($_POST['search']) ? $_POST['search'] : "";
+        //echo $s;
+        $s = trim(htmlspecialchars(addslashes($s)));
+        $this->load->model("Mdv");
+        $config['total_rows'] = $this->Mdv->countAllS($s);
+        $config['per_page'] = 5;
+        $config['base_url'] = base_url()."index.php/admin/get_list_dv_s";
+
+        $start=$this->uri->segment(3);
+        $this->load->library('pagination', $config);
+        $data['listdv']= $this->Mdv->getListS($start, $config['per_page'], $s);
+        $this->load->view("admin/get_list_dv_admin_view", $data);
+    }
+
+    public function get_list_dddl_s(){
+        if (isset($_POST['search'])){
+            $s = $_POST['search'];
+            $this->session->set_userdata('search', $s);
+        }else{
+            $s=$this->session->userdata('search');
+        }
+        $s = trim(htmlspecialchars(addslashes($s)));
+        $this->load->model("Mdddl");
+        $config['total_rows'] = $this->Mdddl->countAllS($s);
+        $config['base_url'] = base_url()."index.php/admin/get_list_dddl_s";
+        $config['per_page'] = 5;
+
+        $start=$this->uri->segment(3);
+        $this->load->library('pagination', $config);
+        $data['listdddl']= $this->Mdddl->getListS($start, $config['per_page'],$s);
+        $this->load->view("admin/get_list_dddl_admin_view", $data);
     }
 
 }

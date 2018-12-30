@@ -35,36 +35,21 @@
                 <a href="<?php echo base_url();?>index.php/dich_vu/view_bxh"><h4>Bảng Xếp Hạng</h4></a>
                 <div class="w3-card w3-margin">
                     <ul class="w3-ul w3-hoverable w3-white w3-animate-top">
-                        <li class="w3-padding-16">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right"style="width:50px">
-                            <span class="w3-large">Lorem</span><br>
-                            <span>Praes tinci sed</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Ipsum</span><br>
-                            <span>Praes tinci sed</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Dorum</span><br>
-                            <span>Ultricies congue</span>
-                        </li>
-                        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Mingsum</span><br>
-                            <span>Lorem ipsum dipsum</span>
-                        </li>
-                        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Mingsum</span><br>
-                            <span>Lorem ipsum dipsum</span>
-                        </li>
-                        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-                            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                            <span class="w3-large">Mingsum</span><br>
-                            <span>Lorem ipsum dipsum</span>
-                        </li>
+                        <?php
+                        $stt = 1;
+                        foreach ($listdvbxhtop6 as $row){?>
+                            <a href="<?php echo base_url() . "index.php/dich_vu/view_detail/" . $row['id_dv'];?>">
+                                <?php if ($stt <= 3){ ?>
+                                    <li class="w3-padding-16">
+                                <?php } else{?>
+                                    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                                <?php }?>
+                                <img src="<?php echo base_url() . "assets/img/dv/". $row['link_dv']; ?>" alt="Image" class="w3-left w3-margin-right"style="width:50px">
+                                <span><b><?php echo "Top: " . $stt++;?></b></span>
+                                <span><?php echo $row['ten_dv'];?></span>
+                                </li>
+                            </a>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
