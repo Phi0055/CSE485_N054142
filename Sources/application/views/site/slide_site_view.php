@@ -23,7 +23,7 @@
         <div class="carousel-item">
             <img src="<?php echo base_url();?>assets/img/bxh.jpg" alt="BXH">
             <div class="carousel-caption">
-                <a href="<?php echo base_url();?>"><h3>Bảng Xếp Hạng</h3></a>
+                <a href="<?php echo base_url();?>index.php/bang_xep_hang"><h3>Bảng Xếp Hạng</h3></a>
                 <p>BXH Dựa Trên Đánh Giá Của Chính Bạn!</p>
             </div>
         </div>

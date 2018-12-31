@@ -108,5 +108,12 @@ class Mdddl extends CI_Model{
         return $query->result_array();
     }
 
+    public function add($ten, $link, $td, $nd, $cd){
+        $this->db->query("insert into dd_du_lich(ten_dddl, link_dddl) values('$ten','$link');");
+        $data=$this->db->query("select id_dddl from dd_du_lich dd where id_dddl >= all (select id_dddl from dd_du_lich);")->row_array();
+        $id=$data['id_dddl'];
+        $this->db->query("insert into ctdddl(id_dddl,tieu_de_dddl, noi_dung_dddl, chu_de) values($id,'$td','$nd','$cd');");
+    }
+
 }
 ?>

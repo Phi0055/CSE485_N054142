@@ -1,7 +1,7 @@
 <div class="article-list me-list-dl">
     <div class="container">
         <div class="intro">
-            <a href="<?php echo base_url();?>index.php/du_lich"><h2 class="text-center">Dịch Vụ</h2></a>
+            <a href="<?php echo base_url();?>index.php/dich_vu"><h2 class="text-center">Dịch Vụ</h2></a>
             <p class="text-center">Dịch Vụ Uy Tín!</p>
         </div>
         <div class="row articles">

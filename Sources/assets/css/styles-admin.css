@@ -24,6 +24,10 @@ header .me-nav .dropdown-item:hover{
 header .me-nav #navcol-1 .nav-link:hover{
     color: white;
 }
+header .me-nav #navcol-1 .btn{
+    border-radius: 25px;
+    margin: 0 50px;
+}
 
 /*Menu*/
 .me-menu-admin{
@@ -95,4 +99,36 @@ header .me-nav #navcol-1 .nav-link:hover{
     width: 50%;
     float: left;
     height: 100%;
+}
+
+/*Drop menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }

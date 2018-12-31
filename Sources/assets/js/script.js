@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     //Ấn Learn more form dtm
     $(".me-fix-dtm #learn-more").click(function () {
        $(".me-fix-dtm").hide();
@@ -8,13 +7,8 @@ $(document).ready(function () {
     //Ẩn form login khi load
     $(".me-form-login").hide();
     //Click nút đăng nhập trên nav
-    $("#btnDangNhap").click(function () {
+    $(".btnDangNhap").click(function () {
         $(".me-form-login").toggle();
-    });
-
-    //Kiểm tra đăng nhập
-    $("#Login").click(function () {
-        
     });
     
     //Click Chat
@@ -27,11 +21,4 @@ $(document).ready(function () {
         $(".me-open-button").show();
     });
 
-    //Xóa địa điểm du lịch
-    $("#delete_dddl").click(function () {
-        var lc = confirm("Bạn có muốn xóa không?");
-        if (lc === true){
-            alert("Xóa thành công!!!");
-        }
-    });
 });

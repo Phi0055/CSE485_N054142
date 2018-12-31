@@ -46,7 +46,7 @@
         </div>
         <div id="me-admin-cn" class="panel-collapse collapse">
             <ul>
-                <li><a href="<?php echo base_url();?>index.php/admin"><i class="fa fa-angle-right" aria-hidden="true"></i>  Thêm Cẩm Nang</a></li>
+                <li><a href="<?php echo base_url();?>index.php/admin/add_cn"><i class="fa fa-angle-right" aria-hidden="true"></i>  Thêm Cẩm Nang</a></li>
                 <li><a href="<?php echo base_url();?>index.php/admin/get_list_cn"><i class="fa fa-angle-right" aria-hidden="true"></i>  Xem Cẩm Nang</a></li>
             </ul>
         </div>

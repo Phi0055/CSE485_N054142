@@ -16,6 +16,7 @@ class Dich_vu extends CI_Controller{
         $this->load->model("Mdv");
         $data['listdvkstop3'] = $this->Mdv->getListKSRad(0,3);
         $data['listdvpttop3'] = $this->Mdv->getListPTRad(0,3);
+        $data['listdvbxhtop3'] = $this->Mdv->getListBXH(0,3);
         $this->load->view('site/dich_vu_site_view', $data);
     }
 

@@ -12,7 +12,9 @@ class Ttcn extends CI_Controller{
         parent::__construct();
     }
 
-    public function index(){
-        $this->load->view('site/ttcner_site_view');
+    public function index($id){
+        $this->load->model("Muser");
+        $data['user'] = $this->Muser->getById($id);
+        $this->load->view('site/ttcner_site_view', $data);
     }
 }

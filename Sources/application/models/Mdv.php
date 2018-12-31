@@ -91,6 +91,7 @@ class Mdv extends CI_Model{
         return $query->result_array();
     }
 
+
     public function countAllS($s){
         $query=$this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%$s%' OR ct.tieu_de_dv LIKE '%$s%' OR ct.noi_dung_dv LIKE '%$s%';");
         return $query->num_rows();
@@ -101,11 +102,5 @@ class Mdv extends CI_Model{
         $query=$this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%$s%' OR ct.tieu_de_dv LIKE '%$s%' OR ct.noi_dung_dv LIKE '%$s%' limit $start , $size");
         return $query->result_array();
     }
-
-//    public function getListS($s){
-//        $query=$this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%$s%' OR ct.tieu_de_dv LIKE '%$s%' OR ct.noi_dung_dv LIKE '%$s%';");
-//        return $query->result_array();
-//    }
-
 }
 ?>

@@ -10,7 +10,6 @@ if (!defined('BASEPATH'))
 class Login extends CI_Controller{
     public function __construct() {
         parent::__construct();
-        $this->load->library("session");
     }
 
     public function index(){
@@ -18,21 +17,33 @@ class Login extends CI_Controller{
     }
 
     public function checkLogin(){
-        $tk = isset($_POST['taikhoan'])? $_POST['taikhoan'] : "";
-        $mk = isset($_POST['matkhau'])? $_POST['matkhau'] : "";
+        $tk = isset($_POST['tk']) ? $_POST['tk'] : "";
+        $mk = isset($_POST['mk']) ? $_POST['mk'] : "";
         $this->load->model("Muser");
-        if ($this->Muser->checkExists($tk, $mk)){
-            echo "Đăng nhập thành công";
-            $data=array(
-                "tk" => $tk,
-                "mk" => $mk,
-                "Is" => "True",
-            );
-            $this->session->set_userdata($data);
-        }else{
-            echo "Sai tài khoản / mật khẩu";
-            header('Location: .');
+        if ($this->Muser->checkLogin($tk, $mk) && $tk != "" && $mk != ""){
+            //Đăng Nhập Thành Công
+            $this->session->set_userdata("CheckLogin", true);
+            $data['infLogin'] = $this->Muser->infLogin($tk, $mk);
+            $this->session->set_userdata($data['infLogin']);
+            //print_r($this->session->all_userdata());
+            if ($this->session->userdata("cap_do") == 1){
+                //Nếu Là Khách
+                redirect(base_url());
+            }else {
+                //Nếu Là Admin (hoặc NV)
+                redirect(base_url() . "index.php/admin");
+            }
+
         }
+        else{
+            //Đăng Nhập Thất Bại
+            redirect(base_url());
+        }
+    }
+
+    public function logout(){
+        $this->session->sess_destroy();
+        redirect(base_url());
     }
 
 }

@@ -15,41 +15,41 @@
                 <form class="custom-form">
                     <h1>Thông Tin Cá Nhân</h1>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="id-input-field">ID</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text" placeholder="ID123" disabled></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">ID</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text" placeholder="<?php echo $user['id_tk'];?>" disabled></div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field">Tên Đăng Nhập</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text" placeholder="username123" disabled></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">Tên Đăng Nhập</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text" placeholder="<?php echo $user['ten_dang_nhap'];?>" disabled></div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Họ Tên</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">Họ Tên</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text" value="<?php echo $user['ho_ten'];?>"></div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Giới Tính</label></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">Giới Tính</label></div>
                         <div class="col-sm-4">
                             <div class="Sex">
-                                <div class="form-check"><input class="form-check-input" type="radio" name="sex" value="Nam"><label class="form-check-label">Nam</label></div>
-                                <div class="form-check"><input class="form-check-input" type="radio" name="sex" value="Nữ"><label class="form-check-label">Nữ</label></div>
+                                <div class="form-check"><input class="form-check-input" type="radio" name="gt" value="Nam" checked><label class="form-check-label">Nam</label></div>
+                                <div class="form-check"><input class="form-check-input" type="radio" name="gt" value="Nữ" <?php if ($user['gioi_tinh'] === "Nữ")echo "checked";?>><label class="form-check-label">Nữ</label></div>
                             </div>
                         </div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Email</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">Email</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text" value="<?php echo $user['email'];?>"></div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Ngày Sinh</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="date"></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">Ngày Sinh</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="date" value="<?php echo $user['ngay_sinh'];?>"></div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Số Điện Thoại</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="tel"></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">Số Điện Thoại</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text" value="<?php echo $user['sdt'];?>"></div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-sm-4 label-column"><label class="col-form-label" for="repeat-pawssword-input-field">Địa Chỉ</label></div>
-                        <div class="col-sm-6 input-column"><input class="form-control" type="text"></div>
+                        <div class="col-sm-4 label-column"><label class="col-form-label">Địa Chỉ</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="text" value="<?php echo $user['dia_chi'];?>"></div>
                     </div>
                     <input class="btn btn-light submit-button" type="submit" value="Cập Nhật">
                 </form>

@@ -26,4 +26,5 @@ class Home extends CI_Controller{
         $data['listdvbxhtop6'] = $this->Mdv->getListBXH(0,6);
         $this->load->view('site/home_site_view', $data);
     }
+
 }
