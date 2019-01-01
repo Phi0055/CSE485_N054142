@@ -7,7 +7,7 @@
             <table class="table">
                 <tr>
                     <td><P>Tiêu đề</p></td>
-                    <td><input type="text" name="td" class="form-control"></td>
+                    <td><textarea name="td" class="form-control" id="" cols="30" rows="1"></textarea></td>
                 </tr>
                 <tr>
                     <td><P>Nội dung</p></td>

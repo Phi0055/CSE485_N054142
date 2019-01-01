@@ -102,5 +102,18 @@ class Mdv extends CI_Model{
         $query=$this->db->query("select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%$s%' OR ct.tieu_de_dv LIKE '%$s%' OR ct.noi_dung_dv LIKE '%$s%' limit $start , $size");
         return $query->result_array();
     }
+
+    public function add($ten, $link, $td, $nd, $loai){
+        $this->db->query("insert into dich_vu(ten_dv, link_dv) values('$ten','$link');");
+        $data=$this->db->query("select id_dv from dich_vu dv where id_dv >= all (select id_dv from dich_vu);")->row_array();
+        $id=$data['id_dv'];
+        $this->db->query("insert into ctdv(id_dv,tieu_de_dv, noi_dung_dv, loai) values($id,'$td','$nd','$loai');");
+    }
+
+    public function edit($id, $ten, $link, $td, $nd, $loai){
+        $this->db->query("update dich_vu set ten_dv = '$ten', link_dv = '$link' where id_dv = $id;");
+        $this->db->query("update ctdv set tieu_de_dv = '$td', noi_dung_dv = '$nd', loai = '$loai' where id_dv = $id;");
+    }
+
 }
 ?>

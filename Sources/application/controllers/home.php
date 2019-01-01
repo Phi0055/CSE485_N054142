@@ -13,13 +13,13 @@ class Home extends CI_Controller{
     }
 
     public function index(){
-        $this->load->model("Mdddl");
+        $this->load->model("Mdd");
         $this->load->model("Mcn");
         $this->load->model("Mdv");
-        $data['listdltntop2'] = $this->Mdddl->getListTNRad(0,2);
-        $data['listdlnntop2'] = $this->Mdddl->getListNNRad(0,2);
-        $data['listdlbxhtop2'] = $this->Mdddl->getListBXH(0,2);
-        $data['listdddltop2'] = $this->Mdddl->getListM(0,2);
+        $data['listddtntop2'] = $this->Mdd->getListTNRad(0,2);
+        $data['listddnntop2'] = $this->Mdd->getListNNRad(0,2);
+        $data['listddbxhtop2'] = $this->Mdd->getListBXH(0,2);
+        $data['listddtop2'] = $this->Mdd->getListM(0,2);
         $data['listcntop3'] = $this->Mcn->getListRad(0,3);
         $data['listdvpttop2'] = $this->Mdv->getListPTRad(0,2);
         $data['listdvkstop2'] = $this->Mdv->getListKSRad(0,2);

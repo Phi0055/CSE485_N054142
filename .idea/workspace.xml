@@ -2,266 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12fbf390-0c5b-40fa-b978-2abf2e46471b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/application/core/MY_Exceptions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_dv_admin_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/s_add_cn_admin_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/s_add_dv_admin_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/s_edit_cn_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/controllers/dia_diem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/models/Mdd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_dd_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_dd_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_dv_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/get_list_dd_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/list_dd_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/s_add_dd_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/s_edit_dd_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/admin/s_edit_dv_admin_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/s_regist_site_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/s_ttcn_site_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/traveling_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/traveling_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session02ca9aou0gg4c93l2pn0jjlif7j0dqtu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0egdfqhb7eval9o389dokkjr7pg8teoa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0ie23lpvhfj5qnrtdgv2skm965h2ckv7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0jvef90hld3jel8ogbdgag5i1ngjl445" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0nqut1t9hi4f8oe9h3a18sl1uolc5kkq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0rijkcf0ompdtt79d6qts4p7n401h5f1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0t8c2jkls4qgstik2kga9h645010q3am" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0ti1mqi1jurr0p80ks8sn657ual944og" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session10j7cb4dipprnt9ncf8fo2qq33p4nvj8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session19741i6o4od7qn8uqpfaq0cjbrc8uhpj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session19q6iiasducof9v8crk1i2d9pn4a0ta4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1bctc8ipcjfgaqcsaibtcrvbs3o8ndh9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1dgbkalei9k51bndu9vnmjj9sletg2a7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1e0q024fo3hdv75u62427hu3frhti3j3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1jjcum34kfvgs3mbcii9rtmdr9joadha" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1mnv7rtcmvm2kdrha2cp101at108u5n3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1rbrdr3qgslnp4ccggdatd1qr0f88v7o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1t2sne9rtsafl92an8550irav4989pcr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session1tgrem9fd92rcajl3pp80khejfrk4033" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session26j7rg0h8gnu258erp9j8sphe2bqqbhl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session2i2u18moj18e6q6v87crtfktif6mfs94" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session2jghhr609nsa7nmkstvpnm8o3fnksadh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session32ignv03h8d3gq1bvhdgid9obtpim8v5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session34n3s67g96u5h6btilmucplfrelb03cp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session38do3j46ac8nmsqorsi638bvkgsm8l1o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session392hoq9etebc2rcq50bgnjau70m6f85d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session3s0mj8k4dgsq6rab3tjr57488cgfq73d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session3tp0fmnjvnk4k5grutucr43863m5q6fp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session3v5soeag1ulrk2l112rit56dqhj79mag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session433i58h97095pgg4cs02pku9fmk9p2d7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session43vuna8f4lh00ubeghc4ounivrtq1h20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4f8mcct7i5ts65hluvun50od6b0hep86" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4hco9drpsea2vt9dc1j53b9fte2sih14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4jm5ei969t16t91fkav84fhq6sj1ft6j" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4n25g34i5gs3grkkgrmer5sa7uliq40s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4ses7qm1gs31jnjlqv4j0p1sn3ckvr1p" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4ss3nneokqq6jsb6ujt5j2kak5fg6s3c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4vlh4osmm94ua6ep9j24q1jj73mnmfo6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session530fijrj2h15ro8ib12tsa3j3cbmnph7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session57kbr025mth3pamnh0ohpjh6q1j0pmp5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5as1h5f41j50hsfqi6ej16tg5mtosss3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5eitq55gjoqdcqe41bmf0o9qsuqb2gql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5gcvsaf15f4h8io30lqlmrs5abm62jfk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5ghmiacnct9td8768li5d36n8nc4q3gl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5l8jjcothqkjptk1itokfpv20n812v95" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5lqkh6vvcih23459t47ol80kgd7cpqfj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5qfl79d7agqa3n9smvjqnvdfbovdhv77" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session5qflrc3nenrsbifik8isa8cbmc60ee9t" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session624llm3gtg1bqa8hi6trqigna16sli1q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session62f4kbr9v9lf268kuuf4boue4iuq1q53" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session63hangj7f4i3c66mmvng91mqiqtrvldf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session63mqrartmj35fd3avbi2755f7kd6ulcq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session6a3jtranbkuvnv22hos3javqu9a0t7nh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session6jris03e5032fs81psnr91400ngbndjq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session6rddc33ahu2lrac3rb95oc5al2lrb7j9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session6rjrqd1gamkfsk92cui31gdqjbpihhlt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session6v4co82guplivtumbsdps2tc3t2emftb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session72a5chhovtaopaaf72023t0h7rrprqth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session76j2001hl0douneo6frd344oiukq3v3b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session786cotq8t4htekh90epvlttpo7470eiq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session7ci195e1chukuhkearkv6ngg2ee4594c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session7mbvp7brpv1cd1m2rtcetf6lvr11ugmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session7qgubj1vhgfkeg2uuaptokvpof12slqm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session7tji24033hi63adai3cea35tsnc57h22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session89kubeqr94c7tiuueb9q8hisr5k6c5t1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session89vrub8e10s15aj4vvrp0oi0uvdnvf0q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session920r1m84fi9i1amrbtgh8ae0o4r4qaa0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9dvm7junn88pgr33le77scpoujgeq1ob" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9e9em55gqck33a5n6r74ltq8pvvsjg7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9esdniqj868mm3t29t6tt3labq5ntjm6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9flc4ivvmkggfbna8g4vvt3keibm73l8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9fqrhk72ajkh94l4kqa7tsko4fs0ec1m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9k14u02uq2dqdrbevihtilnbjukjsrq4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9nl041sn5oguio3hbclth791g1u71k62" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9onplvf4vdbkmlrduscfnf416h1uuu5q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9q41fpu141u9aehpopr32g4e9iog3mls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session9scjhjn2htoivq203o0kfnvauih0sdb7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiona0l1eq5i57jfqhaemahq6m0t8rvgo7s6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiona0l3i208o2mtdp6s43bucaebq201fdda" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiona125p2i7mm0bhrhknv5kfu10qlf08tlo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionagialrpjlbtgg3vsfs1u0c9gerpjtepd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionamm0lnhlpe49nt3ju8ni6ijr41f6bnom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionb17lf8rlhto4u0baobap9t1p4h8lp49v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionb6jskj5g3bdftld2l7not01o1t1dpt1v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionb92jnqbrim476du15ffcl4t4cj2ggsis" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbbf4ul039j55q21dnndpsu25ikogn0t9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbbsdhp83mu5dfi2lod1neh903tsaubip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbgmp2ihthk8h9nqo20i5j9uit8c4nbn7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbj25g6mpdbm10uafgt93mj56s1mer4rp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbjj9o87i1kpgbcjsnehkqsp3qod2t97k" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbo325iegs4ras5anjtml8iqt11skdr1e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionc6k0ubsd77ce4jablbtbj36s4per94qu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionc85e12c8psd7la0ggc39i0ls2ve3mf8a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionc8al248oicip7mprb84clpfjhh9ut990" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessioncdp4hjpv6ko3ncm48ngf55i66anqnkd0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessioncg86nan4icp4dsbrqog2jrfickl0p9qe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionclfcrqslklad1hduoe53d7pt71hfc220" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiond517reo7anv74ut7626qrjo8i4fvs2hg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiond5lpv4akp73ad7o4jhh605ur15omr6ss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiond69e8ej6hd8kn2qcelsv8aa4hnkm9gbi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiondb6nji9m19muhgccktsh3ebe3qcrsott" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiondql98ff3vf3lo2eltafkcucisfal911l" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionds87egmv65t3vjhr06qktvilap1dp1cv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessione1hf557k5o7d44ihj3v9a9s7ehc0cqfp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessione1pjght6hp7atu7c3jelg9vb6lh8nvhm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessioneb6poh282bucm3r82qjlgkfkrpou0hud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessioneljn5slv1r9eftu4he1vic1rt608i7lp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionemfvfrp7drg05q32alq3selmc6f3gro6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionetae9pqiv69vqabup4bppdcdspvjrk40" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionf5qdqa7qq4fklvfel22naphenr6b45cp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionf8ulft8hio7a34505o8o3n1s2u6234uc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfae25rcam5e5207i2qrrjnvoqbgjfcpb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfdvmvpsru832s7vet9612dmj1bhii36q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfe0hsjhes3trgic92lghm0snm85trj7i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfg537qgl5goqq4lu76u1nu7ksnfkmlcc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfjp14u2j77s4cnqhsr3f6u5qnor8feip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfkne4h6uk13jlabgcag5uurojrgt6233" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfokk1c3ro3rjtjmnqa6652joc71lt5kl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfpbmdts281vd6jmiefj3tbugr8jildc2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiong9b7etg2ablk80bti7orta49473lgola" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionghcd8n2r3t4lm3re8kt8dg03ktcu8p57" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiongngs1euq4hf7u9181eln5f0e4k1sakud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiongr73ajniuktmaermbu9r4h22a76o73j0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiongs4i00ped52j7vqdifh94ohpcnjfai5g" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiongs7fdcj6de4q841kvt7uutvbs95hn5ln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiongvtk9t02oldkl8t64l7n8bpd2clijrmr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionh4emvfljhk8c9d79rr5p2ll1dp97r0sc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionh5pf4f5sfl4f7slfnrrvip8rmbm44beb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionh7bb3rr93u74l1tfm34v8kpvkju49sh6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhbsfbvh1880gvtpo8g07s3ggpoo3pki8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhkcq0n1f1nvhneodsr9h3mli17580atc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhkdf0t3nq3pmickpfqond78uia6kebi8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhn8usa8mapv7qdo6hvn5o2mu9jrlmqvg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhnnv6vpqjimmp626br35d0mg1g1benv0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhp0no03e5ehsuledkher32eeot6bf5lt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhri4amf5e7f92todalo5ee7ih3dgerd1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhsls003ieigm07t0uasvh9rfggjpigum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionht0bku20tv7jt2pb09otghkhkn11qb1u" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhvfivuntm5lbohr5v8fr4522ib36snm8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionib789ijgr9l5372i81rpbro0u0jcigrk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionib8em586g7orllsmamb28535se46dedk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionihkunidj9cgfeir3eah5jomi9iio68dr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionj4b35r8ghjptj1bag535e8i3ab8gf76v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionjl2695acbn3vq0cggcrlqmu7lc5e0712" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionjposq4d68it2cslvdt5j94025qhrrflk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionjtpgivfh1gbhipuk68i6uu07m0rt1l55" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionkaluormbbr4uonm87gsqedgj3d32r3p3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionkiv1822ojbc3rm441e6h4akpo08qonrn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionklhdk3ghqt3m7kdn63qmrv4fcmjuif63" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionkmhvdbrlj9hgig29bt9dglnl5oojoel8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionl5rjkr2jj1cruaoqu0qvk4s7ahlq6bs8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionlc4tvchkaemo5mpo7gnjsts0ism392ek" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionldp4ids4n44067h24pg2npg5f9fnmjkq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionlfeq4fe3i1kn912li4dl6kgt479sivfp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionlfi9oenpl7gh2c9rjmasqqm6h3j8fn45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionlishlugm02ompvn4rfdo8o3hrs16tggf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionljfhp157racig535mrb9lg4lrlevp6kn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionlnod53l1gcvi4vo26et0ohm265gkonp7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionlo212bj6bvu8d6tccbl4romhg6cv0gnv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionm1ch54vghsagkif5e1supebjp7h65o05" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionm5l1mlkiteuugcsimf2gl5mkncm8o5g4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionnj47632n7s43ol6d704rcqlldk1qrou9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionnjridshmffhtr83mqm276gmipk63d1do" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionnljlo3agm0eq25hqt4tq42ml2dajf33h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionnm89ah9nv8vmsrjkiigkhngt3aipfl6v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionnu5bvrov742d4r0lqutv30hb6j90001b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiono9dkq8n76d7mjv7sbjd8sdb1brmd2r79" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionogtpbgjpo1pqpe6kju0qn5lmqr44ltaa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionolr3vbbl0qtu5lq5091h1681fvnhtr3o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionosvpg0of3ofmehuj1ievlq3p7d7vohd9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionp08vsmnmshu7sc0uj7hjfp6jkcvp1ki2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionp2ghd2tp1qs1nl4kp0doac75ecp2s2u7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionpbt1l11m1id5btkauuoemv6ov8h1m7nq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionppidh9i9olb040hd3ktg0mcao1sldg28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionpqv7o4llpap86hhbrhgiik7ll4unbuqj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionpt3qq3lv9k3vml8q4gkolb9n80bf6f92" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionq174gjc3vhurqqkcgfuolr43jgnvi7ep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionq320bvdq273m7o1gfl25gjfhrsadqelb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionq33mqa9ssh0ovi388kpqeqj3ham52i0k" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionq7q5lu7t2lf9d5uftkld6gqvgc8vog1v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqacru8smr2qorig40fo3il9aj36h00lq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqg7rqh00m8l8i780afrivhgvng5njc5g" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqnmfqjotiuks62a3msomt9l8s6bsia31" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqrdqtca1jc3ip4iguaqn43bt5m1cucjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionr4qjd2nr81siioo8i49o9egmr4pu0dlg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionr5p7c8322pgt20n4bqad3ntm48jq3lk3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionrae561ubga3du0j8e0sfhjo1g0bmfnvp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionrdidgg479e97vatt29aikfaedjtcllap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionreruv0d5f6h8q8mnakle447b6q5lvl12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionritpbms5skbf3fchke52v0ku0n18iteu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionrktf8c37fodif8b8o06qs7spn9o7jqgq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionrlplfvoepo4dm7qp4b4if1455jf393fm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionrv8hdm1it4vni2jc5nv28rq57v034b83" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessions1kirv3b3feafdisu10nu210t6l5ah48" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessions9cgvs5c0vut6rr1jfno6mcon36hbatd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionsaeog462a13bav93r904n3maol48u8f9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionsb3fb4n3mq191682vb8ouchr7hlu1e72" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionsrk6m2jo3femiocrpdo11gnm3863mfdo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionsu5v3vhs1raik061o3kesp1mru9c3qfr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiont2l1cl77lfog1kp7r8jnbg46scqdkhke" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiont63oa16t6ufgimt6k7jmrklu0d4r3s24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiont64bol2raipn1ifkf5p140917l3mlk2g" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiont7rqmj1t00t9j1rre5h25p48njh6iepv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiont9sukn3a9b11210nkhhgqgvp9sjnum2q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionth291mikur864ti5mu8l2qfh7648qiqd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiontlm2is3upp8oqjslkb7keoonl4f72pip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionu5vcrkvgcb1c0k7gb3piu4cf7h8usf4j" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionu81ovhe3so9jkcsu5tq9jpofp0e5cqm3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionuit931093fmvslgd770lflmb3sm93r2s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionut79at30ooumu9kbggbq8skp0l1a1k9v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionv3llpn6q04rt72ta9t03no0c38mchkmk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionv9b9lh6l1h3inpe2g60rkvf6tidfchgg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvd03b75o7l9eji2kktj2800mqmvv69hp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvgi39lu40s5h3klrgh9hf4kjj11s6v5i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvkgqvk2lvuqck6c25b9fjmsc6qv727s7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvkqq3f5e5pkge5srouku991t2bukfgtq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvnito104fhmjqcuvo3vqas8edcoftlp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvrso8tla1mn6cggmff2jhn6usks9j48m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvu2udic17pmb9vq6savsg62iqhg3ck33" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvuc648348gc2mtvc1v4svrdggpeartkv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/controllers/bang_xep_hang.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/bang_xep_hang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/demo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/cam_nang.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/cam_nang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/demo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/du_lich.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/regist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/regist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/ttcn.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/ttcn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/models/Mcn.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Mcn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/models/Mdddl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Mdddl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/ttcn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/models/Mdddl.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/models/Mdv.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Mdv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/models/Muser.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Muser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_dddl_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_dddl_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_user_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_user_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/list_cn_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/list_cn_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/list_user_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/list_user_admin_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_dddl_admin_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_dv_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_dv_admin_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/dashboard_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/dashboard_admin_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_dddl_admin_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/get_list_dddl_admin_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/list_dddl_admin_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/list_dv_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/list_dv_admin_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/menu_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/menu_admin_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/nav_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/nav_admin_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/s_add_dddl_admin_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/s_edit_dddl_admin_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/all_list_dlbxh_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/all_list_dlm_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/all_list_dlnn_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/all_list_dltn_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/detail_dddl_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/du_lich_bxh_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/du_lich_moi_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/du_lich_ngoai_nuoc_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/du_lich_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/du_lich_trong_nuoc_site_view.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/views/site/fix_nav_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/fix_nav_site_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/home_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/home_site_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_bxh_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/list_bxh_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_dv_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/list_dv_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_dvbxh_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/list_dvbxh_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/login_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/login_site_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_dl_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_dlbxh_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_dlm_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_dlnn_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/list_dltn_site_view.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/regist_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/regist_site_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/register_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_detail_dddl_site_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_detail_dddl_view.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/application/views/site/slide_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/slide_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/ttcn_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/ttcn_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/assets/css/styles-admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/assets/css/styles-admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/ttcner_site_view.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/assets/img/dddl/9.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -285,11 +152,28 @@
       <find>file_path</find>
       <find>] . &quot;.jpg&quot;;</find>
       <find>style=&quot;background-image:</find>
+      <find>dich_cu</find>
+      <find>dd_du_lich</find>
+      <find>Mdddl</find>
+      <find>cd</find>
+      <find>chu_de</find>
       <find>dddl</find>
+      <find>dddd</find>
+      <find>dd</find>
+      <find>Du Lịch</find>
+      <find>du_lich</find>
+      <find>dl</find>
     </findStrings>
     <replaceStrings>
       <replace>];</replace>
+      <replace>dich_cu</replace>
+      <replace>dich_vu</replace>
+      <replace>Mdd</replace>
+      <replace>loai</replace>
       <replace>dv</replace>
+      <replace>Địa Điểm</replace>
+      <replace>dia_diem</replace>
+      <replace>dd</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -298,64 +182,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Sources/application/views/site/bang_xep_hang_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/cam_nang_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/test.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/get_list_dv_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/head_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/list_dv_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/list_dddl_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/list_user_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/config/database.php" />
-        <option value="$PROJECT_DIR$/Sources/application/config/config.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/about_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/regist_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/list_dl_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/models/Mdddl.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_dddl_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_dv_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/s_add_dv_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/s_add_cn_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/regist.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_user_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/menu_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/models/Mdv.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/s_edit_cn_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/list_cn_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/models/Mcn.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/assets/css/styles.css" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/slide_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/list_bxh_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/list_dv_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/list_dvbxh_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/bang_xep_hang.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/demo.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/login_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/home.php" />
-        <option value="$PROJECT_DIR$/Sources/application/core/MY_Exceptions.php" />
-        <option value="$PROJECT_DIR$/Sources/application/models/Muser.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/ttcn_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/ttcn.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/admin/nav_admin_view.php" />
-        <option value="$PROJECT_DIR$/Sources/assets/css/styles-admin.css" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/admin.php" />
-        <option value="$PROJECT_DIR$/Sources/application/controllers/login.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/home_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" />
-        <option value="$PROJECT_DIR$/Sources/assets/js/script.js" />
-        <option value="$PROJECT_DIR$/Sources/application/views/site/fix_nav_site_view.php" />
         <option value="$PROJECT_DIR$/Sources/application/views/site/s_detail_dv_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_dddl_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/models/Mdddl.php" />
+        <option value="$PROJECT_DIR$/Sources/application/models/Mdv.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/edit_dddl_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/models/Mdd.php" />
+        <option value="$PROJECT_DIR$/Sources/application/controllers/admin.php" />
+        <option value="$PROJECT_DIR$/Sources/application/controllers/bang_xep_hang.php" />
+        <option value="$PROJECT_DIR$/Sources/application/controllers/cam_nang.php" />
+        <option value="$PROJECT_DIR$/Sources/application/controllers/home.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_dd_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/add_dv_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/edit_dd_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/get_list_dd_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/s_add_dd_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/s_edit_dd_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/controllers/dia_diem.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/edit_dv_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/nav_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/s_detail_dd_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/dashboard_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/menu_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/list_dv_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/s_edit_dv_admin_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/s_ttcn_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/controllers/site.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/s_regist_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/list_bxh_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/all_list_ddbxh_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/all_list_ddm_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/all_list_ddnn_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/all_list_ddtn_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/detail_dd_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/dia_diem_bxh_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/dia_diem_moi_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/dia_diem_ngoai_nuoc_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/dia_diem_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/dia_diem_trong_nuoc_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/fix_nav_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/home_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/list_ddbxh_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/list_ddm_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/list_ddnn_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/list_ddtn_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/slide_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/Sources/application/views/site/list_dd_site_view.php" />
+        <option value="$PROJECT_DIR$/Sources/application/views/admin/list_dd_admin_view.php" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -375,45 +259,6 @@
             <path>
               <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSE485_N054142" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE485_N054142" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -495,6 +340,10 @@
       <workItem from="1546178355822" duration="4541000" />
       <workItem from="1546186187091" duration="176000" />
       <workItem from="1546217815456" duration="13836000" />
+      <workItem from="1546329177361" duration="5263000" />
+      <workItem from="1546334654875" duration="362000" />
+      <workItem from="1546335060776" duration="1387000" />
+      <workItem from="1546336529236" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="v1 21/12 by Ngon Phi">
       <created>1545404180189</created>
@@ -507,16 +356,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150859000" />
+    <option name="totallyTimeSpent" value="159608000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.33287102" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.19731544" />
       <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.09060403" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -562,355 +411,332 @@
     <option name="LAST_COMMIT_MESSAGE" value="v1 21/12 by Ngon Phi" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php">
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/detail_dv_site_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="30" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="119">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/get_list_cn_admin_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mdddl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="110" column="4" lean-forward="true" selection-start-line="110" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/list_cn_admin_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mcn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="47" column="46" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/assets/css/chat-live.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/slide_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/bang_xep_hang_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_bxh_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_dv_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_dvbxh_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/dich_vu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dich_vu_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_dvks_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="6" lean-forward="true" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_dvbxh_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="379" lean-forward="true" selection-start-line="379" selection-end-line="385" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/cam_nang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="58" column="57" lean-forward="true" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6280.47724/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa10644.33591/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/login_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/bang_xep_hang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/Upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/regist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/page.php">
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dich_vu_bxh_site_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/form.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/demo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/models/Muser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/edit_user_admin_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/ttcn_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/ttcn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/nav_admin_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/system/core/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="849" lean-forward="true" selection-start-line="849" selection-end-line="849" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/system/core/Exceptions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="144" column="25" lean-forward="true" selection-end-line="274" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/core/MY_Exceptions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/home_admin_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/assets/css/styles-admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/application/views/site/fix_dong_thang_mat_site_view.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/admin.php">
+    <entry file="file://$PROJECT_DIR$/Sources/assets/css/styles-admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="-1760">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/assets/js/script.js">
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/about_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_cn_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_dvbxh_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/contact_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/detail_cn_site_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/home_site_view.php">
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dia_diem_site_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="58" column="41" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/application/views/site/fix_nav_site_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#a#0;n#li#5;n#ul#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#a#0;n#li#7;n#ul#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="91" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/about_site_view.php">
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/regist_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/slide_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="120" column="23" lean-forward="true" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/home_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3608">
+          <caret line="209" column="34" lean-forward="true" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/bang_xep_hang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/cam_nang.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/s_detail_dv_site_view.php">
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/dia_diem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="-1256">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/dich_vu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1025">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/regist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/controllers/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="122" column="1" lean-forward="true" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/models/Mdv.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/add_dd_admin_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/edit_dd_admin_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/foot_admin_view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/footer_admin_view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/get_list_dd_admin_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/list_dd_admin_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_ddbxh_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_ddm_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_ddnn_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/all_list_ddtn_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/bang_xep_hang_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/detail_dd_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="59" column="79" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dia_diem_bxh_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dia_diem_moi_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dia_diem_ngoai_nuoc_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/dia_diem_trong_nuoc_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_bxh_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_dv_site_view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_dd_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-388">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_ddbxh_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_ddm_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_ddnn_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/list_ddtn_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="50" column="85" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
         </state>
       </provider>
     </entry>

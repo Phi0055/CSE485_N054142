@@ -19,8 +19,8 @@ class Admin extends CI_Controller{
     public function index(){
         $this->load->model("Muser");
         $data['countUser'] = $this->Muser->countAll();
-        $this->load->model("Mdddl");
-        $data['countDDDL'] = $this->Mdddl->countAll();
+        $this->load->model("Mdd");
+        $data['countDD'] = $this->Mdd->countAll();
         $this->load->model("Mcn");
         $data['countCN'] = $this->Mcn->countAll();
         $this->load->model("Mdv");
@@ -132,24 +132,24 @@ class Admin extends CI_Controller{
         $this->load->view("admin/get_list_user_admin_view", $data);
     }
 
-    //DDDL
-    public function get_list_dddl(){
-        $this->load->model("Mdddl");
-        $config['total_rows'] = $this->Mdddl->countAll();
-        $config['base_url'] = base_url()."index.php/admin/get_list_dddl";
+    //dd
+    public function get_list_dd(){
+        $this->load->model("Mdd");
+        $config['total_rows'] = $this->Mdd->countAll();
+        $config['base_url'] = base_url()."index.php/admin/get_list_dd";
         $config['per_page'] = 5;
 
         $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listdddl']= $this->Mdddl->getList($start, $config['per_page']);
-        $this->load->view("admin/get_list_dddl_admin_view", $data);
+        $data['listdd']= $this->Mdd->getList($start, $config['per_page']);
+        $this->load->view("admin/get_list_dd_admin_view", $data);
     }
 
-    public function add_dddl(){
-        $this->load->view("admin/s_add_dddl_admin_view");
+    public function add_dd(){
+        $this->load->view("admin/s_add_dd_admin_view");
     }
 
-    public function pro_add_dddl(){
+    public function pro_add_dd(){
         //Kiểm tra bằng form validation
         $this->load->library('form_validation');
         $this->form_validation->set_rules('ten', 'Tên', 'required');
@@ -157,37 +157,55 @@ class Admin extends CI_Controller{
         $this->form_validation->set_rules('nd', 'Nội dung', 'required');
         $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
         if($this->form_validation->run() == FALSE){
-            $this->add_dddl();
+            $this->add_dd();
         }
         else{
             $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
             $td = isset($_POST['td']) ? $_POST['td'] : "";
             $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
             $link = isset($_POST['link']) ? $_POST['link'] : "";
-            $cd = isset($_POST['cd']) ? $_POST['cd'] : "";
-            $this->load->model("Mdddl");
-            $this->Mdddl->add($ten, $link, $td, $nd, $cd);
-            $this->get_list_dddl();
+            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+            $this->load->model("Mdd");
+            $this->Mdd->add($ten, $link, $td, $nd, $loai);
+            $this->get_list_dd();
         }
     }
 
-    public function edit_dddl($id){
-        $this->load->model("Mdddl");
-        $data['dddl'] = $this->Mdddl->getById($id);
-        $this->load->view("admin/s_edit_dddl_admin_view", $data);
+    public function edit_dd($id){
+        $this->load->model("Mdd");
+        $data['dd'] = $this->Mdd->getById($id);
+        $this->load->view("admin/s_edit_dd_admin_view", $data);
     }
 
-    public function pro_edit_dddl(){
-
+    public function pro_edit_dd($id){
+        //Kiểm tra bằng form validation
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('ten', 'Tên', 'required');
+        $this->form_validation->set_rules('td', 'Tiêu đề', 'required');
+        $this->form_validation->set_rules('nd', 'Nội dung', 'required');
+        $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
+        if($this->form_validation->run() == FALSE){
+            $this->edit_dd($id);
+        }
+        else{
+            $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
+            $td = isset($_POST['td']) ? $_POST['td'] : "";
+            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+            $link = isset($_POST['link']) ? $_POST['link'] : "";
+            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+            $this->load->model("Mdd");
+            $this->Mdd->edit($id, $ten, $link, $td, $nd, $loai);
+            $this->get_list_dd();
+        }
     }
 
-    public function delete_dddl($id){
-        $this->load->model("Mdddl");
-        $this->Mdddl->deleteById($id);
-        redirect(base_url() . "index.php/admin/get_list_dddl");
+    public function delete_dd($id){
+        $this->load->model("Mdd");
+        $this->Mdd->deleteById($id);
+        redirect(base_url() . "index.php/admin/get_list_dd");
     }
 
-    public function get_list_dddl_s(){
+    public function get_list_dd_s(){
         if (isset($_POST['search'])){
             $s = $_POST['search'];
             $this->session->set_userdata('search', $s);
@@ -195,15 +213,15 @@ class Admin extends CI_Controller{
             $s=$this->session->userdata('search');
         }
         $s = trim(htmlspecialchars(addslashes($s)));
-        $this->load->model("Mdddl");
-        $config['total_rows'] = $this->Mdddl->countAllS($s);
-        $config['base_url'] = base_url()."index.php/admin/get_list_dddl_s";
+        $this->load->model("Mdd");
+        $config['total_rows'] = $this->Mdd->countAllS($s);
+        $config['base_url'] = base_url()."index.php/admin/get_list_dd_s";
         $config['per_page'] = 5;
 
         $start=$this->uri->segment(3);
         $this->load->library('pagination', $config);
-        $data['listdddl']= $this->Mdddl->getListS($start, $config['per_page'],$s);
-        $this->load->view("admin/get_list_dddl_admin_view", $data);
+        $data['listdd']= $this->Mdd->getListS($start, $config['per_page'],$s);
+        $this->load->view("admin/get_list_dd_admin_view", $data);
     }
 
     //DV
@@ -220,19 +238,57 @@ class Admin extends CI_Controller{
     }
 
     public function add_dv(){
-
+        $this->load->view("admin/s_add_dv_admin_view");
     }
 
     public function pro_add_dv(){
-
+        //Kiểm tra bằng form validation
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('ten', 'Tên', 'required');
+        $this->form_validation->set_rules('td', 'Tiêu đề', 'required');
+        $this->form_validation->set_rules('nd', 'Nội dung', 'required');
+        $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
+        if($this->form_validation->run() == FALSE){
+            $this->add_dv();
+        }
+        else{
+            $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
+            $td = isset($_POST['td']) ? $_POST['td'] : "";
+            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+            $link = isset($_POST['link']) ? $_POST['link'] : "";
+            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+            $this->load->model("Mdv");
+            $this->Mdv->add($ten, $link, $td, $nd, $loai);
+            $this->get_list_dv();
+        }
     }
 
-    public function edit_dv(){
-
+    public function edit_dv($id){
+        $this->load->model("Mdv");
+        $data['dv'] = $this->Mdv->getById($id);
+        $this->load->view("admin/s_edit_dv_admin_view", $data);
     }
 
-    public function pro_edit_dv(){
-
+    public function pro_edit_dv($id){
+        //Kiểm tra bằng form validation
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('ten', 'Tên', 'required');
+        $this->form_validation->set_rules('td', 'Tiêu đề', 'required');
+        $this->form_validation->set_rules('nd', 'Nội dung', 'required');
+        $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
+        if($this->form_validation->run() == FALSE){
+            $this->edit_dv($id);
+        }
+        else{
+            $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
+            $td = isset($_POST['td']) ? $_POST['td'] : "";
+            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+            $link = isset($_POST['link']) ? $_POST['link'] : "";
+            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+            $this->load->model("Mdv");
+            $this->Mdv->edit($id, $ten, $link, $td, $nd, $loai);
+            $this->get_list_dv();
+        }
     }
 
     public function delete_dv($id){

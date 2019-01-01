@@ -13,9 +13,9 @@ class Bang_xep_hang extends CI_Controller{
     }
 
     public function index(){
-        $this->load->model("Mdddl");
+        $this->load->model("Mdd");
         $this->load->model("Mdv");
-        $data['listdlbxhtop6'] = $this->Mdddl->getListBXH(0,6);
+        $data['listddbxhtop6'] = $this->Mdd->getListBXH(0,6);
         $data['listdvbxhtop6'] = $this->Mdv->getListBXH(0,6);
         $this->load->view('site/bang_xep_hang_site_view', $data);
     }

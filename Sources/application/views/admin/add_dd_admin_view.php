@@ -1,8 +1,8 @@
 <div class="content">
     <div class="col-md-6 add-dm">
-        <h4 class="text-center"><b>Thêm Dịch Vụ</b></h4>
+        <h4 class="text-center"><b>Thêm Địa Điểm</b></h4>
     </div>
-    <form method="post" action="<?php echo base_url();?>index.php/admin/pro_add_dv">
+    <form method="post" action="<?php echo base_url();?>index.php/admin/pro_add_dd">
         <div class="form">
             <table class="table">
                 <tr>
@@ -24,8 +24,8 @@
                 <tr>
                     <td><p>Lựa chọn danh mục</p></td>
                     <td><select name="loai" class="form-control">
-                            <option value="Khách Sạn">Khách Sạn</option>
-                            <option value="Phương Tiện">Phương Tiện</option>
+                            <option value="Trong Nước">Trong Nước</option>
+                            <option value="Ngoài Nước">Ngoài Nước</option>
                         </select>
                     </td>
                 </tr>

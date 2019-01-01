@@ -7,7 +7,7 @@
             <table class="table">
                 <tr>
                     <td><P>Tiêu đề</p></td>
-                    <td><input type="text" name="td" class="form-control" value="<?php echo $cn['tieu_de_cn'];?>"></td>
+                    <td><textarea name="td" class="form-control" id="" cols="30" rows="1"><?php echo $cn['tieu_de_cn'];?></textarea></td>
                 </tr>
                 <tr>
                     <td><P>Nội dung</p></td>

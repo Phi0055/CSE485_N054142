@@ -4,8 +4,8 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col col-xs-6">
-                        <h3 class="panel-title">Bảng Dịch Vụ</h3>
-                        <form action="<?php echo base_url();?>index.php/admin/get_list_dv_s" method="post" class="form-inline mr-auto">
+                        <h3 class="panel-title">Bảng Địa Điểm</h3>
+                        <form action="<?php echo base_url();?>index.php/admin/get_list_dd_s" method="post" class="form-inline mr-auto">
                             <div class="form-control">
                                 <label for="search-field"></label>
                                 <input class="form-control search-field" type="text" placeholder="Search.." name="search">
@@ -22,7 +22,7 @@
                 <tr>
                     <th><em class="fa fa-cog"></em></th>
                     <th>ID</th>
-                    <th>Tên Dịch Vụ</th>
+                    <th>Tên Địa Điểm</th>
                     <th>Tiêu Đề</th>
                     <th>Nội Dung Chi Tiết</th>
                     <th>Loại</th>
@@ -30,21 +30,21 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($listdv as $row){?>
+                <?php foreach ($listdd as $row){?>
                     <tr class="w3-animate-left">
                         <td align="center">
-                            <a class="btn btn-default" href="<?php echo base_url();?>index.php/admin/edit_dv/<?php echo $row['id_dv'];?>"><em class="fa fa-pencil"></em></a>
+                            <a class="btn btn-default" href="<?php echo base_url();?>index.php/admin/edit_dd/<?php echo $row['id_dd'];?>"><em class="fa fa-pencil"></em></a>
                             <br>
-                            <a class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa không');" href="<?php echo base_url();?>index.php/admin/delete_dv/<?php echo $row['id_dv'];?>"><em class="fa fa-trash"></em></a>
+                            <a class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa không');" href="<?php echo base_url();?>index.php/admin/delete_dd/<?php echo $row['id_dd'];?>"><em class="fa fa-trash"></em></a>
                         </td>
-                        <td><?php echo $row['id_dv'];?></td>
-                        <td><?php echo $row['ten_dv'];?></td>
-                        <td><?php echo $row['tieu_de_dv'];?></td>
+                        <td><?php echo $row['id_dd'];?></td>
+                        <td><?php echo $row['ten_dd'];?></td>
+                        <td><?php echo $row['tieu_de_dd'];?></td>
                         <td><?php
-                            echo substr($row['noi_dung_dv'],0,70) . "  ...";
+                            echo substr($row['noi_dung_dd'],0,70) . "  ...";
                             ?></td>
                         <td><?php echo $row['loai'];?></td>
-                        <td><?php echo $row['link_dv'];?></td>
+                        <td><?php echo $row['link_dd'];?></td>
                     </tr>
                     <?php
                 }

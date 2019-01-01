@@ -18,12 +18,12 @@
                         </li>
                     <?php } ?>
                     <li class="dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Du Lịch</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Địa Điểm</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_bxh">Bảng Xếp Hạng</a>
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_moi">Mới</a>
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_trong_nuoc">Trong Nước</a>
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_ngoai_nuoc">Ngoài Nước</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_bxh">Bảng Xếp Hạng</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_moi">Mới</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_trong_nuoc">Trong Nước</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_ngoai_nuoc">Ngoài Nước</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -48,7 +48,7 @@
                         <div class="dropdown">
                         <a class="btn btn-light" style="color: black;"><i class="fa fa-user"></i><?php echo $this->session->userdata("ho_ten"); ?></a>
                             <div class="dropdown-content">
-                                <a href="<?php echo base_url() . "index.php/ttcn/index/" . $this->session->userdata("id_tk");?>"><i class="fa fa-cogs"></i>Setting</a>
+                                <a href="<?php echo base_url() . "index.php/site/ttcn/" . $this->session->userdata("id_tk");?>"><i class="fa fa-cogs"></i>Setting</a>
                                 <a href="<?php echo base_url();?>index.php/login/logout"><i class="fa fa-power-off"></i>Logout</a>
                             </div>
                         </div>
