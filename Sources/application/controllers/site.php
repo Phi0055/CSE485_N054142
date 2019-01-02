@@ -24,4 +24,10 @@ class Site extends CI_Controller{
         $this->load->view("site/s_blog_site_view");
     }
 
+    public function ttcn($id){
+        $this->load->model("Muser");
+        $data['user'] = $this->Muser->getById($id);
+        $this->load->view('site/s_ttcn_site_view', $data);
+    }
+
 }

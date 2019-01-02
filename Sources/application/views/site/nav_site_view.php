@@ -10,13 +10,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav nav-right">
+                    <?php
+                    //Nếu đăng nhập là Admin (hoặc NV)
+                    if ($this->session->userdata("cap_do") != 1 && $this->session->userdata("CheckLogin")){?>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="<?php echo base_url();?>index.php/admin">Home Admin</a>
+                        </li>
+                    <?php } ?>
                     <li class="dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Du Lịch</a>
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Địa Điểm</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_bxh">Bảng Xếp Hạng</a>
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_moi">Mới</a>
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_trong_nuoc">Trong Nước</a>
-                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/du_lich/view_ngoai_nuoc">Ngoài Nước</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_bxh">Bảng Xếp Hạng</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_moi">Mới</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_trong_nuoc">Trong Nước</a>
+                            <a class="dropdown-item" role="presentation" href="<?php echo base_url();?>index.php/dia_diem/view_ngoai_nuoc">Ngoài Nước</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -35,7 +42,23 @@
                     </li>
                 </ul>
                 <p class="ml-auto navbar-text actions">
-                    <a class="btn btn-light" role="button" id="btnDangNhap"><i class="fa fa-user"></i>Đăng Nhập</a>
+                    <?php
+                    //Nếu đã đăng nhập
+                    if ($this->session->userdata("CheckLogin")){ ?>
+                        <div class="dropdown">
+                        <a class="btn btn-light" style="color: black;"><i class="fa fa-user"></i><?php echo $this->session->userdata("ho_ten"); ?></a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo base_url() . "index.php/site/ttcn/" . $this->session->userdata("id_tk");?>"><i class="fa fa-cogs"></i>Setting</a>
+                                <a href="<?php echo base_url();?>index.php/login/logout"><i class="fa fa-power-off"></i>Logout</a>
+                            </div>
+                        </div>
+                    <?php }
+                    //Nếu chưa đăng nhập
+                    else{ ?>
+                        <div class="dropdown">
+                            <a class="btn btn-light btnDangNhap" style="color: black;"><i class="fa fa-user"></i>Đăng Nhập</a>
+                        </div>
+                    <?php } ?>
                     <a class="btn btn-light" role="button" href="<?php echo base_url();?>index.php/regist"><i class="fa fa-sign-in"></i>Đăng Ký</a>
                 </p>
             </div>

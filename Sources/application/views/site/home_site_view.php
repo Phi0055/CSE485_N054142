@@ -10,7 +10,7 @@ include_once "fix_dong_thang_mat_site_view.php";
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:10%">10%</div>
 </div>
 <?php
-include "list_dl_site_view.php";
+include "list_dd_site_view.php";
 ?>
 <div class="w3-light-grey container w3-animate-left">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>

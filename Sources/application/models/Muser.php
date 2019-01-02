@@ -26,7 +26,7 @@ class Muser extends CI_Model{
         $this->db->query("insert into tai_khoan(ten_dang_nhap, mat_khau) values('$tk', '$mk');");
         $data=$this->db->query("select id_tk from tai_khoan where id_tk >= all (select id_tk from tai_khoan);")->row_array();
         $id=$data['id_tk'];
-        $this->db->query("insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values($id,'$ht','$email',$ns,'$gt','$dc',$sdt);");
+        $this->db->query("insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values($id,'$ht','$email','$ns','$gt','$dc',$sdt);");
     }
 
     public function edit($id, $mk, $ht, $gt, $email, $ns, $dc, $sdt){
@@ -43,6 +43,29 @@ class Muser extends CI_Model{
         $query = $this->db->query("select * from tai_khoan where ten_dang_nhap = '$tk' and mat_khau = '$mk';");
         if ($query->num_rows() > 0)return TRUE;
         return FALSE;
+    }
+
+    public function countAllS($s){
+        $query=$this->db->query("select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.cap_do <> 2 and (tk.ten_dang_nhap like '%$s%' OR tttk.ho_ten like '%$s%' OR tttk.email like '%$s%' OR tttk.dia_chi like '%$s%');");
+        return $query->num_rows();
+    }
+
+    public function getListS($start, $size, $s){
+        $start = isset($start)? $start : 0;
+        $query=$this->db->query("select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.cap_do <> 2 and (tk.ten_dang_nhap like '%$s%' OR tttk.ho_ten like '%$s%' OR tttk.email like '%$s%' OR tttk.dia_chi like '%$s%') limit $start , $size");
+        return $query->result_array();
+    }
+
+    public function checkLogin($tk, $mk){
+        $query=$this->db->query("select * from tai_khoan where ten_dang_nhap = '$tk' and mat_khau = '$mk';");
+        $ck = $query->num_rows();
+        if ($ck > 0)return true;
+        return false;
+    }
+
+    public function infLogin($tk, $mk){
+        $query=$this->db->query("select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.ten_dang_nhap = '$tk' and tk.mat_khau = '$mk';");
+        return $query->row_array();
     }
 
 }

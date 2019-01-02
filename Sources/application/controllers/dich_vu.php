@@ -16,6 +16,7 @@ class Dich_vu extends CI_Controller{
         $this->load->model("Mdv");
         $data['listdvkstop3'] = $this->Mdv->getListKSRad(0,3);
         $data['listdvpttop3'] = $this->Mdv->getListPTRad(0,3);
+        $data['listdvbxhtop3'] = $this->Mdv->getListBXH(0,3);
         $this->load->view('site/dich_vu_site_view', $data);
     }
 
@@ -38,9 +39,9 @@ class Dich_vu extends CI_Controller{
         $data['listdvtop4'] = $this->Mdv->getListPTRad(0, 4);
         $type = $this->Mdv->getTypeById($id);
         $data['listdvtop4'] = array();
-        if ($type['loai'] === "Phương tiện"){
+        if ($type['loai'] === "Phương Tiện"){
             $data['listdvtop4'] = $this->Mdv->getListPTRad(0,4);
-        }elseif ($type['loai'] === "khách sạn"){
+        }elseif ($type['loai'] === "Khách Sạn"){
             $data['listdvtop4'] = $this->Mdv->getListKSRad(0,4);
         }
         //Lấy comments
