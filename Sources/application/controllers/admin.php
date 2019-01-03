@@ -54,6 +54,7 @@ class Admin extends CI_Controller{
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
         $this->form_validation->set_rules('sdt', 'Số Điện Thoại', 'numeric');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->add_user();
         }
         else{
@@ -68,10 +69,11 @@ class Admin extends CI_Controller{
                 $sdt = isset($_POST['sdt']) ? $_POST['sdt'] : "";
                 $this->load->model("Muser");
                 $this->Muser->add($tk, $mk, $ht, $gt, $email, $ns, $dc, $sdt);
+                echo "<script>alert('Thêm Thành Công !!!')</script>";
                 $this->get_list_user();
             }
             catch(Exception $e){
-                echo "<script lang=\"js\">alert(\"Tài khoản đã tồn tại\");</script>";
+                echo "<script>alert('Tài Khoản Đã Tồn Tại !!!')</script>";
                 $this->add_user();
             }
         }
@@ -91,6 +93,7 @@ class Admin extends CI_Controller{
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
         $this->form_validation->set_rules('sdt', 'Số Điện Thoại', 'numeric');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->edit_user($id);
         }
         else{
@@ -103,14 +106,16 @@ class Admin extends CI_Controller{
             $sdt = isset($_POST['sdt']) ? $_POST['sdt'] : "";
             $this->load->model("Muser");
             $this->Muser->edit($id, $mk, $ht, $gt, $email, $ns, $dc, $sdt);
-            $this->get_list_user();
+            echo "<script>alert('Sửa Thành Công !!!')</script>";
+            $this->edit_user($id);
         }
     }
 
     public function delete_user($id){
         $this->load->model("Muser");
         $this->Muser->deleteById($id);
-        redirect(base_url() . "index.php/admin/get_list_user");
+        echo "<script>alert('Xóa Thành Công !!!')</script>";
+        $this->get_list_user();
     }
 
     public function get_list_user_s(){
@@ -155,19 +160,31 @@ class Admin extends CI_Controller{
         $this->form_validation->set_rules('ten', 'Tên', 'required');
         $this->form_validation->set_rules('td', 'Tiêu đề', 'required');
         $this->form_validation->set_rules('nd', 'Nội dung', 'required');
-        $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->add_dd();
         }
         else{
-            $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
-            $td = isset($_POST['td']) ? $_POST['td'] : "";
-            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
-            $link = isset($_POST['link']) ? $_POST['link'] : "";
-            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
-            $this->load->model("Mdd");
-            $this->Mdd->add($ten, $link, $td, $nd, $loai);
-            $this->get_list_dd();
+            $config['upload_path']          = './assets/img/dd/';
+            $config['allowed_types']        = 'gif|jpg|jpeg|png';
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('link'))
+            {
+                echo "<script>alert('Lỗi Upload File !!!')</script>";
+                $this->add_dd();
+            }
+            else
+            {
+                $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
+                $td = isset($_POST['td']) ? $_POST['td'] : "";
+                $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+                $link = $this->upload->data('file_name');
+                $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+                $this->load->model("Mdd");
+                $this->Mdd->add($ten, $link, $td, $nd, $loai);
+                echo "<script>alert('Thêm Thành Công !!!')</script>";
+                $this->get_list_dd();
+            }
         }
     }
 
@@ -183,26 +200,38 @@ class Admin extends CI_Controller{
         $this->form_validation->set_rules('ten', 'Tên', 'required');
         $this->form_validation->set_rules('td', 'Tiêu đề', 'required');
         $this->form_validation->set_rules('nd', 'Nội dung', 'required');
-        $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->edit_dd($id);
         }
         else{
-            $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
-            $td = isset($_POST['td']) ? $_POST['td'] : "";
-            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
-            $link = isset($_POST['link']) ? $_POST['link'] : "";
-            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
-            $this->load->model("Mdd");
-            $this->Mdd->edit($id, $ten, $link, $td, $nd, $loai);
-            $this->get_list_dd();
+            $config['upload_path']          = './assets/img/dd/';
+            $config['allowed_types']        = 'gif|jpg|jpeg|png';
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('link'))
+            {
+                echo "<script>alert('Lỗi Upload File !!!')</script>";
+                $this->edit_dd($id);
+            }
+            else {
+                $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
+                $td = isset($_POST['td']) ? $_POST['td'] : "";
+                $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+                $link = $this->upload->data('file_name');
+                $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+                $this->load->model("Mdd");
+                $this->Mdd->edit($id, $ten, $link, $td, $nd, $loai);
+                echo "<script>alert('Sửa Thành Công !!!')</script>";
+                $this->edit_dd($id);
+            }
         }
     }
 
     public function delete_dd($id){
         $this->load->model("Mdd");
         $this->Mdd->deleteById($id);
-        redirect(base_url() . "index.php/admin/get_list_dd");
+        echo "<script>alert('Xóa Thành Công !!!')</script>";
+        $this->get_list_dd();
     }
 
     public function get_list_dd_s(){
@@ -247,19 +276,31 @@ class Admin extends CI_Controller{
         $this->form_validation->set_rules('ten', 'Tên', 'required');
         $this->form_validation->set_rules('td', 'Tiêu đề', 'required');
         $this->form_validation->set_rules('nd', 'Nội dung', 'required');
-        $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->add_dv();
         }
         else{
-            $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
-            $td = isset($_POST['td']) ? $_POST['td'] : "";
-            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
-            $link = isset($_POST['link']) ? $_POST['link'] : "";
-            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
-            $this->load->model("Mdv");
-            $this->Mdv->add($ten, $link, $td, $nd, $loai);
-            $this->get_list_dv();
+            $config['upload_path']          = './assets/img/dv/';
+            $config['allowed_types']        = 'gif|jpg|jpeg|png';
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('link'))
+            {
+                echo "<script>alert('Lỗi Upload File !!!')</script>";
+                $this->add_dv();
+            }
+            else
+            {
+                $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
+                $td = isset($_POST['td']) ? $_POST['td'] : "";
+                $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+                $link = $this->upload->data('file_name');
+                $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+                $this->load->model("Mdv");
+                $this->Mdv->add($ten, $link, $td, $nd, $loai);
+                echo "<script>alert('Thêm Thành Công !!!')</script>";
+                $this->get_list_dv();
+            }
         }
     }
 
@@ -275,26 +316,38 @@ class Admin extends CI_Controller{
         $this->form_validation->set_rules('ten', 'Tên', 'required');
         $this->form_validation->set_rules('td', 'Tiêu đề', 'required');
         $this->form_validation->set_rules('nd', 'Nội dung', 'required');
-        $this->form_validation->set_rules('link', 'Hình ảnh', 'required');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->edit_dv($id);
         }
         else{
-            $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
-            $td = isset($_POST['td']) ? $_POST['td'] : "";
-            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
-            $link = isset($_POST['link']) ? $_POST['link'] : "";
-            $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
-            $this->load->model("Mdv");
-            $this->Mdv->edit($id, $ten, $link, $td, $nd, $loai);
-            $this->get_list_dv();
+            $config['upload_path']          = './assets/img/dv/';
+            $config['allowed_types']        = 'gif|jpg|jpeg|png';
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('link'))
+            {
+                echo "<script>alert('Lỗi Upload File !!!')</script>";
+                $this->edit_dv($id);
+            }
+            else {
+                $ten = isset($_POST['ten']) ? $_POST['ten'] : "";
+                $td = isset($_POST['td']) ? $_POST['td'] : "";
+                $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+                $link = $this->upload->data('file_name');
+                $loai = isset($_POST['loai']) ? $_POST['loai'] : "";
+                $this->load->model("Mdv");
+                $this->Mdv->edit($id, $ten, $link, $td, $nd, $loai);
+                echo "<script>alert('Sửa Thành Công !!!')</script>";
+                $this->edit_dv($id);
+            }
         }
     }
 
     public function delete_dv($id){
         $this->load->model("Mdv");
         $this->Mdv->deleteById($id);
-        redirect(base_url() . "index.php/admin/get_list_dv");
+        echo "<script>alert('Xóa Thành Công !!!')</script>";
+        $this->get_list_dv();
     }
 
     public function get_list_dv_s(){
@@ -304,8 +357,6 @@ class Admin extends CI_Controller{
         }else{
             $s=$this->session->userdata('search');
         }
-        //$s = isset($_POST['search']) ? $_POST['search'] : "";
-        //echo $s;
         $s = trim(htmlspecialchars(addslashes($s)));
         $this->load->model("Mdv");
         $config['total_rows'] = $this->Mdv->countAllS($s);
@@ -340,17 +391,28 @@ class Admin extends CI_Controller{
         $this->load->library('form_validation');
         $this->form_validation->set_rules('td', 'Tiêu Đề', 'required');
         $this->form_validation->set_rules('nd', 'Nội Dung', 'required');
-        $this->form_validation->set_rules('link', 'Hình Ảnh', 'required');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->add_cn();
         }
         else {
-            $this->load->model("Mcn");
-            $td = isset($_POST['td']) ? $_POST['td'] : "";
-            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
-            $link = isset($_POST['link']) ? $_POST['link'] : "";
-            $this->Mcn->add($td, $nd, $link);
-            $this->get_list_cn();
+            $config['upload_path']          = './assets/img/cn/';
+            $config['allowed_types']        = 'gif|jpg|jpeg|png';
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('link'))
+            {
+                echo "<script>alert('Lỗi Upload File !!!')</script>";
+                $this->add_cn();
+            }
+            else {
+                $this->load->model("Mcn");
+                $td = isset($_POST['td']) ? $_POST['td'] : "";
+                $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+                $link = $this->upload->data('file_name');
+                $this->Mcn->add($td, $nd, $link);
+                echo "<script>alert('Thêm Thành Công !!!')</script>";
+                $this->get_list_cn();
+            }
         }
     }
 
@@ -365,24 +427,36 @@ class Admin extends CI_Controller{
         $this->load->library('form_validation');
         $this->form_validation->set_rules('td', 'Tiêu Đề', 'required');
         $this->form_validation->set_rules('nd', 'Nội Dung', 'required');
-        $this->form_validation->set_rules('link', 'Hình Ảnh', 'required');
         if($this->form_validation->run() == FALSE){
+            echo "<script>alert('Lỗi Nhập !!!')</script>";
             $this->edit_cn($id);
         }
         else {
-            $this->load->model("Mcn");
-            $td = isset($_POST['td']) ? $_POST['td'] : "";
-            $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
-            $link = isset($_POST['link']) ? $_POST['link'] : "";
-            $this->Mcn->edit($id, $td, $nd, $link);
-            $this->get_list_cn();
+            $config['upload_path']          = './assets/img/cn/';
+            $config['allowed_types']        = 'gif|jpg|jpeg|png';
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('link'))
+            {
+                echo "<script>alert('Lỗi Upload File !!!')</script>";
+                $this->edit_cn($id);
+            }
+            else {
+                $this->load->model("Mcn");
+                $td = isset($_POST['td']) ? $_POST['td'] : "";
+                $nd = isset($_POST['nd']) ? $_POST['nd'] : "";
+                $link = $this->upload->data('file_name');
+                $this->Mcn->edit($id, $td, $nd, $link);
+                echo "<script>alert('Sửa Thành Công !!!')</script>";
+                $this->edit_cn($id);
+            }
         }
     }
 
     public function delete_cn($id){
         $this->load->model("Mcn");
         $this->Mcn->deleteById($id);
-        redirect(base_url() . "index.php/admin/get_list_cn");
+        echo "<script>alert('Xóa Thành Công !!!')</script>";
+        $this->get_list_cn();
     }
 
     public function get_list_cn_s(){

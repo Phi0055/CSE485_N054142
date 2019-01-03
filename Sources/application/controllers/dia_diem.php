@@ -96,4 +96,33 @@ class Dia_diem extends CI_Controller{
         $data['comments'] = $this->Mdd->getComments($id);
         $this->load->view("site/s_detail_dd_site_view", $data);
     }
+
+    public function pro_so_sao(){
+        $so_sao = isset($_POST['so_sao']) ? $_POST['so_sao'] : "";
+        $id_dd = isset($_POST['id_dd']) ? $_POST['id_dd'] : "";
+        $id_tk =  $this->session->userdata("id_tk");
+        $this->load->model("Mdd");
+        //Nếu lần đầu đánh giá
+        if (!$this->Mdd->checkExists($id_dd, $id_tk)){
+            $this->Mdd->add_so_sao($id_dd, $id_tk, $so_sao);
+        }
+        else{
+            //Nếu đánh giá lại
+            $this->Mdd->edit_so_sao($id_dd, $id_tk, $so_sao);
+        }
+        echo "<script>alert('Đánh Giá Thành Công !!!');</script>";
+        $this->view_detail($id_dd);
+    }
+
+    public function pro_binh_luan(){
+        $binh_luan = isset($_POST['binh_luan']) ? $_POST['binh_luan'] : "";
+        $id_dd = isset($_POST['id_dd']) ? $_POST['id_dd'] : "";
+        $id_tk =  $this->session->userdata("id_tk");
+        $t=time();
+        $thoi_gian = date("Y-m-d H:m:s",$t);
+        $this->load->model("Mdd");
+        $this->Mdd->add_binh_luan($id_dd, $id_tk, $binh_luan, $thoi_gian);
+        $this->view_detail($id_dd);
+    }
+
 }

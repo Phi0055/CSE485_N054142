@@ -39,9 +39,9 @@ class Dich_vu extends CI_Controller{
         $data['listdvtop4'] = $this->Mdv->getListPTRad(0, 4);
         $type = $this->Mdv->getTypeById($id);
         $data['listdvtop4'] = array();
-        if ($type['loai'] === "Phương tiện"){
+        if ($type['loai'] === "Phương Tiện"){
             $data['listdvtop4'] = $this->Mdv->getListPTRad(0,4);
-        }elseif ($type['loai'] === "khách sạn"){
+        }elseif ($type['loai'] === "Khách Sạn"){
             $data['listdvtop4'] = $this->Mdv->getListKSRad(0,4);
         }
         //Lấy comments
@@ -83,6 +83,34 @@ class Dich_vu extends CI_Controller{
         $this->load->library('pagination', $config);
         $data['listdvbxh'] = $this->Mdv->getListBXH($start, $config['per_page']);
         $this->load->view("site/dich_vu_bxh_site_view", $data);
+    }
+
+    public function pro_so_sao(){
+        $so_sao = isset($_POST['so_sao']) ? $_POST['so_sao'] : "";
+        $id_dv = isset($_POST['id_dv']) ? $_POST['id_dv'] : "";
+        $id_tk =  $this->session->userdata("id_tk");
+        $this->load->model("Mdv");
+        //Nếu lần đầu đánh giá
+        if (!$this->Mdv->checkExists($id_dv, $id_tk)){
+            $this->Mdv->add_so_sao($id_dv, $id_tk, $so_sao);
+        }
+        else{
+            //Nếu đánh giá lại
+            $this->Mdv->edit_so_sao($id_dv, $id_tk, $so_sao);
+        }
+        echo "<script>alert('Đánh Giá Thành Công !!!');</script>";
+        $this->view_detail($id_dv);
+    }
+
+    public function pro_binh_luan(){
+        $binh_luan = isset($_POST['binh_luan']) ? $_POST['binh_luan'] : "";
+        $id_dv = isset($_POST['id_dv']) ? $_POST['id_dv'] : "";
+        $id_tk =  $this->session->userdata("id_tk");
+        $t=time();
+        $thoi_gian = date("Y-m-d H:m:s",$t);
+        $this->load->model("Mdv");
+        $this->Mdv->add_binh_luan($id_dv, $id_tk, $binh_luan, $thoi_gian);
+        $this->view_detail($id_dv);
     }
 
 }

@@ -2,7 +2,7 @@
     <div class="col-md-6 add-dm">
         <h4 class="text-center"><b>Thêm Dịch Vụ</b></h4>
     </div>
-    <form method="post" action="<?php echo base_url();?>index.php/admin/pro_add_dv">
+    <?php echo form_open_multipart('/admin/pro_add_dv'); ?>
         <div class="form">
             <table class="table">
                 <tr>
@@ -19,7 +19,7 @@
                 </tr>
                 <tr>
                     <td><P>Hình ảnh</p></td>
-                    <td><input type="text" name="link" class="form-control"></td>
+                    <td><input type="file" name="link" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><p>Lựa chọn danh mục</p></td>

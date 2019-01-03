@@ -5,7 +5,7 @@
         <p class="text-left"><i class="fa fa-user fa-4x" style="color: #bd2130" aria-hidden="true"></i></p>
     </div>
     <div class="col-lg-3 col-md-6 me-db-item" style="background: linear-gradient(214.27deg, rgba(0, 0, 255, 0.5) 24.07%, rgba(255, 255, 255, 0) 100%), #FFFFE0;">
-        <h4 class="text-right">Tổng Số Địa Điểm Du Lịch</h4>
+        <h4 class="text-right">Tổng Số Địa Điểm</h4>
         <h4 class="text-right"><?php echo $countDD;?></h4>
         <p class="text-left"><i class="fa fa-table fa-4x" style="color: blue" aria-hidden="true"></i></p>
     </div>

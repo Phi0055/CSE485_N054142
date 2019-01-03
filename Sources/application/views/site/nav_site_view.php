@@ -10,6 +10,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav nav-right">
+                    <li class="d-flex justify-content-center">
+                        <form action="<?php echo base_url() . 'index.php/home/get_list_search'?>" method="post" class="searchbar">
+                            <input class="search_input" type="text" name="s_search" placeholder="Search...">
+                            <input class="search_icon btn-primary" type="submit" value="O" id="OK" name="OK">
+                        </form>
+                    </li>
                     <?php
                     //Nếu đăng nhập là Admin (hoặc NV)
                     if ($this->session->userdata("cap_do") != 1 && $this->session->userdata("CheckLogin")){?>
@@ -48,8 +54,8 @@
                         <div class="dropdown">
                         <a class="btn btn-light" style="color: black;"><i class="fa fa-user"></i><?php echo $this->session->userdata("ho_ten"); ?></a>
                             <div class="dropdown-content">
-                                <a href="<?php echo base_url() . "index.php/site/ttcn/" . $this->session->userdata("id_tk");?>"><i class="fa fa-cogs"></i>Setting</a>
-                                <a href="<?php echo base_url();?>index.php/login/logout"><i class="fa fa-power-off"></i>Logout</a>
+                                <a href="<?php echo base_url() . "index.php/home/ttcn/" . $this->session->userdata("id_tk");?>"><i class="fa fa-cogs"></i>Setting</a>
+                                <a href="<?php echo base_url();?>index.php/home/logout"><i class="fa fa-power-off"></i>Logout</a>
                             </div>
                         </div>
                     <?php }
@@ -57,9 +63,9 @@
                     else{ ?>
                         <div class="dropdown">
                             <a class="btn btn-light btnDangNhap" style="color: black;"><i class="fa fa-user"></i>Đăng Nhập</a>
+                            <a class="btn btn-light" role="button" href="<?php echo base_url();?>index.php/home/register"><i class="fa fa-sign-in"></i>Đăng Ký</a>
                         </div>
                     <?php } ?>
-                    <a class="btn btn-light" role="button" href="<?php echo base_url();?>index.php/regist"><i class="fa fa-sign-in"></i>Đăng Ký</a>
                 </p>
             </div>
         </div>

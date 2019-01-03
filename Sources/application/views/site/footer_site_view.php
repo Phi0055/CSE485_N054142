@@ -5,11 +5,11 @@
                 <h3><a href="#">Traveling <img src="<?php echo base_url();?>assets/img/logo.png" width="100px"></a></h3>
                 <p class="links"><a href="<?php echo base_url();?>">Home</a>
                     <strong> · </strong>
-                    <a href="<?php echo base_url();?>index.php/Site/blog">Blog</a>
+                    <a href="<?php echo base_url();?>index.php/home/blog">Blog</a>
                     <strong> · </strong>
-                    <a href="<?php echo base_url();?>index.php/Site/about">About</a>
+                    <a href="<?php echo base_url();?>index.php/home/about">About</a>
                     <strong> · </strong>
-                    <a href="<?php echo base_url();?>index.php/Site/contact">Contact</a>
+                    <a href="<?php echo base_url();?>index.php/home/contact">Contact</a>
                 </p>
                 <p class="company-name">Traveling © 2018 </p>
             </div>

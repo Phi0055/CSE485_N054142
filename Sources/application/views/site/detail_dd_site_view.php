@@ -19,7 +19,13 @@
                     <i class="fa fa-star-o"></i>
                     <?php echo $star;?>/5 trong <?php echo $counts['counts'];?> đánh giá
                 </p>
-                <button class="btn btn-primary" type="button">Gửi đánh giá của bạn</button>
+                <?php if ($this->session->userdata("CheckLogin")){?>
+                    <form action="<?php echo base_url() . 'index.php/dia_diem/pro_so_sao';?>" method="post">
+                        <input type="number" name="so_sao" min="1" max="5" value="5">
+                        <input type="hidden" value="<?php echo $dd['id_dd'];?>" name="id_dd">
+                        <input class="btn-primary" type="submit" value="Gửi đánh giá của bạn">
+                    </form>
+                <?php }?>
             </div>
         </div>
 
@@ -34,7 +40,7 @@
                         <li class="list-group-item">
                             <?php foreach ($comments as $row){ ?>
                             <p><img src="<?php echo base_url();?>assets/img/user-photo4.jpg" width="20px" height="20px">
-                                <b><?php echo $row['ho_ten'];?></b> : <?php echo $row['binh_luan_dd'];?></p>
+                                <?php echo $row['thoi_gian'];?>: <b><?php echo $row['ho_ten'];?></b> : <?php echo $row['binh_luan_dd'];?></p>
                             <?php } ?>
                         </li>
                     </ul>
@@ -45,10 +51,15 @@
         <br>
 
         <div>
-            <textarea name="" id="" cols="70" rows="3"></textarea>
-            <br>
-            <br>
-            <button class="btn btn-primary" type="button">Bình Luận</button>
+            <?php if ($this->session->userdata("CheckLogin")){?>
+                <form action="<?php echo base_url() . 'index.php/dia_diem/pro_binh_luan';?>" method="post">
+                    <textarea name="binh_luan" class="col-9" cols="70" rows="1"></textarea>
+                    <div class="col-3 form-group pull-right">
+                        <input type="hidden" value="<?php echo $dd['id_dd'];?>" name="id_dd">
+                        <input type="submit" name="ok" value="Bình Luận" class="btn btn-primary btn-block">
+                    </div>
+                </form>
+            <?php }?>
         </div>
 
         <div class="more-projects">

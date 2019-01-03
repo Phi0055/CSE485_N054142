@@ -2,8 +2,7 @@
     <div class="col-md-6 add-dm">
         <h4 class="text-center"><b>Sửa Địa Điểm : <?php echo $dd['id_dd'];?></b></h4>
     </div>
-    <div class="clearfix"></div>
-    <form method="post" action="<?php echo base_url() . 'index.php/admin/pro_edit_dd/' . $dd['id_dd'];?>">
+    <?php echo form_open_multipart('/admin/pro_edit_dd/' . $dd['id_dd']); ?>
         <div class="form">
             <table class="table">
                 <tr>
@@ -20,7 +19,7 @@
                 </tr>
                 <tr>
                     <td><P>Hình ảnh</p></td>
-                    <td><input type="text" name="link" class="form-control" value="<?php echo $dd['link_dd'];?>"></td>
+                    <td><input type="file" name="link" class="form-control"></td>
                 </tr>
                 <tr>
                     <td><p>Lựa chọn danh mục</p></td>
