@@ -21,4 +21,10 @@ $(document).ready(function () {
         $(".me-open-button").show();
     });
 
+    //Sửa đổi thông tin cá nhân
+    $(".hide-update").hide();
+    $("#me-setting-ttcn").click(function () {
+        $(".hide-update").toggle();
+    });
+
 });

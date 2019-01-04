@@ -267,3 +267,40 @@ Footer{
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+/*search*/
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    background-color: #007bff;
+    border-radius: 30px;
+}
+
+.search_input{
+    color: white;
+    border: 0;
+    background: none;
+    width: 0px;
+    caret-color:transparent;
+    transition: width 2s linear;
+}
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 250px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+}

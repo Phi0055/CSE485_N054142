@@ -57,7 +57,8 @@ class Mdd extends CI_Model{
 
     public function deleteById($id){
         $this->db->query("delete from ctdd where id_dd = $id;");
-        $this->db->query("delete from ctdgdd where id_dd = $id;");
+        $this->db->query("delete from dgsdd where id_dd = $id;");
+        $this->db->query("delete from dgcdd where id_dd = $id;");
         $this->db->query("delete from dia_diem where id_dd = $id;");
     }
 
@@ -72,33 +73,33 @@ class Mdd extends CI_Model{
     }
 
     public function getSumStarById($id){
-        $query=$this->db->query("select sum(so_sao_dd) as sums from ctdgdd where id_dd = $id");
+        $query=$this->db->query("select sum(so_sao_dd) as sums from dgsdd where id_dd = $id");
         return $query->row_array();
     }
 
     public function getCountStarById($id){
-        $query=$this->db->query("select count(so_sao_dd) as counts from ctdgdd where id_dd = $id");
+        $query=$this->db->query("select count(so_sao_dd) as counts from dgsdd where id_dd = $id");
         return $query->row_array();
     }
 
     public function getComments($id){
-        $query = $this->db->query("select * from ctdgdd ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dd = $id;");
+        $query = $this->db->query("select * from dgcdd ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dd = $id;");
         return $query->result_array();
     }
 
     public function countBXH(){
-        $query=$this->db->query("select * from dia_diem dd join ctdd ct on dd.id_dd = ct.id_dd join ctdgdd ctdg on ctdg.id_dd = dd.id_dd group by dd.id_dd order by sum(so_sao_dd)/count(so_sao_dd) desc, count(so_sao_dd) desc;");
+        $query=$this->db->query("select * from dia_diem dd join ctdd ct on dd.id_dd = ct.id_dd join dgsdd dgs on dgs.id_dd = dd.id_dd group by dd.id_dd order by sum(so_sao_dd)/count(so_sao_dd) desc, count(so_sao_dd) desc;");
         return $query->num_rows();
     }
 
     public function getListBXH($start, $size){
         $start = isset($start)? $start : 0;
-        $query = $this->db->query("select * from dia_diem dd join ctdd ct on dd.id_dd = ct.id_dd join ctdgdd ctdg on ctdg.id_dd = dd.id_dd group by dd.id_dd order by sum(so_sao_dd)/count(so_sao_dd) desc, count(so_sao_dd) desc limit $start , $size");
+        $query = $this->db->query("select * from dia_diem dd join ctdd ct on dd.id_dd = ct.id_dd join dgsdd dgs on dgs.id_dd = dd.id_dd group by dd.id_dd order by sum(so_sao_dd)/count(so_sao_dd) desc, count(so_sao_dd) desc limit $start , $size");
         return $query->result_array();
     }
 
     public function countAllS($s){
-        $query=$this->db->query("select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where dd.ten_dd like '%$s%' OR ct.tieu_de_dd like '%$s%' OR ct.noi_dung_dd like '$s%';");
+        $query=$this->db->query("select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where dd.ten_dd like '%$s%' OR ct.tieu_de_dd like '%$s%' OR ct.noi_dung_dd like '%$s%';");
         return $query->num_rows();
     }
 
@@ -118,6 +119,24 @@ class Mdd extends CI_Model{
     public function edit($id, $ten, $link, $td, $nd, $loai){
         $this->db->query("update dia_diem set ten_dd = '$ten', link_dd = '$link' where id_dd = $id;");
         $this->db->query("update ctdd set tieu_de_dd = '$td', noi_dung_dd = '$nd', loai = '$loai' where id_dd = $id;");
+    }
+
+    public function add_so_sao($id_dd, $id_tk, $so_sao){
+        $this->db->query("INSERT INTO dgsdd (id_dd, id_tk, so_sao_dd) VALUES($id_dd, $id_tk, $so_sao);");
+    }
+
+    public function add_binh_luan($id_dd, $id_tk, $binh_luan, $thoi_gian){
+        $this->db->query("INSERT INTO dgcdd (id_dd, id_tk, binh_luan_dd, thoi_gian) VALUES ($id_dd, $id_tk, '$binh_luan', '$thoi_gian');");
+    }
+
+    public function checkExists($id_dd, $id_tk){
+        $query = $this->db->query("select * from dgsdd where id_dd = $id_dd and id_tk = $id_tk;");
+        if ($query->num_rows() > 0)return TRUE;
+        return FALSE;
+    }
+
+    public function edit_so_sao($id_dd, $id_tk, $so_sao){
+        $this->db->query("update dgsdd set so_sao_dd = $so_sao where id_dd = $id_dd and id_tk = $id_tk;");
     }
 
 }

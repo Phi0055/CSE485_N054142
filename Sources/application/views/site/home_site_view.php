@@ -28,7 +28,7 @@ include "list_dv_site_view.php";
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
 </div>
 <?php
-include "live_chat_site_view.php";
+//include "live_chat_site_view.php";
 include "footer_site_view.php";
 include_once "foot_site_view.php";
 ?>

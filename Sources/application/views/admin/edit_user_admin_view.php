@@ -2,6 +2,10 @@
     <form action="<?php echo base_url();?>index.php/admin/pro_edit_user/<?php echo $user['id_tk'];?>" method="post" class="custom-form" style="padding: 0; margin: 0; width: 100%">
         <h1>Sửa Thành Viên</h1>
         <div class="form-row form-group">
+            <div class="col-sm-4 label-column"><label class="col-form-label">ID</label></div>
+            <div class="col-sm-6 input-column"><input name="id" class="form-control" type="text" value="<?php echo $user['id_tk'];?>" readonly></div>
+        </div>
+        <div class="form-row form-group">
             <div class="col-lg-4 col-md-4 label-column"><label class="col-form-label" for="name-input-field">Tên Đăng Nhập</label></div>
             <div class="col-lg-7 col-md-7 input-column"><input class="form-control" type="text" name="tk" readonly value="<?php echo $user['ten_dang_nhap'];?>"></div>
         </div>

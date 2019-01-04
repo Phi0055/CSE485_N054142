@@ -7,12 +7,12 @@
         <li><a class="btn" href="<?php echo base_url();?>index.php/cam_nang"><i class="fa fa-bar-chart-o"></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">CẩmNang</p></div></a></li>
         <?php
         if ($this->session->userdata("CheckLogin")){?>
-            <li><a class="btn" href="<?php echo base_url() . "index.php/site/ttcn/" . $this->session->userdata("id_tk");?>" title="settings"><i class="fa fa-cogs"></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">Settings</p></div></a></li>
+            <li><a class="btn" href="<?php echo base_url() . "index.php/home/ttcn/" . $this->session->userdata("id_tk");?>" title="settings"><i class="fa fa-cogs"></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">Settings</p></div></a></li>
             <li><a class="btn" href="<?php echo base_url();?>index.php/login/logout"><i class="fa fa-power-off"></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">Logout</p></div></a></li>
         <?php }
         else{?>
-            <li><a class="btn btnDangNhap"><i class="fa fa-user"></i></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">ĐăngNhập</p></div></a></li>
-            <li><a class="btn" href="<?php echo base_url();?>index.php/regist"><i class="fa fa-sign-in"></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">ĐăngKý</p></div></a></li>
+            <li><a class="btn btnDangNhap"><i class="fa fa-user"></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">ĐăngNhập</p></div></a></li>
+            <li><a class="btn" href="<?php echo base_url();?>index.php/home/register"><i class="fa fa-sign-in"></i><div class="nt-tooltip"><p style="font-family:'Ubuntu Condensed', sans-serif;">ĐăngKý</p></div></a></li>
         <?php }?>
     </ul>
 </div>

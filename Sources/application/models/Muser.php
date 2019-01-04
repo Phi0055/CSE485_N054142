@@ -17,7 +17,7 @@ class Muser extends CI_Model{
 
     public function deleteById($id){
         $this->db->query("delete from ctdgdv where id_tk = $id;");
-        $this->db->query("delete from ctdgdddl where id_tk = $id;");
+        $this->db->query("delete from ctdgdd where id_tk = $id;");
         $this->db->query("delete from thong_tin_tai_khoan where id_tk = $id;");
         $this->db->query("delete from tai_khoan where id_tk = $id;");
     }

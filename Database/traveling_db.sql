@@ -34,14 +34,23 @@ loai text,
 foreign key(id_dd) references dia_diem(id_dd)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-create table ctdgdd(
+create table dgsdd(
 id_dd int,
 id_tk int,
 so_sao_dd int,
-binh_luan_dd text,
 foreign key(id_dd) references dia_diem(id_dd),
 foreign key(id_tk) references tai_khoan(id_tk),
-primary key (id_dd,id_tk,so_sao_dd)
+primary key (id_dd,id_tk)
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+create table dgcdd(
+id_dd int,
+id_tk int,
+binh_luan_dd text,
+thoi_gian datetime,
+foreign key(id_dd) references dia_diem(id_dd),
+foreign key(id_tk) references tai_khoan(id_tk),
+primary key (id_dd,id_tk,thoi_gian)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 create table dich_vu(
@@ -58,14 +67,23 @@ loai text,
 foreign key(id_dv) references dich_vu(id_dv)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-create table ctdgdv(
+create table dgsdv(
 id_dv int ,
 id_tk int ,
-so_sao_dv int ,
-binh_luan_dv text,
+so_sao_dv int,
 foreign key(id_dv) references dich_vu(id_dv),
 foreign key(id_tk) references tai_khoan(id_tk),
-primary key (id_dv,id_tk,so_sao_dv)
+primary key (id_dv,id_tk)
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+create table dgcdv(
+id_dv int ,
+id_tk int ,
+binh_luan_dv text,
+thoi_gian datetime,
+foreign key(id_dv) references dich_vu(id_dv),
+foreign key(id_tk) references tai_khoan(id_tk),
+primary key (id_dv,id_tk,thoi_gian)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 create table cam_nang (
@@ -77,8 +95,7 @@ link_cn varchar (50),
 foreign key(id_tk) references tai_khoan(id_tk)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1;
 
-
-insert into tai_khoan(ten_dang_nhap, mat_khau, cap_do) values('admin', 'admin', 2);
+insert into tai_khoan(ten_dang_nhap, mat_khau, cap_do) values('admin', '123456', 2);
 insert into tai_khoan(ten_dang_nhap, mat_khau) values('khach1', '123456');
 insert into tai_khoan(ten_dang_nhap, mat_khau) values('khach2', '123456');
 insert into tai_khoan(ten_dang_nhap, mat_khau) values('khach3', '123456');
@@ -90,7 +107,7 @@ insert into tai_khoan(ten_dang_nhap, mat_khau) values('khach8', '123456');
 insert into tai_khoan(ten_dang_nhap, mat_khau) values('khach9', '123456');
 insert into tai_khoan(ten_dang_nhap, mat_khau) values('khach10', '123456');
 
-insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values(1,'admin','admin@gmail.com','1998-02-13','Nam','Hà Nội','0123456789');
+insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values(1,'Nguyễn Xuân Phi','admin@gmail.com','1998-02-13','Nam','Hà Nội','0123456789');
 insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values(2,'Nguyễn Thị A','a@gmail.com','1998-10-2','Nữ','Hà Nam','0923456719');
 insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values(3,'Nguyễn Văn JK','b@gmail.com','1997-02-26','Nam','Nam Định','0163456729');
 insert into thong_tin_tai_khoan(id_tk,ho_ten,email,ngay_sinh,gioi_tinh,dia_chi,sdt) values(4,'Nguyễn Văn GH','c@gmail.com','1998-02-18','Nam','Huế','0963453589');
@@ -276,9 +293,9 @@ insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (7,'Siem Reap, Campu
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (8,'Manuel Antonio, Costa Rica.' ,'Khách sạn Tulemar Bungalows & Villas nằm tại công viên quốc gia Manuel Antonio của Costa Rica. Hầu như tất cả mọi du khách khi đến Tulemar Bungalows & Villas đều đồng ý rằng kỳ nghỉ dưỡng tại đây là kỳ nghỉ tuyệt vời nhất mà họ từng có. Thật vậy, không gian kiến trúc tuyệt đẹp, chất lượng dịch vụ đều rất tuyệt vời. Tất cả những gì để nói về Tulemar Bungalows & Villas chỉ cần gói gọn trong một chữ "tuyệt" là đủ để hiểu tại sao đây lại nằm trong danh sách những khách sạn hàng đầu thế giới.','Khách Sạn');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (9,'JA Manafaru', 'Trên cả tuyệt vời. Tôi thực sự cảm nhận được sự nồng hậu và hiếu khách tại đây trong suốt thời gian lưu trú". Đó chính là một lời nhận xét của một du khách quốc tế khi kết thúc kỳ nghỉ dưỡng của mình tại khách sạn JA Manafaru. Tại thiên đường Maldives, du khách quốc tế có thể dễ dàng chọn cho mình một khách sạn 5 sao quốc tế nhưng để chọn được một khách sạn ưng ý nhất về chất lượng dịch vụ thì quả thực không dễ dàng. JA Manafaru là một trong số những khách sạn hàng đầu với chất lượng dịch vụ tốt tuyệt đối. Đến với JA Manafaru, du khách sẽ có được tất cả những gì mà mình mong muốn cho một chuyến du lịch hoàn hảo nhất.','Khách Sạn');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (10,'Bắc Ari','Lại là một khách sạn hàng đầu thuộc thiên đường Maldives. Trên đảo san hô vòng Bắc Ari, hãy tìm đến với khách sạn Kandolhu Maldives để được trải nghiệm những dịch vụ tốt nhất, chuyên nghiệp nhất từ sự phụ vụ nhiệt tình của nhân viên, dịch vụ khách hàng nhiệt tình 24/24, đồ ăn ngon cho đến sự êm ái của từng chiếc giường nghỉ hay bồn nước nóng. Thực sự, du khách quốc tế hầu như không thể chê bất cứ điều gì tại nơi đây. Dịch vụ thật sự hoàn hảo!','Khách Sạn');
-insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (11, 'Số 86 Hùng Vương, phường Lộc Thọ, TP Nha Trang','Khách sạn ibis Style Nha Trang tọa lạc ở vị trí đẹp, tiện lợi: vừa gần biển lại ngay tại trung tâm thành phố. Hơn 300 phòng tiêu chuẩn 3 sao của ibis Style Nha Trang sở hữu kiến trúc hiện đại, màu sắc hài hòa và phòng nghỉ sang trọng, ấn tượng.Phòng hội nghị, hồ bơi ngoài trời, phòng thể dục, phòng xông hơi, spa, nhà hàng và quầy bar cũng hội tụ đủ trong khuôn viên khách sạn. Mọi chi tiết của ibis Style Nha Trang đều được chọn lọc, bài trí tỉ mỉ tạo ra không gian ấm cúng, nhằm đáp ứng tốt nhu cầu lưu trú của quý khách hàng.Ibis Styles Nha Trang được tập đoàn Accor quản lý. Các dịch vụ khách sạn như: an ninh 24 giờ, truy cập wifi khu vực công cộng, tư vấn tour, dịch vụ giặt là, dịch vụ taxi, giữ hành lý, nhân viên hướng dẫn, thu đổi ngoại tệ, thủ tục nhận phòng/ trả phòng nhanh chóng, thuận tiện.Với đội ngũ nhân viên nhiệt tình và chuyên nghiệp, khách sạn ibis Style Nha Trang hứa hẹn mang đến cho quý khách sự thoải mái, hài lòng nhất trong thời gian lưu trú.', 'Khách Sạn');
-insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (12, '105A Hùng Vương , Thành phố Huế, Thừa Thiên Huế','Khách Sạn Indochine Palace được xây dựng theo tiêu chuẩn 5 sao quốc tế, tọa lạc ở vị trí đắc địa, ngay trung tâm thành phố Huế. Chỗ nghỉ này cho phép bạn dễ dàng tiếp cận các điểm tham quan nổi tiếng ở Cố Đô như Cầu Tràng Tiền, Sông Hương, Chợ Đông Ba, nhà thờ Đức Bà, Cung An Định hoặc nhà văn hóa Trung Tâm…Indochine Palace nổi tiếng về chất lượng lẫn dịch vụ và đội ngũ nhân viên thân thiện. Khi đặt phòng khách sạn nghỉ ngơi tại đây, bạn sẽ được tận hưởng các dịch vụ tiện nghi cao cấp như quán cà phê, dịch vụ du lịch, Wi-Fi ở khu vực công cộng, thiết bị phòng họp và quầy nước….Đặc biệt, chất lượng khách sạn Indochine Palace được phản ánh qua từng phòng. Mỗi phòng đều trang bị đầy đủ thiết bị hiện đại: TV màn hình phẳng, Wifi tốc độ cao, điện thoại, máy sấy tóc, phòng tắm riêng, áo choàng cùng những dụng cụ thiết yếu. Bên cạnh đó, khách sạn còn cung cấp nhiều phương tiện giải trí độc đáo như câu lạc bộ dành cho trẻ em, bể bơi ngoài trời, bồn tắm nóng và phòng tắm hơi… đảm bảo quý khách sẽ luôn hài lòng trong thời gian lưu trú.','Khách Sạn');
-insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (13, '54 Liễu Giai, Phường Cống Vị, Quận Ba Đình, Hà Nội','Khách Sạn Lotte Hà Nội được xây dựng theo tiêu chuẩn 5 sao quốc tế, nằm giao ở khu phố Đào Tấn và Liễu Giai – nơi tổng hòa giữa nét truyền thống của khu phố cổ với sự hiện đại của đô thị mới. Khách sạn này giống như làn gió mới bởi chất lượng tuyệt hảo và dịch vụ chuyên nghiệp. Chính vị thế thuận lợi sẽ giúp bạn dễ dàng hơn trong việc di chuyển đến các địa điểm tham quan nổi tiếng như Trung tâm Triển Lãm Giảng Võ, Chùa Một Chột, Bảo tàng dân tộc học… Lotte Hà Nội Hotel cũng chỉ cách sân bay Quốc tế Nội Bài 27 Km và mất chừng 30 phút lái xe để tới ga Hà Nội mà thôi.Điểm nổi bật của khách sạn là tất cả các phòng nghỉ đều nằm ở trên cao của tòa nhà 65 tầng. Do đó, với những ai muốn trải nghiệm những điều thú vị thì Lotte Ha Noi Hotel chính là lựa chọn hoàn hảo mang đến cho bạn điểm nhìn ngoạn mục về toàn cảnh thành phố. Hơn nữa, mỗi phòng nghỉ đều trang bị đầy đủ tiện nghi hiện đại cùng phong cách bài trí khác nhau, tạo dấu ấn riêng trong lòng mỗi du khách.Dịch vụ khách sạn Lotte Hà Nội cũng rất hoàn hảo, 318 phòng cao cấp được thiết kế hài hòa từ màu sắc đến chi tiết… Như một sự khẳng định về đẳng cấp và chất lượng của mình, khách sạn Hà Nội 5 sao này còn sở hữu hệ thống nhà hàng, phòng tiệc và quán bar xa hoa… đáp ứng mọi nhu cầu của quý khách. Bên cạnh đó, bạn cũng sẽ tìm thấy những giây phút thư giãn trong không gian giải trí nơi đây như khu spa, phòng tập thể dục và bể bơi trong nhà…','Khách Sạn');
+insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (11,'Số 86 Hùng Vương, phường Lộc Thọ, TP Nha Trang','Khách sạn ibis Style Nha Trang tọa lạc ở vị trí đẹp, tiện lợi: vừa gần biển lại ngay tại trung tâm thành phố. Hơn 300 phòng tiêu chuẩn 3 sao của ibis Style Nha Trang sở hữu kiến trúc hiện đại, màu sắc hài hòa và phòng nghỉ sang trọng, ấn tượng.Phòng hội nghị, hồ bơi ngoài trời, phòng thể dục, phòng xông hơi, spa, nhà hàng và quầy bar cũng hội tụ đủ trong khuôn viên khách sạn. Mọi chi tiết của ibis Style Nha Trang đều được chọn lọc, bài trí tỉ mỉ tạo ra không gian ấm cúng, nhằm đáp ứng tốt nhu cầu lưu trú của quý khách hàng.Ibis Styles Nha Trang được tập đoàn Accor quản lý. Các dịch vụ khách sạn như: an ninh 24 giờ, truy cập wifi khu vực công cộng, tư vấn tour, dịch vụ giặt là, dịch vụ taxi, giữ hành lý, nhân viên hướng dẫn, thu đổi ngoại tệ, thủ tục nhận phòng/ trả phòng nhanh chóng, thuận tiện.Với đội ngũ nhân viên nhiệt tình và chuyên nghiệp, khách sạn ibis Style Nha Trang hứa hẹn mang đến cho quý khách sự thoải mái, hài lòng nhất trong thời gian lưu trú.', 'Khách Sạn');
+insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (12,'105A Hùng Vương , Thành phố Huế, Thừa Thiên Huế','Khách Sạn Indochine Palace được xây dựng theo tiêu chuẩn 5 sao quốc tế, tọa lạc ở vị trí đắc địa, ngay trung tâm thành phố Huế. Chỗ nghỉ này cho phép bạn dễ dàng tiếp cận các điểm tham quan nổi tiếng ở Cố Đô như Cầu Tràng Tiền, Sông Hương, Chợ Đông Ba, nhà thờ Đức Bà, Cung An Định hoặc nhà văn hóa Trung Tâm…Indochine Palace nổi tiếng về chất lượng lẫn dịch vụ và đội ngũ nhân viên thân thiện. Khi đặt phòng khách sạn nghỉ ngơi tại đây, bạn sẽ được tận hưởng các dịch vụ tiện nghi cao cấp như quán cà phê, dịch vụ du lịch, Wi-Fi ở khu vực công cộng, thiết bị phòng họp và quầy nước….Đặc biệt, chất lượng khách sạn Indochine Palace được phản ánh qua từng phòng. Mỗi phòng đều trang bị đầy đủ thiết bị hiện đại: TV màn hình phẳng, Wifi tốc độ cao, điện thoại, máy sấy tóc, phòng tắm riêng, áo choàng cùng những dụng cụ thiết yếu. Bên cạnh đó, khách sạn còn cung cấp nhiều phương tiện giải trí độc đáo như câu lạc bộ dành cho trẻ em, bể bơi ngoài trời, bồn tắm nóng và phòng tắm hơi… đảm bảo quý khách sẽ luôn hài lòng trong thời gian lưu trú.','Khách Sạn');
+insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (13,'54 Liễu Giai, Phường Cống Vị, Quận Ba Đình, Hà Nội','Khách Sạn Lotte Hà Nội được xây dựng theo tiêu chuẩn 5 sao quốc tế, nằm giao ở khu phố Đào Tấn và Liễu Giai – nơi tổng hòa giữa nét truyền thống của khu phố cổ với sự hiện đại của đô thị mới. Khách sạn này giống như làn gió mới bởi chất lượng tuyệt hảo và dịch vụ chuyên nghiệp. Chính vị thế thuận lợi sẽ giúp bạn dễ dàng hơn trong việc di chuyển đến các địa điểm tham quan nổi tiếng như Trung tâm Triển Lãm Giảng Võ, Chùa Một Chột, Bảo tàng dân tộc học… Lotte Hà Nội Hotel cũng chỉ cách sân bay Quốc tế Nội Bài 27 Km và mất chừng 30 phút lái xe để tới ga Hà Nội mà thôi.Điểm nổi bật của khách sạn là tất cả các phòng nghỉ đều nằm ở trên cao của tòa nhà 65 tầng. Do đó, với những ai muốn trải nghiệm những điều thú vị thì Lotte Ha Noi Hotel chính là lựa chọn hoàn hảo mang đến cho bạn điểm nhìn ngoạn mục về toàn cảnh thành phố. Hơn nữa, mỗi phòng nghỉ đều trang bị đầy đủ tiện nghi hiện đại cùng phong cách bài trí khác nhau, tạo dấu ấn riêng trong lòng mỗi du khách.Dịch vụ khách sạn Lotte Hà Nội cũng rất hoàn hảo, 318 phòng cao cấp được thiết kế hài hòa từ màu sắc đến chi tiết… Như một sự khẳng định về đẳng cấp và chất lượng của mình, khách sạn Hà Nội 5 sao này còn sở hữu hệ thống nhà hàng, phòng tiệc và quán bar xa hoa… đáp ứng mọi nhu cầu của quý khách. Bên cạnh đó, bạn cũng sẽ tìm thấy những giây phút thư giãn trong không gian giải trí nơi đây như khu spa, phòng tập thể dục và bể bơi trong nhà…','Khách Sạn');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (14,'An Hai Village, Thôn An Hải, thị trấn Thuận An, huyện Phú Vang, Việt Nam','Khu nghỉ dưỡng Ana Mandara Huế nằm ngay làng Thuận An, Huế. Từ Huế, bạn phải mất khoảng 20 phút lái xe bằng xe ô tô hoặc xe máy theo con đường biển mới mở để đến đây. Nét đặc sắc và thu hút khách du lịch ở nơi đây đó chính là khu nghỉ dưỡng được bao quanh bởi những ruộng lúa, phá Tam Giang đã tạo nên một cảnh đẹp như mơ. Hơn thế nữa, resort này lại nằm trong khu vườn nhiệt đới  với cây trái, hoa lá.Khu nghỉ dưỡng Ana Mandara Huế có diện tích là 2.8 ha với tổng số 78 phòng nghỉ. Trong đó có 4 phòng bao gồm: biệt thự có hồ bơi riêng, biệt thự hướng biển, các phòng đôi, phòng nghỉ cao cấp... Mỗi phòng trong khu nghỉ dưỡng đều được cung cấp đầy đủ các tiện nghi hiện đại, tốt nhất, đáp ứng được yêu cầu của những vị khách khó tính.Bên cạnh đó, khi đặt phòng khách sạn tại đây, du khách cũng có thể tìm thấy tất cả tiện nghi và dịch vụ tốt nhất tại khu nghỉ dưỡng bao gồm cửa hàng mua sắm, tầng cao cấp, mát xa, quán cà phê, dịch vụ giặt ủi, tiện nghi phòng họp. Sau một ngày làm việc hoặc du lịch khám phá, du khách có thể sử dụng dịch vụ mát xa, bể tắm Jacuzzi, phòng tập thể dục, tắm hơi, bể bơi để thư giãn.Khu nghỉ dưỡng Ana Mandara Huế hứa hẹn là sự lựa chọn rất hoàn hảo mang đến du khách sự thoải mái và thuận tiện nhất.','Khách Sạn');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (15,'24 Lê Đại Hành, Thành phố Đà Lạt, Việt Nam','Khách sạn Rum Vàng tọa lạc tại vị trí đắc địa nằm ngay trung tâm thành phố Đà Lạt. Khách sạn chỉ cách hồ Xuân Hương thơ mộng khoảng 05 phút đi bộ và du khách chỉ cần di chuyển đến nhà thờ Con Gà khoảng 5 phút lái xe.Khách sạn Rung Vàng được thiết kế theo phong cách hiện đại, gồm có tổng cộng là 50 phòng nghỉ đạt tiêu chuẩn 3 sao. Tất cả các phòng trong khách sạn đều được cung cấp cửa sổ lớn với hướng nhìn ra toàn thành phố, công viên hoặc hồ Xuân Hương. Tiện nghi phòng nghỉ bao gồm két sắt an toàn, bồn tắm, nước nóng lạnh, TV LCD với số lượng kênh truyền hình cáp đa dạng, dụng cụ pha trà và pha cà phê cũng được cung cấp tại khách sạn.Với sức chứa khoản hơn 150 khách, nhà hàng Rum Vàng nằm trên tầng sân thượng của khách sạn, mở cửa từ 06:00 sáng đến 10:00 đêm sẽ là sự lựa chọn lý tưởng để khách có thể thưởng thức các món Âu Á theo yêu cầu. Còn Rum Vàng Bar & Café phục vụ khách từ 06:00 sáng đến 10:00 đêm hằng ngày sẽ phục vụ khách các loại rượu và đồ uống phong phú. Khu vực quầy bar được bố trí tại khu vực có tầm nhìn đẹp ra hồ Xuân Hương, trung tâm thành phố, đồi thông sẽ là sự lựa chọn đầy lý tưởng để bạn tìm lại khoảng lặng cho riêng mình.Nếu du khách đặt phòng khách sạn với mục đích công việc hoặc muốn tổ chức các cuộc hội họp, hội nghị lớn thì du khách cũng có thể lựa chọn phòng họp Mimosa với khả năng phục vụ 120 khách được trang bị đầy đủ dụng cụ tiện nghi cần thiết hội họp như máy chiếu, màn hình chiếu cùng với dịch vụ hỗ trợ hội họp luôn sẵn sàng làm hài lòng khách du lịch.','Khách Sạn');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (16,'Số 32 - Anh Đào – Bãi Cháy – Hạ Long – Quảng Ninh, Việt Nam','Pelican Cruise Hạ Long nằm ở vị trí đắc địa thuộc Hạ Long, đây là nơi nghỉ chân tuyệt vời để du khách có thể tiếp tục khám thành phố trẻ sôi động ở mọi góc cạnh khác nhau.Pelican Cruise Hạ Long được thiết kế theo phong cách cổ điển, nhằm mục đích gợi nên cảm giác thân thuộc, ấm áp nhưng không hề kém phần thanh lịch, tinh tế trong cách thiết kế. Khách sạn gồm có tổng số là 22 phòng với 4 lầu mang đến du khách khi nghỉ chân tại đây có cảm giác ấm cúng và dễ chịu như đang được ở nhà. Mỗi phòng trong khách sạn được trang bị đầy đủ các thiết bị, tiện nghi hiện đại bao gồm máy sấy tóc, két sắt, vòi sen, tủ đồ ăn nhẹ, ban công, TV màn hình phẳng...Cho dù bạn là người thích vui vẻ hay chỉ thích muốn thư giãn sau một ngày làm việc bận rộn, mệt mỏi, bạn sẽ cảm thấy vô cùng thoải mái khi sử dụng các tiện nghi của khách sạn. Đó là một loạt tiện nghi giải trí như giải trí spa, thể thao dưới nước, mát xa. Không dừng lại khi đặt phòng khách sạn giá rẻ và nghỉ chân tại đây, khách sạn còn gợi ý đến bạn những hoạt động vui chơi giải trí đảm bảo bạn luôn cảm thấy vô cùng hứng thú trong suốt kì nghỉ dưỡng của mình.', 'Khách Sạn');
@@ -302,169 +319,6 @@ insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (33,'Hàng Không n�
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (34,'Hàng Không nội địa-Air Mekong','Hãng hàng không nội địa Air Mekong được ra đời vào năm 2012 không có khuyến mãi sốc như hai hãng hàng không phía trên bên cạnh đó, các máy bay đều rất nhỏ và chỉ sử dụng trong các chuyến bay đặc thù như Hà Nội đi đến Phú Quốc, Côn Đảo.Vì có thiết kế nhỏ nên hãng hàng không này có vinh dự phục vụ mộtvợ chồng siêu tài tử Brad Pitt – Angela khi họ đã thuê riêng một chuyến bay của hãng hàng không này ra Côn Đảo.', 'Phương Tiện');
 insert into ctdv( id_dv,tieu_de_dv,noi_dung_dv,loai) values (35,'Hàng không nội địa- Vasco','Hãng hàng không Việt Nam trong nội địa thứ 5 đó là Vasco, chính xác đây là một hãng hàng không xuất phát từ Công ty của hãng VietnamAirlines có thể gọi là công ty con của hãng hàng không quốc gia.Máy bay của Vasco có thiết kế nhỏ vì công ty này chỉ bay và phục vụ cho các tuyến bay hàng không ở Việt Nam trong nội địa ngắn và được xuất phát từ TP Hồ Chí Minh.', 'Phương Tiện');
 
-INSERT INTO `ctdgdv` (`id_dv`, `id_tk`, `so_sao_dv`, `binh_luan_dv`) VALUES
-(1, 1, 5, 'Rất Tốt, dịch vụ tuyệt'),
-(1, 2, 1, 'Không Tốt,chả có gì, không khí không thoáng mát'),
-(1, 2, 4, 'Tốt,Hài lòng'),
-(1, 2, 5, 'Hài lòng, tôi dễ tính mà!'),
-(1, 6, 5, 'Tốt, cần phát huy nhé!'),
-(1, 7, 4, 'không đặc biệt nhưng Khá ổn'),
-(2, 1, 3, 'không Tốt,không có gì đặc biệt'),
-(2, 1, 5, 'Tốt, Rất ưng ý'),
-(2, 2, 5, 'Tốtlắm, hồ bơi sang chảnh'),
-(2, 4, 1, 'Rất kém,chả có gì '),
-(2, 5, 5, 'hoàn hảo, mọi thứ ở mức tuyệt vời'),
-(2, 6, 5, 'Rất tuyệt vời'),
-(2, 7, 5, 'giá rẻ dịch vụ lại tốt'),
-(2, 9, 3, 'ở mức trung bình khá thôi'),
-(2, 9, 4, 'Tôi thấy ở đâu cũng vậy!'),
-(2, 11, 3, 'Bình thường mà'),
-(3, 6, 3, 'tạm chấp nhận được'),
-(4, 10, 3, 'dịch vụ không tốt lắm'),
-(5, 5, 5, 'nên nới lỏng hơn về việc ra vào cò lại mọ thứ đều tuyệt vời'),
-(6, 4, 3, 'tôi là một khách hàng khó tính, nên cải thiện nhiều hơn'),
-(7, 2, 5, 'các bạn cần tiếp tục phát huy mọi dịch vụ và triển khai nhiều ưu đãi hơn nữa'),
-(8, 10, 3, 'dịch vụ ở đây chưa thực sự tốt'),
-(9, 10, 1, 'kém, không hài long chút nào'),
-(10, 6, 5, 'khách sạn hoàn hảo cả về chất lượng,không gian và dịch vụ'),
-(11, 2, 4, 'khá ổn, phát triển thêm nhé!'),
-(11, 7, 3, 'ở mức trung bình, cần tu sủa lại không gian'),
-(11, 7, 5, 'Tuyệt vời, các dịch vụ trong khách sạn rất tốt'),
-(12, 9, 4, 'view trong khách sạn khá đẹp'),
-(13, 1, 5, 'Nhân viên nhiệt tình, dịch vụ tốt'),
-(14, 1, 1, 'kém, không nên ở đây'),
-(15, 8, 2, '  phục vụ không tốt,'),
-(16, 5, 5, 'hoàn hảo'),
-(17, 2, 5, 'Hài lòng, nhân viên thân thiện, nhiệt tình'),
-(18, 6, 5, 'Tốt, nên phát huy'),
-(19, 10, 5, 'khu nghỉ dưỡng quá hoàn hảo, không có gì để chê trách'),
-(20, 8, 5, 'sứng đáng là khách sạn 5 sao'),
-(21, 10, 3, 'trung bình, cần phát triển nâng cao hơn'),
-(22, 2, 3, 'nhân viên không nhiệt tình'),
-(22, 6, 5, 'Rất tuyệt vời'),
-(23, 4, 3, 'chất luộng dịch vụ khá ổn, nhưng không gian hơi hẹp'),
-(23, 11, 2, 'khách sạn cao cấp hay nhà nghỉ bình dân không phân biệt nổi nữa'),
-(24, 3, 1, 'nhân viên ở đây bị kỳ thị người Việt Nam à'),
-(25, 6, 5, 'lần đầu tiên biết say máy bay là gì, nhưng mà vui'),
-(25, 8, 2, ' chuyến đi tồi'),
-(26, 3, 4, 'không biết quy định, tý nữa thì bị cho ở lại khỏi bay'),
-(26, 4, 1, 'dịch vụ trên chuyến đi rất kém'),
-(26, 4, 2, 'không hài lòng về cách cư xử của tiếp viên'),
-(27, 3, 5, 'chuyến bay an toàn'),
-(27, 6, 4, 'dịch vụ ổn, nhân viên thân thiện'),
-(28, 8, 5, 'ngủ một mạch cả lộ trình bay luôn'),
-(28, 11, 5, 'cảm ơn vì cho tôi hạ cánh an toàn'),
-(29, 4, 4, 'ngày xưa chỉ ước được đi máy bay một lần ý.giờ được đi sợ đến già'),
-(29, 7, 3, 'lần thứ xxx đi máy bay nhưng lần này không thực sự hài lòng'),
-(30, 1, 4, 'khá ổn'),
-(30, 4, 1, 'nên cải thiện chất lượng dịch vụ'),
-(31, 3, 4, 'mức giá cũng được,view bình thường'),
-(31, 3, 5, 'đã quá nổi tiếng, không chỉ về dịch vụ mà chất lượng chuyến bay cũng hoàn hảo'),
-(31, 7, 5, 'xứng đáng nhận 5 sao cho một hãng hàng không nội địa'),
-(31, 8, 2, ' không Tốt, nhân viên bị khó ở !'),
-(32, 4, 5, 'hệ thống nhân viên vui vẻ, thân thiện, nhiệt tình'),
-(33, 2, 4, 'khá tốt, nên tiếp tục phát huy'),
-(33, 2, 5, 'tuyệt vời, chuyến đi thuận lợi quá'),
-(33, 8, 5, 'hàng không nội địa mà dịch vụ rất chuyên nghiệp'),
-(34, 1, 5, 'mọi thứ hoàn hảo'),
-(34, 7, 3, 'Tôi không thoải mái'),
-(34, 10, 1, 'tôi sợ  đi máy bay đến già luôn'),
-(35, 2, 1, 'không thể chấp nhận được cách phục vụ'),
-(35, 10, 5, 'bay cao bay xa bay bay , giờ vẫn run');
-
-INSERT INTO `ctdgdd` (`id_dd`, `id_tk`, `so_sao_dd`, `binh_luan_dd`) VALUES
-(1, 1, 4, 'một chuyến đi vui cùng bạn bè!!'),
-(1, 2, 4, 'Đây là một nơi rất thích. Đây là một địa điểm thích hợp với những bạn thích đi du lịch'),
-(1, 11, 4, 'khá hài lòng, cũng vui'),
-(2, 1, 3, 'không có gì vui!'),
-(2, 10, 3, 'Bình thường, mọi thứ đều ổn nhưng không có gì đặc biệt.'),
-(3, 5, 5, 'tôi rất thích nơi này'),
-(4, 2, 3, 'không lý tưởng như tôi nghĩ, mông đợi nhiều hơn thế'),
-(5, 2, 1, 'tôi thất vọng khi đến đây'),
-(6, 9, 5, 'một địa điểm tuyệt vời để hẹn hò'),
-(7, 10, 4, 'nhiều khỉ lắm hihi haha'),
-(8, 6, 5, 'nếu có điều kiệ, hãy đến đây một lần'),
-(9, 10, 1, 'tồi tệ quá, buồn, chả đẹp gì cả'),
-(10, 10, 3, 'bình thường mà sao mọi người khen nhiều vậy?'),
-(11, 7, 5, 'nếu có cơ hội, tôi sẽ quay lại lần nữa cũng gia đình, quá tuyệt'),
-(12, 6, 5, 'Rất tuyệt vời,'),
-(12, 9, 4, 'nói chung là ổn , không phí công sức , thời gian , tiền bạc khi đến đây'),
-(13, 1, 5, 'quá tuyệt vời, đẹp lắm!'),
-(14, 1, 5, 'khung cảnh ở đây đẹp lắm '),
-(14, 7, 3, 'Chẳng có gì đặc biệt cả'),
-(15, 8, 2, ' không Tốt, chán ghê'),
-(16, 5, 5, 'đẹp, chuyến đi ý nghĩa'),
-(17, 6, 5, 'có tiền thì quay lại bao nhiêu lần cũng không chán'),
-(18, 6, 5, 'sẽ quay lại. hihi'),
-(19, 5, 5, 'hoàn hảo, không có gì để chê'),
-(19, 10, 1, 'phi mất một chuyến đi, buồn quá!'),
-(20, 11, 4, 'huế mộng mơ thiệt đó'),
-(21, 9, 4, ' tên ngô đồng mà sao không có ngô, tính qua đó vặt ngô mà'),
-(22, 6, 5, 'Rất tuyệt vời,rất ý nghĩa'),
-(23, 5, 3, 'có gì hay đâu,chán òm'),
-(24, 6, 5, 'vua biết ăn chơi quá ha'),
-(25, 8, 2, ' đừng phí tiền đến đây'),
-(26, 9, 4, 'chùa này thiêng lắm,không gian yên tĩnh thanh tịnh'),
-(27, 2, 5, 'Hài lòng, vui lắm mọi người ạ'),
-(28, 10, 2, 'chỉ thấy mệt khi đến đây thôi, có gì vui đâu'),
-(29, 10, 5, 'mũi né tưởng đâu là mũi nghé'),
-(30, 11, 4, 'nhiều thứ hay ho lắm '),
-(31, 9, 4, 'cảnh quan tuyệt vời,nơi khá thích hợp để nghỉ dưỡng'),
-(32, 7, 3, 'có ai thấy gì đặc biệt ở đây không'),
-(33, 2, 4, 'Khá ổn, không khí trong lành'),
-(34, 7, 3, 'đi 3 hôm mưa 2 !!'),
-(35, 2, 1, 'sai lầm khi đến đây'),
-(36, 11, 3, 'nhạt, bình thường quá mà'),
-(37, 3, 2, 'mỏi chân chứ được cái quái gì đâu'),
-(38, 9, 2, 'mất tiền, mất thời gian, mất công sức  để đến đây haizzz'),
-(39, 7, 5, 'đẹp mê hồn luôn, cứ phải gọi là hoàn hảo'),
-(40, 6, 3, 'tất cả chỉ là nghệ thuạt sắp đặt, quảng cáo thì rõ hay, rõ đẹp'),
-(40, 10, 3, 'thời tiết không ủng hộ cho lắm!'),
-(41, 8, 1, 'nếu có ước muốn cho thời gian trở lại, tôi sẽ ko mất tiền ngu'),
-(42, 2, 3, 'Trung bình, tôi không thấy nơi này có nhiều thứ thú vị'),
-(42, 9, 4, 'vui lắm!'),
-(43, 2, 4, 'Khá ổn, không có gì đặc sắc nhưng mọi thứ đều tốt'),
-(45, 5, 5, 'Fa thì đừng đến đây nhá, tủi thân lắm ý'),
-(46, 9, 4, 'vui, đẹp mỗi tội về đen hết da, như kiểu đi làm đồng ý'),
-(47, 2, 5, 'hoàn hảo, một địa điểm lý tưởng'),
-(48, 3, 1, 'có ai thyaas nó đẹp không, cứ mình thì không thấy một chút xíu gì gọi là đẹp cả'),
-(49, 9, 5, 'trải nghiệm khó quên, hang động đẹp lắm luôn'),
-(50, 8, 5, 'nhìn cái hồ ai dám bơi, tui sợ chết đuối, uống no nước luôn'),
-(50, 11, 4, 'khá tuyệt'),
-(51, 5, 5, 'vào đó mà đi một mình chắc khỏi ra quá'),
-(51, 6, 4, 'kiếm hoài  không  được cây tre trăm đốt'),
-(51, 7, 5, 'một địa điẻm du lịch hoàn hảo'),
-(52, 3, 3, 'chắc tại mình không hợp phong thủy, đi đến đó chán òm'),
-(52, 6, 3, 'tôi muốn nhiều hơn thế khi đến đây'),
-(53, 4, 2, 'mai tự xây cái cầu thnag như vậy'),
-(53, 6, 2, 'chưa tìm ra sự đặc biệt '),
-(53, 8, 3, 'ai nói cho tôi biết có gì vui ở đây'),
-(54, 1, 5, 'đẹp lắm các bạn ạ!'),
-(54, 7, 2, 'có gì vui đâu chứ'),
-(54, 8, 4, 'về đến nhà mới biết mình còn sống, chỉ sợ núi lửa nó phun là toi đời. haha'),
-(54, 9, 5, 'hihi, ngoài sự mong đợi luôn, tận mắt đc thấy ko phải xem qua ảnh qua báo nữa, thích ghê'),
-(54, 11, 3, 'tích tiền đưa gia đình đến đây chơi một bữa nữa'),
-(55, 3, 3, 'thấy bình thường à'),
-(55, 4, 5, 'tự nhiên có tạo hóa lạ lùng thiệt'),
-(55, 6, 2, 'chán òm, quảng cáo thì rõ đẹp, đến dó có gì đâu'),
-(56, 4, 1, 'không bao giờ quay lại lần nữa'),
-(56, 7, 1, ' ở đó không khí ô nhiễm quá'),
-(56, 8, 4, 'chỡ mãi chả thấy nó đổi màu gì cả'),
-(57, 2, 2, 'quá bình thường'),
-(57, 3, 4, 'thành phố mộng mơ'),
-(57, 8, 4, 'khá thú vị khi đến đây, nhiều chỗ chơi chỗ ăn, thoải mái '),
-(58, 2, 2, 'đi về mệt muốn chết, lại chả có gì hay ho'),
-(58, 8, 3, 'chán kinh'),
-(58, 9, 4, 'khá ổn, dù sao cũng có một kỳ nghỉ vui vẻ'),
-(59, 3, 3, 'có gì hay đâu, lượn một ngày thấy chán'),
-(59, 3, 4, 'quá nhiều điều để khám phá'),
-(60, 1, 4, 'cảnh đẹp lắm'),
-(60, 7, 5, 'cái thác đó là nơi sống ảo cho mọi chị em '),
-(60, 9, 3, 'thác đẹp hầy'),
-(61, 5, 5, 'chờ mãi mới có cơ hội được đi, cảm ơn vì đã ko phụ sự kỳ vọng của tôi'),
-(62, 2, 3, 'không đẹp như mình nghĩ'),
-(63, 11, 5, 'Rất Tốt, đây là nơi hoàn hảo để hẹn hò');
-
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'QUÀ DU LỊCH 3 MIỀN ĐẤT NƯỚC VIỆT NAM','Sau mỗi chuyến du lịch, những đặc sản là món quà nhỏ bé mang đậm hương vị vùng miền mà bạn muốn gửi tặng đến những người thân yêu. Vì thế, quà cho người nhà sau mỗi chuyến đi là điều khiến nhiều người lưu tâm.','1.jpg');
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH ẤN ĐỘ, MUMBAI, DELHI TỪ A ĐẾN Z','Sông Hằng huyền thoại, những đỉnh núi tuyết vĩnh cửu, thành phố sôi động và những bãi biển hoang sơ khiến Ấn Độ luôn nằm trong những điểm đến hấp dẫn nhất hành tinh.','2.jpg');
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'NHỮNG ĐỊA ĐIỂM SỐNG ẢO CỰC CHẤT TẠI HÀ NỘI','Nếu bạn có dự định đến du lịch Hà Nội và là tín đồ của hoạt động "sống ảo", "checkin" thì hãy ghi nhớ ngay những địa điểm sau đây. Bởi dưới đây là những địa chỉ "sống ảo" cực chất mà không phải ai cũng biết','3.jpg');
@@ -476,137 +330,438 @@ insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'5 MÔN
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'CẨM NANG DU LỊCH BRAZIL, RIO DE JANEIRO TỪ A ĐẾN Z','Rio de Janeiro là thủ phủ của Brazil nói chung và bang Rio de Janeiro nói riêng, thường được khách du lịch gọi tắt bằng cái tên là Rio. Thành phố này nổi tiếng trong lòng du khách bởi có cảnh sắc thiên nhiên lý thú cùng với những bãi biển cát trắng trải dài, hay những rừng mưa nằm trong lòng đô thị.', '9.jpg');
 insert into cam_nang( id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'7 ĐẶC SẢN XỨ HOA VÀNG TRÊN CỎ XANH ĂN LÀ GHIỀN','Sau thành công của bộ phim "Tôi thấy hoa vàng trên cỏ xanh" chuyển thể từ tác phẩm cùng tên của nhà văn Nguyễn Nhật Ánh, vùng đất Phú Yên đầy nắng gió nằm trải dài trên dải đất miền Trung thân thương đã trở nên vô cùng nổi tiếng. Ngoài những cảnh đẹp, hiếm có mảnh đất nào mà ở khắp mọi nơi từ ngoài đường đến trong hẻm, từ trung tâm đến huyện lỵ lại có nhiều đồ ăn ngon như Phú Yên.', '10.jpg');
 
-/*
-select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.cap_do <> 2 limit 3, 5;
+INSERT INTO dgsdd (id_dd, id_tk, so_sao_dd) VALUES
+(1, 2, 1),
+(1, 3, 5),
+(1, 4, 4),
+(1, 5, 1),
+(1, 6, 2),
+(1, 7, 3),
+(2, 2, 1),
+(2, 3, 2),
+(2, 4, 4),
+(2, 5, 5),
+(2, 6, 4),
+(2, 7, 1),
+(3, 2, 2),
+(3, 3, 3),
+(3, 4, 1),
+(3, 5, 3),
+(3, 6, 4),
+(3, 7, 1),
+(4, 2, 1),
+(4, 3, 4),
+(4, 4, 4),
+(4, 5, 1),
+(4, 6, 5),
+(4, 7, 1),
+(5, 8, 2),
+(5, 9, 1),
+(5, 10, 3),
+(5, 11, 1),
+(6, 8, 1),
+(6, 9, 5),
+(6, 10, 2),
+(6, 11, 1),
+(7, 8, 1),
+(7, 9, 5),
+(7, 10, 2),
+(7, 11, 1),
+(8, 2, 1),
+(8, 3, 4),
+(8, 4, 4),
+(8, 5, 3),
+(8, 6, 4),
+(8, 7, 1),
+(9, 7, 1),
+(9, 8, 2),
+(9, 9, 1),
+(10, 10, 3),
+(11, 3, 1),
+(11, 11, 1),
+(12, 4, 1),
+(12, 5, 5),
+(12, 6, 2),
+(13, 7, 1),
+(13, 8, 2),
+(14, 9, 1),
+(15, 2, 5),
+(15, 3, 5),
+(15, 4, 1),
+(15, 5, 2),
+(16, 6, 5),
+(16, 8, 3),
+(17, 2, 5),
+(17, 4, 4),
+(17, 7, 1),
+(18, 2, 3),
+(18, 4, 3),
+(18, 9, 3),
+(18, 10, 4),
+(18, 11, 2),
+(19, 2, 2),
+(19, 3, 1),
+(19, 4, 3),
+(19, 5, 5),
+(19, 7, 4),
+(19, 8, 4),
+(19, 9, 4),
+(19, 10, 4),
+(19, 11, 4),
+(20, 2, 2),
+(20, 3, 5),
+(20, 4, 3),
+(20, 7, 4),
+(20, 8, 4),
+(20, 9, 4),
+(21, 2, 3),
+(21, 3, 4),
+(21, 4, 5),
+(21, 6, 3),
+(21, 7, 3),
+(22, 2, 1),
+(22, 8, 2),
+(22, 9, 3),
+(22, 10, 5),
+(23, 3, 2),
+(23, 4, 5),
+(23, 6, 3),
+(23, 7, 3),
+(24, 2, 1),
+(24, 8, 4),
+(24, 9, 3),
+(25, 3, 4),
+(25, 6, 3),
+(25, 10, 5),
+(26, 2, 1),
+(26, 4, 5),
+(26, 7, 3),
+(27, 8, 2),
+(27, 9, 3),
+(27, 10, 5),
+(28, 3, 4),
+(28, 4, 5),
+(28, 6, 5),
+(29, 2, 1),
+(29, 7, 3),
+(29, 8, 2),
+(29, 9, 5),
+(29, 10, 5),
+(30, 2, 3),
+(30, 3, 4),
+(30, 4, 5),
+(31, 2, 1),
+(31, 7, 3),
+(31, 8, 2),
+(32, 2, 1),
+(32, 6, 3),
+(32, 9, 3),
+(32, 10, 5),
+(33, 3, 4),
+(33, 4, 5),
+(33, 7, 3),
+(33, 10, 5),
+(33, 11, 3),
+(34, 2, 1),
+(34, 4, 5),
+(34, 8, 2),
+(34, 9, 3),
+(35, 3, 4),
+(35, 5, 5),
+(35, 6, 3),
+(35, 8, 2),
+(35, 9, 3),
+(41, 3, 4),
+(41, 4, 5),
+(41, 6, 3),
+(41, 7, 3),
+(41, 11, 3),
+(43, 3, 4),
+(43, 4, 5),
+(43, 6, 3),
+(43, 7, 3),
+(44, 4, 1),
+(44, 8, 4),
+(44, 9, 3),
+(44, 10, 5),
+(44, 11, 1),
+(45, 3, 4),
+(45, 6, 3),
+(45, 10, 5),
+(46, 4, 1),
+(46, 7, 3),
+(46, 11, 5),
+(47, 8, 4),
+(47, 9, 3),
+(47, 10, 5),
+(48, 3, 4),
+(48, 4, 5),
+(48, 6, 5),
+(49, 4, 1),
+(49, 7, 3),
+(49, 8, 4),
+(49, 10, 5),
+(49, 11, 5),
+(51, 3, 5),
+(51, 5, 5),
+(51, 6, 3),
+(51, 7, 3),
+(51, 8, 3),
+(53, 3, 5),
+(53, 5, 5),
+(53, 6, 3),
+(53, 7, 3),
+(55, 5, 1),
+(55, 6, 3),
+(55, 8, 5),
+(55, 9, 3),
+(55, 10, 5),
+(56, 5, 5),
+(56, 7, 3),
+(57, 8, 5),
+(57, 9, 3),
+(57, 10, 5),
+(58, 3, 5),
+(58, 5, 5),
+(58, 6, 5),
+(59, 5, 1),
+(59, 7, 3),
+(59, 8, 5),
+(59, 9, 5),
+(59, 10, 5),
+(60, 2, 3),
+(60, 3, 4),
+(60, 4, 5),
+(61, 2, 1),
+(61, 7, 3),
+(61, 8, 2),
+(62, 2, 1),
+(62, 6, 3),
+(62, 9, 3),
+(62, 10, 5),
+(63, 3, 4),
+(63, 4, 5),
+(63, 7, 3),
+(63, 10, 5),
+(63, 11, 3);
 
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd;
+INSERT INTO dgsdv (id_dv, id_tk, so_sao_dv) VALUES
+(1, 2, 1),
+(1, 3, 5),
+(1, 4, 4),
+(1, 5, 1),
+(1, 6, 2),
+(1, 7, 3),
+(2, 2, 1),
+(2, 3, 2),
+(2, 4, 4),
+(2, 5, 5),
+(2, 6, 4),
+(2, 7, 1),
+(3, 2, 2),
+(3, 3, 3),
+(3, 4, 1),
+(3, 5, 3),
+(3, 6, 4),
+(3, 7, 1),
+(4, 2, 1),
+(4, 3, 4),
+(4, 4, 4),
+(4, 5, 1),
+(4, 6, 5),
+(4, 7, 1),
+(5, 8, 2),
+(5, 9, 1),
+(5, 10, 3),
+(5, 11, 1),
+(6, 8, 1),
+(6, 9, 5),
+(6, 10, 2),
+(6, 11, 1),
+(7, 8, 1),
+(7, 9, 5),
+(7, 10, 2),
+(7, 11, 1),
+(8, 2, 1),
+(8, 3, 4),
+(8, 4, 4),
+(8, 5, 3),
+(8, 6, 4),
+(8, 7, 1),
+(9, 7, 1),
+(9, 8, 2),
+(9, 9, 1),
+(10, 10, 3),
+(11, 3, 1),
+(11, 11, 1),
+(12, 4, 1),
+(12, 5, 5),
+(12, 6, 2),
+(13, 7, 1),
+(13, 8, 2),
+(14, 9, 1),
+(15, 2, 5),
+(15, 3, 5),
+(15, 4, 1),
+(15, 5, 2),
+(16, 6, 5),
+(16, 8, 3),
+(17, 2, 5),
+(17, 4, 4),
+(17, 7, 1),
+(18, 2, 3),
+(18, 4, 3),
+(18, 9, 3),
+(18, 10, 4),
+(18, 11, 2),
+(19, 2, 2),
+(19, 3, 1),
+(19, 4, 3),
+(19, 5, 5),
+(19, 7, 4),
+(19, 8, 4),
+(19, 9, 4),
+(19, 10, 4),
+(19, 11, 4),
+(20, 2, 2),
+(20, 3, 5),
+(20, 4, 3),
+(20, 7, 4),
+(20, 8, 4),
+(20, 9, 4),
+(21, 2, 3),
+(21, 3, 4),
+(21, 4, 5),
+(21, 6, 3),
+(21, 7, 3),
+(22, 2, 1),
+(22, 8, 2),
+(22, 9, 3),
+(22, 10, 5),
+(23, 3, 2),
+(23, 4, 5),
+(23, 6, 3),
+(23, 7, 3),
+(24, 2, 1),
+(24, 8, 4),
+(24, 9, 3),
+(25, 3, 4),
+(25, 6, 3),
+(25, 10, 5),
+(26, 2, 1),
+(26, 4, 5),
+(26, 7, 3),
+(27, 8, 2),
+(27, 9, 3),
+(27, 10, 5),
+(28, 3, 4),
+(28, 4, 5),
+(28, 6, 5),
+(29, 2, 1),
+(29, 7, 3),
+(29, 8, 2),
+(29, 9, 5),
+(29, 10, 5),
+(30, 2, 3),
+(30, 3, 4),
+(30, 4, 5),
+(31, 2, 1),
+(31, 7, 3),
+(31, 8, 2),
+(32, 2, 1),
+(32, 6, 3),
+(32, 9, 3),
+(32, 10, 5),
+(33, 3, 4),
+(33, 4, 5),
+(33, 7, 3),
+(33, 10, 5),
+(33, 11, 3),
+(34, 2, 1),
+(34, 4, 5),
+(34, 8, 2),
+(34, 9, 3),
+(35, 3, 4),
+(35, 5, 5),
+(35, 6, 3),
+(35, 8, 2),
+(35, 9, 3);
 
-select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv;
+INSERT INTO dgcdv (id_dv, id_tk, binh_luan_dv, thoi_gian) VALUES
+(1, 2, 'dịch vụ khá tốt, không gian hợp lý, thoáng mát.', '2018-12-03 06:09:25'),
+(2, 3, 'dịch vụ ở đây tuyệt vời.', '2019-01-01 07:12:32'),
+(3, 6, 'dịch vụ không nhiều, nhân viên không nhiệt tình.', '2018-12-03 11:14:29'),
+(4, 7, 'nhân viên không tôn trọng khách hàng', '2018-02-22 07:17:17'),
+(5, 6, 'dịch vụ tốt, có thêm bể bơi thì tuyệt vời', '2018-07-11 08:12:28'),
+(6, 11, 'dịch vụ ổn, nhưng không gian phòng chưa hợp lý, hơi ngột ngạt', '2018-07-12 06:09:00'),
+(7, 8, 'khu resort lý tưởng cho dịp nghỉ lễ tới', '2019-01-01 02:06:32'),
+(8, 6, 'một khách sạn xứng đáng 5 sao', '2019-01-02 05:12:29'),
+(9, 8, 'khách sạn đẹp , không gian thoáng mát, dịch vụ tốt', '2018-02-14 07:07:38'),
+(10, 9, 'khách sạn này thế nào vậy mọi người, sắp có chuyến công tác cần lắm một khách sạn giá cả tốt', '2018-07-11 13:12:08'),
+(11, 6, 'đi nha trang thì chọn khách sạn này là tuyệt vời', '2018-10-15 07:18:00'),
+(12, 7, 'an ninh  ở đây đảm bảo lắm này, giá lại rẻ nữa', '2019-01-15 06:14:00'),
+(13, 8, 'công tác Hà Nội thì chọn khách sạn này là hợp lý nhất', '2018-05-14 13:32:12'),
+(14, 11, 'khu nghỉ dưỡng tuyệt vời cho một kỳ nghỉ', '2017-08-15 04:23:11'),
+(15, 4, 'khách sạn vàng của thành phố ngàn hoa', '2017-03-09 08:39:39'),
+(16, 8, 'cho em hỏi giá cả thế nào , an ninh có tốt không ạ', '2018-07-24 06:09:30'),
+(17, 6, 'dịch vụ khá ổn, vị trí cũng thuận tiện cho việc đi chơi', '2018-09-26 07:16:32'),
+(18, 2, 'nhân viên phục vụ không tốt, lại còn chặt chém khách nước ngoài nữa chứ', '2018-10-02 10:12:29'),
+(19, 7, 'trong nước mà xây dựng được một khu nghỉ dưỡng tuyệt quá', '2018-10-15 11:16:26'),
+(20, 9, 'dịch vụ tốt, cần phát huy ', '2019-01-08 09:16:25'),
+(21, 7, 'hãng hàng không tuyệt vời', '2018-09-11 13:15:34'),
+(22, 11, 'dịch vụ khá tốt, nhân viên nhiệt tình', '2018-09-10 06:07:29'),
+(23, 8, 'hôm đó bay trong thời tiết khá xấu, thật may là chuyến bay hạ cánh an toàn', '2019-01-01 08:12:00'),
+(24, 4, 'hãng hàng không đáng để lựa chọn', '2018-08-21 07:18:35'),
+(25, 3, 'Eva đã cho tôi một chuyến đi tuyệt vời', '2018-09-02 00:00:00'),
+(26, 2, 'một chuyến đi đáng để nhớ', '2018-10-15 14:17:31'),
+(27, 6, 'dịch vụ tốt, nhân viên tận tình', '2018-10-08 06:14:25'),
+(28, 7, 'giá cả hợp lý mà dịch vụ lại tốt', '2019-01-01 06:32:43'),
+(29, 9, 'nhân viên cởi mở, nhiệt tình, dịch vụ tốt, giá hợp lý', '2018-10-16 09:21:00'),
+(30, 8, 'vé của Korean hơi chát', '2018-09-10 16:32:35'),
+(31, 5, 'một hãng hàng không nội địa tuyệt vời', '2019-01-06 13:36:00'),
+(32, 11, 'chuyến bay an toàn là vui rồi, cảm ơn jetstar', '2018-09-10 11:00:27'),
+(33, 7, 'giá rẻ, dịch vụ tốt, nhân viên vui tính nhiệt tình', '2018-01-01 09:23:43'),
+(34, 9, 'giá cao quá, nhưng đổi lại được dịch vụ tốt', '2018-10-15 00:00:00'),
+(35, 10, 'dịch vụ tốt, cần phát huy nhé', '2018-10-08 10:27:34');
 
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where ct.loai = 'Trong Nước';
-
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where ct.loai = 'Ngoài Nước';
-
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd order by dd.id_dd desc limit 3;
-
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where ct.loai = 'Trong Nước' order by RAND() limit 0, 3;
-
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where ct.loai = 'Ngoài Nước' order by RAND() limit 0, 3;
-
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where dd.id_dd = 15;
-
-select loai from ctdd where id_dd = 5;
-*/
-/*
-delete from ctdd where id_dd = 5;
-delete from ctdgdd where id_dd = 5;
-delete from dia_diem where id_dd = 5;
-*/
-
-/*
-delete from ctdv where id_dv = 5;
-delete from ctdgdv where id_dv = 5;
-delete from dich_vu where id_dv = 5;
-*/
-
-/*
-delete from cam_nang where id_cn = 5;
-*/
-
-/*
-delete from ctdgdv where id_tk = 5;
-delete from ctdgdd where id_tk = 5;
-delete from thong_tin_tai_khoan where id_tk = 5;
-delete from tai_khoan where id_tk = 5;
-*/
-
-/*
-select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.id_tk = 5;
-select id_tk from tai_khoan where id_tk >= all (select id_tk from tai_khoan);
-
-select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where ct.loai = "phương tiện" limit 0, 1000;
-
-select * from cam_nang limit 0, 1000;
-
-select * from tai_khoan where ten_dang_nhap = 'admin' and mat_khau = 'admin';
-
-update tai_khoan set mat_khau = '123' where id_tk = 3;
-
-update thong_tin_tai_khoan set ho_ten = 'xxx xxx', email = 'x@gmail.com', ngay_sinh = '1998-02-02', gioi_tinh = 'Nam', dia_chi = 'HN', sdt = '1234569879' where id_tk = 3;
-*/
-/*
-select * from ctdgdd where id_dd = 7;
-
-select sum(so_sao_dd) as sums from ctdgdd where id_dd = 1;
-
-select count(so_sao_dd) as counts from ctdgdd where id_dd = 1;
-
-select * from ctdgdv where id_dv = 1;
-
-select count(so_sao_dv) as counts from ctdgdv where id_dv = 1;
-
-select sum(so_sao_dv) as sums from ctdgdv where id_dv = 1;
-
-select * from dich_vu dv inner join ctdv ct on dv.id_dv = ct.id_dv where loai = "Phương tiện" order by rand() limit 0, 4;
-*/
-/*select * from cam_nang where id_cn = 5;
-
-select * from ctdgdd ct join thong_tin_tai_khoan tk on ct.id_tk = tk.id_tk where ct.id_dd = 60;
-
-select *, sum(so_sao_dd)/count(so_sao_dd) as bxh, sum(so_sao_dd) as sums from ctdgdd group by id_dd order by sum(so_sao_dd)/count(so_sao_dd) desc, count(so_sao_dd) desc;
-
-*/
-/*Đối với các địa điểm du lịch chưa có lượt đánh giá nào thì chưa được vào bảng xếp hạng*/
-/*
-select * from dia_diem dd join ctdd ct on dd.id_dd = ct.id_dd join ctdgdd ctdg on ctdg.id_dd = dd.id_dd group by dd.id_dd order by sum(so_sao_dd)/count(so_sao_dd) desc, count(so_sao_dd) desc;
-
-select *, sum(so_sao_dv)/count(so_sao_dv) as bxh, sum(so_sao_dv) as sums from ctdgdv group by id_dv order by sum(so_sao_dv)/count(so_sao_dv) desc, count(so_sao_dv) desc;
-*/
-/*Đối với các dịch vụ du lịch chưa có lượt đánh giá nào thì chưa được vào bảng xếp hạng*/
-/*
-select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv join ctdgdv ctdg on ctdg.id_dv = dv.id_dv group by dv.id_dv order by sum(so_sao_dv)/count(so_sao_dv) desc, count(so_sao_dv) desc limit 0, 6;
-
-select * from dich_vu dv join ctdv ct on dv.id_dv = ct.id_dv where dv.ten_dv like '%31%' OR ct.tieu_de_dv LIKE '%31%' OR ct.noi_dung_dv LIKE '%31%' OR ct.id_dv LIKE '%31%';
-
-select * from dia_diem dd inner join ctdd ct on dd.id_dd = ct.id_dd where dd.ten_dd like '%%' OR ct.tieu_de_dd like '%%' OR ct.noi_dung_dd like '%%';
-
-select * from cam_nang where tieu_de_cn like '%Sau%' OR noi_dung_cn like '%Sau%';
-
-select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.cap_do <> 2 and (tk.ten_dang_nhap like '%%' OR tttk.ho_ten like '%%' OR tttk.email like '%%' OR tttk.dia_chi like '%%');
-
-insert into dia_diem(ten_dd, link_dd) values('Đồng bằng sông Cửu Long','63.jpg');
-
-select * from dia_diem;
-
-select id_dd from dia_diem dd where id_dd >= all (select id_dd from dia_diem);
-
-insert into ctdd(id_dd,tieu_de_dd, noi_dung_dd,loai) values(1,'TP Hạ Long- TP Cẩm Phả -Quảng Ninh','Không chỉ đẹp bởi cảnh sắc “mây trời sóng nước”, vẻ đẹp nên thơ hay vô số những đảo đá vôi nổi trên mặt nước, Hạ Long còn đem lại cho du khách cảm giác bình yên khi hòa mình vào cảnh vật nơi đây. Được đánh giá là một trong 29 Vịnh đẹp nhất thế giới, cuối tháng 3/2012, tổ chức New Open World cũng đã chính thức công nhận vịnh Hạ Long là một trong bảy kỳ quan thiên nhiên mới của thế giới.','Trong Nước');
-
-select * from ctdd;
-*/
-/*
-select * from cam_nang;
-
-insert into cam_nang(id_tk, tieu_de_cn, noi_dung_cn, link_cn) values (1,'Đây là tiêu đề','Đây là nội dung','15.jpg');
-
-select * from cam_nang where id_cn = 5;
-
-update cam_nang set tieu_de_cn = '123', noi_dung_cn = '123132', link_cn = '123' where id_cn = 3;
-*/
-/*
-select * from tai_khoan tk inner join thong_tin_tai_khoan tttk on tk.id_tk = tttk.id_tk where tk.ten_dang_nhap = 'admin' and tk.mat_khau = 'admin';
-*/
-/*
-select * from dia_diem;
-
-update dia_diem set ten_dd = '123', link_dd = '5.jpg' where id_dd = 3;
-
-select * from ctdd;
-
-update ctdd set tieu_de_dd = 'xxx xxx', noi_dung_dd = 'x@gmail.com', loai = 'Trong Nước' where id_dd = 3;
-
-select * from dich_vu;
-
-select * from ctdv;
-
-*/
+INSERT INTO dgcdd (id_dd, id_tk, binh_luan_dd, thoi_gian) VALUES
+(1, 2, 'không uổng danh là kỳ quan thiên nhiên thế giới ', '2018-12-03 06:09:25'),
+(2, 3, 'cảnh quan ở đây tuyệt vời.', '2019-01-01 07:12:32'),
+(3, 6, 'khoog có gì đặc biệt ở đây cả.', '2018-12-03 11:14:29'),
+(4, 7, ' chuyến đi khá vui', '2018-02-22 07:17:17'),
+(5, 6, 'địa điểm lý thú để hẹ hò', '2018-07-11 08:12:28'),
+(6, 11, 'dịch vụ ổn, nhưng không gian phòng chưa hợp lý, hơi ngột ngạt', '2018-07-12 06:09:00'),
+(7, 8, 'địa điểm lý tưởng cho dịp nghỉ lễ tới', '2019-01-01 02:06:32'),
+(8, 6, 'ai cho mình xin ý ít thông tin với, có gì thú vị không ạ', '2019-01-02 05:12:29'),
+(9, 8, 'không khí trong lành, không gian thoáng mát,đẹp', '2018-02-14 07:07:38'),
+(10, 9, 'có cơ hội sẽ cùng cả nhà', '2018-07-11 13:12:08'),
+(11, 6, ' quá tuyệt vời', '2018-10-15 07:18:00'),
+(12, 7, 'an ninh  ở đây đảm bảo lắm này, giá lại rẻ nữa', '2019-01-15 06:14:00'),
+(13, 8, 'đẹp, hơn những gì mong đợi', '2018-05-14 13:32:12'),
+(14, 11, 'quá tuyệt vời cho một kỳ nghỉ', '2017-08-15 04:23:11'),
+(15, 4, 'cho mìn ít thông tin đi', '2017-03-09 08:39:39'),
+(16, 8, 'an ninh có tốt không ạ', '2018-07-24 06:09:30'),
+(17, 6, ' vị trí cũng thuận tiện cho việc đi chơi', '2018-09-26 07:16:32'),
+(18, 2, ' ở đây  chặt chém khách nước ngoài lắm', '2018-10-02 10:12:29'),
+(19, 7, '  một khu nghỉ dưỡng tuyệt quá', '2018-10-15 11:16:26'),
+(20, 9, 'hợp lý để hẹn hò không mọi người ', '2019-01-08 09:16:25'),
+(21, 7, ' tuyệt vời', '2018-09-11 13:15:34'),
+(22, 11, 'thời tiết không ủng hộ, nên không được đi đâu, chỉ nàm trong khách sạn, chả biết nó thế nào', '2018-09-10 06:07:29'),
+(23, 8, ' thời tiết khá xấu', '2019-01-01 08:12:00'),
+(24, 4, ' đáng để lựa chọn', '2018-08-21 07:18:35'),
+(25, 3, ' chuyến đi tuyệt vời', '2018-09-02 00:00:00'),
+(26, 2, 'chuyến đi đáng để nhớ', '2018-10-15 14:17:31'),
+(27, 6, ' kỳ nghỉ ý nghĩa', '2018-10-08 06:14:25'),
+(28, 7, 'giá cả hợp lý ', '2019-01-01 06:32:43'),
+(29, 9, 'không hài long cho lắm, không như mong đợi', '2018-10-16 09:21:00'),
+(30, 8, 'cần chuẩn bị những gì nhỉ', '2018-09-10 16:32:35'),
+(31, 5, ' tuyệt vời', '2019-01-06 13:36:00'),
+(32, 11, ' quá vui rồi,', '2016-09-10 11:00:27'),
+(33, 7, 'ước gì dược đi một lần nữa', '2018-01-01 09:23:43'),
+(34, 9, 'đẹp lắm mọi người ạ', '2018-10-15 00:00:00'),
+(35, 10, 'dmột sự lựa chọn hợp lý cho cả gia đình cùng ngao du', '2018-10-08 10:27:34'),
+(36, 11, 'muốn đi thêm lần nữa', '2018-09-10 09:12:27'),
+(37, 3, 'đẹp tuyệt luôn', '2019-01-01 14:14:23'),
+(38, 8, 'muốn đi bà xã đi một lần', '2018-12-20 13:36:00'),
+(39, 6, 'có sao không', '2018-09-10 06:30:21'),
+(40, 8, 'một tạo hóa  tuyệt vời của tự nhiên', '2018-10-03 13:14:32');
