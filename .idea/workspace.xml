@@ -2,138 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12fbf390-0c5b-40fa-b978-2abf2e46471b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/register_site_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/s_register_site_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/s_search_site_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/application/views/site/search_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/traveling_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/traveling_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/Read Me.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0ahlvhv0iidqlhskc1bhv12735jqfmrr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session0tsaes1ug7d4c8havqekg7j8lg1qrtsk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session17ciireladcb1o4dptvr7vuv6bk4e65a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session2ukercgmfb9cfsi12hgmrg389mbirhrg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session2v6j9gna64jadhubedurl17lv6ta73ho" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session37a95v28gb9kql7qfjqeefgml6cgr85r" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session3k370dvvlcek5qhfdkr5jauthofukgro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session4mt8tmsjkoarekm3q1pj42m27moje6rt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session53g5bhc863tucmf96p3vp71vaq6oqat8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session6405jdcl1c1nqb4emgc3pm0e991vhnr0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session65cfl2tp17thiamb91jinktehq0f4747" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session6oi0i6a6cmg63npsc2eei12jt01aldhk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session702lhfk414hvv1kj3lhth2hvks4j61v6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session741euckjpm1urtdk06pillk9e9nd2aa1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session7uu1r22i2jdfv838gpsgusa4fhpgqre5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_session8t4kapdcd3vlem27m9sjpcqfegf3e2rj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiona4122juedcrvcbocnto614oet8ob7lj0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionabfvf7urbrrsq9d01s4kqtqv8460j98e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionaipd8m2gm48hplvvpb80gdj2o4nmohpd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionap29g14psc68tj2c93m2t5f95r871m07" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbo8t2jm3599ha1temaj4i2kkid8ccl0p" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionbp4u167cn3hcjbpmehr1249g9fa2j3no" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessioncma49jrehvngr1n6r9itaporioqaujfa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiondo6i10llru8j0qli7l9tg4a2j1dbht2l" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiondq07jvrb7bo1o9kva236lg65hsmt7m95" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessioneb12s9pkjt53f5082r698k0u4aacj61p" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessioneqku3gq5srablsbj0kcjotsdcbqno103" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionfs80ilf49bnibu8uvvda3pp4c8qbo8uf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiong4su4cgsvimv6gs42b7t0t414rr0cupl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessiongbn1fve815vehtjpnodglu5onmhcbii1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionh1siemjob40amc066uqkjcvni22dftje" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionhuj4s6sk2tb77qt00qupt321dbtnl3jv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionj209jfctpn6ee6grng9ka9tepljdg485" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionj5q1l6llh88sdmlqnospu7kit21ghoe7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionj8uggavkmp99i9j4ru8j6f3tq94is2po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionk1un2hntm7cvkv2kpg6tl172jtk79t35" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionla5napkkhdqcuqb4ammt2nor50nrvdqq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionljbr55m026aldka26lj9jc9ei5s08fga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionllgoh2sd1tp03s4fc4h48pg18hdb3j69" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionlqrft5sagcqliv299sbgate54nm4q006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionmn6jo5mv9k0iefs1nnundnv8pn18l24t" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionnlbbkar51gmf2r6htqihf2ugq3kjhs3q" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionnoohpk1beuum1d06pagstseboishfmtn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionoa6i7jnspn10va1292v61htabmpaditn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionoitl9haou6j560k542jd1ugtu88453s2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionomv2cj9s9p91njtj1dtito7gkgkn9rsk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionp2het2ekfo4g92bqff5758pn7b92hbu5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionpcjm4gqlipa71a8frr7gpu9chrnpj11a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionpoqho52pellijfmmuik3f4tv7lgrih1t" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionpuahcqt0duvs90d0lk4csh35mrkjoidb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionq1evlb7g01tdcpggpijo36u6jjtku00b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionq1n64m9o7h7kofoq6rkp83edsjlftbuv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionq67d88ghaaspjl5lddhbd0af3vg3hoe7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqeh6jcgab5cjv9enkr5mfgbi4638ftmq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqklugs6hg95h23ttsg4lmcrqft9dp9av" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqnct3b3va7svoeifpuq38gmvhnde4e28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionqo69etajesvgpog0evg7dgg4ue3t6ipr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionrgcqohhbjmc9m7m1j3o1rqah310l3ibo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionskafeonsmobdpf0gr5hm3j7b60vduc9e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionskun918ss5hu1envvekg6qnodl81mdbq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionsvrukvss2iuqej1l7ufj4qmailm9jks3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionuajj2fhqpd4t83s2rsgaaddsb07ogrcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionudq1upoai1h7e043ovakjf4q2u1hlo00" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionunn7c94nn1rkai8r9fqrohgfd8a6gcpf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionv955ce0851js1fbsihlvp3ak712fn6dr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvfmsnch9p4cnhqrec1oc4jek9k4rmkeq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvp2c1up04oi612nav88kv22umujqqvvv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvr3q30u3cp4tl9ii0eq1sn6ji7dut799" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/config/session/ci_sessionvttd6comsupko35c6djchp588tch7sps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/dia_diem.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/dia_diem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/dich_vu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/controllers/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/regist.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/site.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/controllers/upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/models/Mdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Mdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/models/Mdv.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Mdv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/models/Muser.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/models/Muser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_cn_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_dd_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_dd_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/add_dv_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/add_dv_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/dashboard_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/dashboard_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_cn_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_dd_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_dd_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_dv_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_dv_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/edit_user_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/edit_user_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/admin/nav_admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/admin/nav_admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/bang_xep_hang_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/bang_xep_hang_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/cam_nang_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/cam_nang_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/detail_dd_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/detail_dd_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/detail_dv_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/detail_dv_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_bxh_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_bxh_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_moi_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_moi_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_ngoai_nuoc_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_ngoai_nuoc_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_trong_nuoc_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dia_diem_trong_nuoc_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_bxh_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_bxh_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_ks_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_ks_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_pt_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_pt_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/dich_vu_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/fix_nav_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/fix_nav_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/footer_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/footer_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/home_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/home_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/login_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/login_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/nav_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/regist_site_view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_about_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/s_about_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_blog_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/s_blog_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_contact_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/s_contact_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_detail_cn_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/s_detail_cn_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_detail_dd_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/s_detail_dd_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_detail_dv_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/s_detail_dv_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_regist_site_view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/s_ttcn_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/s_ttcn_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/site/ttcn_site_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/application/views/site/ttcn_site_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/success.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/application/views/upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/assets/img/165774d3f85e926.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/assets/img/165774d3f85e9261.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Report.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/dashboard_admin_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="441">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -259,7 +128,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="973" />
+    <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -420,6 +289,7 @@
       <workItem from="1546526426061" duration="51000" />
       <workItem from="1546535828621" duration="41000" />
       <workItem from="1546539686771" duration="36000" />
+      <workItem from="1546562457210" duration="572000" />
     </task>
     <task id="LOCAL-00001" summary="v1 21/12 by Ngon Phi">
       <created>1545404180189</created>
@@ -432,13 +302,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201326000" />
+    <option name="totallyTimeSpent" value="201898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="778" height="830" extended-state="0" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.38579386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.3966713" />
       <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.09060403" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -732,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/application/views/admin/dashboard_admin_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="441">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
